@@ -1,0 +1,18 @@
+{
+ "desc": "gold framed promo plate for menus and signs, with corner stars",
+ "tags": [
+  "gold",
+  "menu",
+  "promo",
+  "sign",
+  "star"
+ ],
+ "usage": "prop_gold_box(g, x, y, w, h)",
+ "name": "gold_box",
+ "kind": "prop",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

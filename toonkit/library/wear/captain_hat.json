@@ -1,0 +1,17 @@
+{
+ "name": "captain_hat",
+ "kind": "wear",
+ "desc": "captain's cap with gold braid and anchor badge",
+ "tags": [
+  "hat",
+  "captain",
+  "anchor",
+  "diner"
+ ],
+ "usage": "wear_captain_hat(c.head)",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

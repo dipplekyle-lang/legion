@@ -1,0 +1,17 @@
+{
+ "name": "cook_tee",
+ "kind": "wear",
+ "desc": "kitchen tee cloth painter with flour dab",
+ "tags": [
+  "outfit",
+  "cook",
+  "tee",
+  "diner"
+ ],
+ "usage": "cloth: wear_cook_tee()",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

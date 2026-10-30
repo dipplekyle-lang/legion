@@ -1,0 +1,18 @@
+{
+ "desc": "hand-inked anchor logo for canvas textures (signs, menus, mugs, napkins)",
+ "tags": [
+  "anchor",
+  "logo",
+  "nautical",
+  "diner",
+  "sign"
+ ],
+ "usage": "tex_anchor_logo(g, cx, cy, size, colour, lineWidth)",
+ "name": "anchor_logo",
+ "kind": "tex",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

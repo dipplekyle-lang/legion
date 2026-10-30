@@ -1,0 +1,18 @@
+{
+ "desc": "cartoon triple-decker sandwich with flag pick and optional captain hat, for menus, frames and boards",
+ "tags": [
+  "sandwich",
+  "food",
+  "diner",
+  "menu",
+  "hat"
+ ],
+ "usage": "prop_hero_sandwich(g, cx, cy, size, hat)",
+ "name": "hero_sandwich",
+ "kind": "prop",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

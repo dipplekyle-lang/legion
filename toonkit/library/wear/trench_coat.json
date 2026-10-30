@@ -1,0 +1,17 @@
+{
+ "name": "trench_coat",
+ "kind": "wear",
+ "desc": "trench coat cloth painter: lapels, buttons, belt",
+ "tags": [
+  "outfit",
+  "trench",
+  "coat",
+  "noir"
+ ],
+ "usage": "cloth: wear_trench_coat()",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

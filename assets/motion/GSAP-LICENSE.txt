@@ -1,0 +1,3 @@
+GSAP 3.13.0 by GreenSock / Webflow - https://gsap.com
+Used under the GSAP Standard "No Charge" License: https://gsap.com/standard-license/
+Not for use in no-code visual animation builders that compete with Webflow.

@@ -1,0 +1,18 @@
+{
+ "desc": "held paper menu with a gold deal box, price rows and a branded back",
+ "tags": [
+  "menu",
+  "paper",
+  "diner",
+  "prop",
+  "price"
+ ],
+ "usage": "const pm = prop_printed_menu({rows}); pm.make(size)",
+ "name": "printed_menu",
+ "kind": "prop",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timeline editor — Legion</title>
+<style>
+/* ── LEGION · TIMELINE EDITOR ─────────────────────────────────────────────
+   The finished video as its pieces: the shots, the labels, the captions and
+   the voice on one clock. Click a piece, change it by hand or tell Claude what
+   is wrong with it; the change is queued, rendered on its own, and plays here
+   before Render puts the whole video together again. Read fresh on every
+   request — edit, reload, see it.                                            */
+:root{
+  --bg:#08070a; --bg2:#0d0c10; --bg3:#131217;
+  --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.16);
+  --ink:#f6f4f0; --dim:#8d8880; --dimmer:#5f5b55;
+  --amber:#ffb020; --amber2:#ff8a00; --amber-dim:rgba(255,176,32,.14);
+  --ok:#4ade80; --bad:#f87171;
+  --c-footage:#3d6fb6; --c-stock:#55657d; --c-still:#7c5cc4; --c-graphic:#b7832a; --c-map:#3f8f63;
+  --c-chapter:#8b8780; --c-press:#b0505a; --c-photo:#9a5bb0; --c-threed:#2f8f8f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--ink);font:13.5px/1.45 ui-sans-serif,-apple-system,"Segoe UI",Inter,system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;display:flex;flex-direction:column}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+::selection{background:rgba(255,176,32,.28)}
+.hidden{display:none!important}
+
+/* header */
+.top{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--bg2);flex:0 0 auto}
+.back{color:var(--dim);text-decoration:none;font-size:13px;padding:6px 10px;border-radius:9px;border:1px solid var(--line)}
+.back:hover{color:var(--ink);border-color:var(--line2)}
+.ttl{min-width:90px;flex:1}
+.ttl b{display:block;font-size:14.5px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ttl span{display:block;color:var(--dimmer);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:1100px){.changes{display:none}.rstate{max-width:140px}.rbar{width:90px}}
+@media (max-height:700px){.tl{height:210px}.h-v{height:70px}#laneV{height:70px}#laneL{top:100px;height:34px}.h-lab{height:34px}
+  #laneC{top:134px;height:36px}.h-cap{height:36px}#laneA{top:170px;height:40px}.h-voice{height:40px}
+  .insp{max-height:30%}.queue{max-height:45%}}
+.btn{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:13px;white-space:nowrap}
+.btn:hover:not(:disabled){border-color:var(--line2);background:rgba(255,255,255,.09)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.go{background:linear-gradient(180deg,var(--amber),var(--amber2));color:#1a1206;border:0;font-weight:700}
+.btn.go:hover:not(:disabled){filter:brightness(1.07)}
+.btn.go:disabled{background:var(--panel2);color:var(--dimmer);border:1px solid var(--line);opacity:1}
+.btn.bad{color:var(--bad)}
+.btn.sm{padding:4px 9px;font-size:12px;border-radius:8px}
+.changes{color:var(--amber);font-size:12.5px;white-space:nowrap}
+.rbar{width:170px;height:6px;border-radius:4px;background:var(--panel2);overflow:hidden}
+.rbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--amber),var(--amber2));transition:width .4s}
+.rstate{font-size:12px;color:var(--dim);max-width:280px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* main */
+.main{flex:1 1 auto;display:flex;min-height:0}
+.stage{flex:1;display:flex;flex-direction:column;min-width:0;padding:12px 12px 8px}
+.screen{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center;background:#000;border-radius:12px;overflow:hidden}
+.screen video{max-width:100%;max-height:100%;display:block}
+.screen .ovwrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.screen #ov{max-width:100%;max-height:100%;background:#000}
+.badge{position:absolute;top:10px;left:10px;background:rgba(255,176,32,.92);color:#1a1206;font-size:11.5px;font-weight:700;
+  padding:3px 8px;border-radius:6px;letter-spacing:.2px}
+.wait{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;
+  background:rgba(8,7,10,.86);color:var(--dim);font-size:13px;text-align:center;padding:20px}
+.wait img{max-width:46%;border-radius:8px;opacity:.55}
+.transport{display:flex;align-items:center;gap:8px;padding:9px 2px 0}
+.tbtn{width:34px;height:30px;border-radius:9px;border:1px solid var(--line);background:var(--panel);display:grid;place-items:center}
+.tbtn:hover{border-color:var(--line2)}
+.tbtn svg{width:15px;height:15px;fill:currentColor}
+.tc{font-variant-numeric:tabular-nums;color:var(--dim);font-size:12.5px;min-width:120px}
+.tc b{color:var(--ink);font-weight:600}
+.zoom{display:flex;align-items:center;gap:6px;margin-left:auto;color:var(--dimmer);font-size:12px}
+.zoom input{width:120px;accent-color:var(--amber)}
+.legend{display:flex;gap:10px;flex-wrap:wrap;color:var(--dimmer);font-size:11.5px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+@media (max-width:1300px){.legend{display:none}}
+@media (max-height:820px){.tl{height:250px}.h-v{height:80px}#laneV{height:80px}#laneL{top:110px}#laneC{top:150px}#laneA{top:194px;height:50px}.h-voice{height:50px}}
+
+/* side panel */
+.side{width:390px;flex:0 0 390px;border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0;background:var(--bg2)}
+.insp{border-bottom:1px solid var(--line);padding:12px 14px;max-height:40%;overflow:auto;flex:0 0 auto}
+.insp h3{margin:0 0 2px;font-size:13.5px;font-weight:650;display:flex;align-items:center;gap:8px}
+.insp h3 .sw{width:10px;height:10px;border-radius:3px;flex:0 0 10px}
+.insp .when{color:var(--dimmer);font-size:12px;margin-bottom:8px}
+.insp .row{margin:6px 0}
+.insp .k{color:var(--dimmer);font-size:11px;text-transform:uppercase;letter-spacing:.6px}
+.insp .v{color:var(--ink);font-size:13px}
+.insp .quote{color:var(--dim);font-style:italic}
+.insp .acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.insp .note{color:var(--dimmer);font-size:12px;margin-top:8px}
+.insp .empty{color:var(--dimmer);font-size:12.5px}
+.field{display:flex;flex-direction:column;gap:3px;margin:7px 0}
+.field label{color:var(--dimmer);font-size:11px;text-transform:uppercase;letter-spacing:.6px}
+.field input,.field textarea,.field select{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font-size:13px;width:100%}
+.field textarea{resize:vertical;min-height:54px}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:rgba(255,176,32,.5)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.spec{border-left:2px solid var(--line);padding-left:8px;margin:4px 0}
+
+.chat{flex:1;display:flex;flex-direction:column;min-height:0}
+.chead{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line)}
+.chead b{font-size:13px}
+.chead .q{margin-left:auto;color:var(--dim);font-size:12px;cursor:pointer;user-select:none}
+.chead .q:hover{color:var(--ink)}
+.queue{border-bottom:1px solid var(--line);padding:8px 12px 10px;max-height:34%;overflow:auto;background:rgba(0,0,0,.18)}
+.queue .qh{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--dimmer);text-transform:uppercase;letter-spacing:.6px;margin:2px 0 6px}
+.queue .qrow{display:grid;grid-template-columns:18px 1fr auto auto;gap:7px;align-items:center;font-size:12px;color:var(--dim);
+  padding:5px 6px;border-radius:7px}
+.queue .qrow:nth-child(odd){background:rgba(255,255,255,.025)}
+.queue .qrow .n{color:var(--dimmer);font-variant-numeric:tabular-nums;text-align:right}
+.queue .qrow .lb{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
+.queue .qrow .lb small{color:var(--dimmer)}
+.queue .qrow .eta{color:var(--amber);font-variant-numeric:tabular-nums}
+.queue .qrow.done .lb{color:var(--dim)}
+.queue .qrow.failed .lb{color:var(--bad)}
+.queue .qrow .x{border:0;background:none;color:var(--dimmer);padding:0 3px}
+.queue .qrow .x:hover{color:var(--bad)}
+.queue .auto{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--dim);margin-top:8px;cursor:pointer}
+.queue .auto input{accent-color:var(--amber)}
+.queue .tot{font-size:12px;color:var(--dim);margin-top:6px}
+.queue .tot b{color:var(--amber);font-weight:600}
+.queue .empty{font-size:12px;color:var(--dimmer);padding:4px 2px}
+.msgs{flex:1;overflow:auto;padding:12px 14px;display:flex;flex-direction:column;gap:9px}
+.m{max-width:92%;padding:8px 11px;border-radius:12px;font-size:13px;white-space:pre-wrap;word-wrap:break-word}
+.m.user{align-self:flex-end;background:rgba(255,176,32,.13);border:1px solid rgba(255,176,32,.25)}
+.m.ai{align-self:flex-start;background:var(--panel2);border:1px solid var(--line)}
+.m.ai.err{border-color:rgba(248,113,113,.4)}
+.m.sys{align-self:center;background:none;color:var(--dimmer);font-size:12px;padding:2px 6px;text-align:center}
+.m.sys.ok{color:var(--ok)}
+.m .selnote{display:block;color:var(--dimmer);font-size:11px;margin-top:3px}
+.m .res{margin-top:6px;display:flex;flex-direction:column;gap:4px}
+.task{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--dim);background:rgba(0,0,0,.25);border-radius:8px;padding:5px 8px}
+.task .st{flex:0 0 auto;width:14px;text-align:center}
+.task .lb{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.task .eta{color:var(--amber);font-variant-numeric:tabular-nums}
+.task.done .st{color:var(--ok)}
+.task.failed .st,.task .er{color:var(--bad)}
+.task .x{border:0;background:none;color:var(--dimmer);padding:0 2px}
+.dots{display:inline-flex;gap:3px}
+.dots i{width:5px;height:5px;border-radius:50%;background:var(--dim);animation:bl 1.2s infinite}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes bl{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.spin{display:inline-block;width:11px;height:11px;border:2px solid var(--line2);border-top-color:var(--amber);border-radius:50%;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.compose{border-top:1px solid var(--line);padding:10px 12px}
+.selchip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--dim);background:var(--panel2);
+  border:1px solid var(--line);border-radius:999px;padding:2px 4px 2px 9px;margin-bottom:7px;max-width:100%}
+.selchip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.selchip button{border:0;background:none;color:var(--dimmer);padding:0 4px}
+.cbox{display:flex;gap:8px;align-items:flex-end}
+.cbox textarea{flex:1;resize:none;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-height:40px;max-height:140px;font-size:13px}
+.cbox textarea:focus{outline:none;border-color:rgba(255,176,32,.5)}
+.hintline{color:var(--dimmer);font-size:11.5px;margin-top:6px}
+
+/* timeline */
+.tl{flex:0 0 auto;height:282px;border-top:1px solid var(--line);background:var(--bg2);display:flex;user-select:none}
+.heads{width:92px;flex:0 0 92px;border-right:1px solid var(--line);display:flex;flex-direction:column}
+.heads div{display:flex;align-items:center;padding-left:12px;color:var(--dimmer);font-size:11px;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid rgba(255,255,255,.04)}
+.scroll{flex:1;overflow-x:auto;overflow-y:hidden;position:relative}
+.scroll::-webkit-scrollbar{height:10px}
+.scroll::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px}
+.content{position:relative;height:100%}
+.lane{position:absolute;left:0;right:0;border-bottom:1px solid rgba(255,255,255,.04)}
+.h-ruler{height:30px}.h-v{height:92px}.h-lab{height:40px}.h-cap{height:44px}.h-voice{height:58px}
+#ruler{top:0;height:30px;cursor:text}
+#laneV{top:30px;height:92px}
+#laneL{top:122px;height:40px}
+#laneC{top:162px;height:44px}
+#laneA{top:206px;height:58px}
+canvas.fixed{position:absolute;top:0;left:0;pointer-events:none}
+.clip{position:absolute;top:6px;bottom:6px;border-radius:7px;overflow:hidden;background-size:cover;background-position:center;
+  border:1px solid rgba(0,0,0,.6);cursor:pointer;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.clip .tint{position:absolute;inset:0;opacity:.55;mix-blend-mode:multiply}
+.clip .bar{position:absolute;left:0;right:0;bottom:0;height:4px}
+.clip .cap{position:absolute;left:5px;right:5px;bottom:6px;font-size:10.5px;line-height:1.2;color:#fff;
+  text-shadow:0 1px 2px #000,0 0 6px #000;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.clip .kind{position:absolute;left:5px;top:4px;font-size:9.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:#fff;text-shadow:0 1px 2px #000}
+.clip.sel{box-shadow:0 0 0 2px var(--amber),inset 0 0 0 1px rgba(255,255,255,.2);z-index:2}
+.clip.changed::after{content:"";position:absolute;top:4px;right:4px;width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 2px rgba(0,0,0,.6)}
+.clip .eh{position:absolute;top:0;bottom:0;width:7px;cursor:ew-resize;z-index:3}
+.clip .eh.l{left:0}.clip .eh.r{right:0}
+.clip .eh:hover{background:rgba(255,176,32,.45)}
+.work{position:absolute;top:2px;bottom:2px;border-radius:7px;pointer-events:none;z-index:4;
+  background:repeating-linear-gradient(135deg,rgba(255,176,32,.28) 0 8px,rgba(255,176,32,.08) 8px 16px);border:1px dashed var(--amber)}
+.lab{position:absolute;top:6px;bottom:6px;border-radius:6px;background:rgba(255,255,255,.08);border:1px solid var(--line2);
+  font-size:10.5px;padding:3px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:grab}
+.lab b{color:var(--amber);font-weight:600;margin-right:4px;text-transform:uppercase;font-size:9px;letter-spacing:.4px}
+.lab.sel{border-color:var(--amber);background:rgba(255,176,32,.16)}
+.capb{position:absolute;top:6px;bottom:6px;border-radius:5px;background:rgba(120,160,255,.08);border:1px solid rgba(120,160,255,.18);
+  font-size:10.5px;padding:3px 5px;overflow:hidden;color:#c9d3ea;line-height:1.25;cursor:pointer}
+.capb.sel{border-color:var(--amber);background:rgba(255,176,32,.14);color:var(--ink)}
+.chap{position:absolute;top:0;height:30px;border-left:2px solid var(--amber);padding:2px 0 0 5px;font-size:10.5px;color:var(--amber);
+  white-space:nowrap;pointer-events:none;background:linear-gradient(90deg,rgba(255,176,32,.14),transparent 140px)}
+.range{position:absolute;top:0;bottom:0;background:rgba(255,176,32,.12);border-left:1px solid var(--amber);border-right:1px solid var(--amber);pointer-events:none;z-index:1}
+.ph{position:absolute;top:0;bottom:0;width:2px;background:var(--amber);z-index:6;pointer-events:none;box-shadow:0 0 8px rgba(255,176,32,.6)}
+.ph::before{content:"";position:absolute;top:0;left:-6px;border:7px solid transparent;border-top:9px solid var(--amber)}
+.ghost{position:absolute;top:0;bottom:0;width:2px;background:#fff;z-index:7;pointer-events:none}
+.ghost span{position:absolute;top:2px;left:5px;font-size:11px;background:#000;padding:1px 5px;border-radius:4px;white-space:nowrap}
+
+/* the shot browser */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:50}
+.mbox{width:min(920px,94vw);max-height:86vh;background:var(--bg3);border:1px solid var(--line2);border-radius:16px;display:flex;flex-direction:column;overflow:hidden}
+.mhead{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}
+.mhead b{font-size:14px}
+.mhead input{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.mtabs{display:flex;gap:6px;padding:10px 16px 0}
+.mtabs button{background:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:12px;color:var(--dim)}
+.mtabs button[aria-pressed=true]{border-color:rgba(255,176,32,.55);color:var(--amber);background:var(--amber-dim)}
+.mbody{overflow:auto;padding:12px 16px 16px}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:8px}
+.shot{border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden;display:grid;
+  grid-template-columns:118px 1fr auto;align-items:center;gap:10px;padding:8px}
+.shot:hover{border-color:var(--line2)}
+.shot .im{width:118px;aspect-ratio:16/9;background:#000 center/cover;position:relative;border-radius:7px;overflow:hidden;opacity:.75}
+.shot.local .im{opacity:1}
+.shot.local .im::after{content:none}
+.shot .ready{color:var(--ok);font-weight:600}
+.shot .im::after{content:"source video";position:absolute;left:0;right:0;top:0;font-size:9px;letter-spacing:.4px;text-transform:uppercase;
+  background:rgba(0,0,0,.65);color:#bbb;padding:1px 5px}
+.shot .im{display:block;color:inherit;text-decoration:none}
+.shot .im span{position:absolute;right:3px;bottom:3px;background:rgba(0,0,0,.75);font-size:10px;padding:0 5px;border-radius:4px}
+.shot .im em{display:none}
+.shot .tx{font-size:13px;min-width:0}
+.shot .tx small{display:block;color:var(--dimmer);font-size:11px;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.shot button{margin:0}
+.mfoot{padding:12px 16px;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.mfoot input{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.blank{color:var(--dimmer);text-align:center;padding:40px 10px}
+.toast{position:fixed;left:50%;bottom:300px;transform:translateX(-50%);background:#1d1b20;border:1px solid var(--line2);padding:8px 14px;border-radius:10px;font-size:13px;z-index:60;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.toast.err{border-color:rgba(248,113,113,.5);color:#fecaca}
+.cannot{max-width:560px;margin:80px auto;text-align:center;color:var(--dim)}
+.cannot b{display:block;color:var(--ink);font-size:16px;margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <a class="back" href="/">&lsaquo; Library</a>
+  <div class="ttl"><b id="title">Loading…</b><span id="sub"></span></div>
+  <span class="changes hidden" id="changes"></span>
+  <button class="btn" id="undo" title="Undo (⌘Z)">Undo</button>
+  <button class="btn" id="revert" title="Throw away every change since the last render">Discard changes</button>
+  <div class="hidden" id="rprog" style="display:flex;align-items:center;gap:8px"><div class="rbar"><i id="rfill"></i></div><span class="rstate" id="rstate"></span></div>
+  <button class="btn go" id="render" disabled>Render video</button>
+</div>
+
+<div class="cannot hidden" id="cannot"><b>This video can't be opened in the timeline editor</b><span id="cannotWhy"></span><p><a class="back" href="/">&lsaquo; Back to the library</a></p></div>
+
+<div class="main" id="main">
+  <div class="stage">
+    <div class="screen" id="screen">
+      <video id="v" playsinline preload="auto"></video>
+      <div class="ovwrap"><video id="ov" class="hidden" muted playsinline preload="auto"></video></div>
+      <div class="badge hidden" id="badge">EDITED · PREVIEW</div>
+      <div class="wait hidden" id="wait"><img id="waitImg" alt=""><span id="waitTxt">Rendering this shot for the preview…</span></div>
+    </div>
+    <div class="transport">
+      <button class="tbtn" id="prevCut" title="Previous cut (↑)"><svg viewBox="0 0 16 16"><path d="M3 2h2v12H3zM14 2v12L6 8z"/></svg></button>
+      <button class="tbtn" id="play" title="Play / pause (space)"><svg viewBox="0 0 16 16" id="playIc"><path d="M4 2v12l10-6z"/></svg></button>
+      <button class="tbtn" id="nextCut" title="Next cut (↓)"><svg viewBox="0 0 16 16"><path d="M11 2h2v12h-2zM2 2v12l8-6z"/></svg></button>
+      <span class="tc"><b id="tcNow">0:00.0</b> / <span id="tcAll">0:00</span></span>
+      <div class="legend" id="legend"></div>
+      <div class="zoom"><button class="btn sm" id="fit">Fit</button>zoom<input type="range" id="zoom" min="0" max="100" value="45"></div>
+    </div>
+  </div>
+
+  <div class="side">
+    <div class="insp" id="insp"><div class="empty">Click a shot, a label or a caption on the timeline to see it here. Drag the edge of a shot to move a cut. Shift-drag on the ruler to mark a range.</div></div>
+    <div class="chat">
+      <div class="chead"><b>✦ AI editor</b><span class="q" id="qsum" title="Show or hide the queue"></span></div>
+      <div class="queue hidden" id="queue"></div>
+      <div class="msgs" id="msgs"></div>
+      <div class="compose">
+        <div class="selchip" id="selchip"><span id="seltxt">Playhead 0:00</span><button id="selx" title="Clear the selection">×</button></div>
+        <div class="cbox">
+          <textarea id="msg" rows="2" placeholder="Tell Claude what to change — “this shot doesn't fit, show the control room instead”, “the date on this graphic is wrong, it's 1970”, “put a map of the route here”…"></textarea>
+          <button class="btn go" id="send">Send</button>
+        </div>
+        <div class="hintline">Enter sends · Shift+Enter new line · changes are queued and shown on the timeline when ready</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tl" id="tl">
+  <div class="heads">
+    <div class="h-ruler"></div><div class="h-v">Picture</div><div class="h-lab">Labels</div><div class="h-cap">Captions</div><div class="h-voice">Voice</div>
+  </div>
+  <div class="scroll" id="scroll">
+    <div class="content" id="content">
+      <div class="lane" id="ruler"><canvas class="fixed" id="rulerCv"></canvas></div>
+      <div class="lane" id="laneV"></div>
+      <div class="lane" id="laneL"></div>
+      <div class="lane" id="laneC"></div>
+      <div class="lane" id="laneA"><canvas class="fixed" id="waveCv"></canvas></div>
+      <div class="ph" id="ph"></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal hidden" id="pool">
+  <div class="mbox">
+    <div class="mhead"><b id="poolTitle">Replace the shot</b><input id="poolQ" placeholder="Search this video's footage (in English) — e.g. “mission control”, “rocket launch”"><button class="btn" id="poolClose">Close</button></div>
+    <div class="mtabs"><span style="color:var(--dimmer);font-size:12px;align-self:center" id="poolCount"></span></div>
+    <div class="mbody"><div class="shots" id="shots"></div></div>
+    <div class="mfoot">
+      <input id="poolAsk" placeholder="Or describe the shot you want (English works best)…">
+      <button class="btn" id="poolSearch" title="A new YouTube search: the best videos are watched and a shot picked — 2–4 minutes, a few cents">Search YouTube</button>
+      <button class="btn" id="poolImage" title="An AI picture drawn from your description">Draw AI picture</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const SLUG = decodeURIComponent(location.pathname.split('/').filter(Boolean).pop());
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = (s, dec=1) => { s = Math.max(0, s||0); const m = Math.floor(s/60), r = s - m*60;
+  return `${m}:${(dec ? r.toFixed(dec) : Math.floor(r).toString()).padStart(dec ? 3+dec : 2, '0')}`; };
+const COLORS = {footage:'--c-footage', stock:'--c-stock', still:'--c-still', graphic:'--c-graphic', map:'--c-map',
+  chapter:'--c-chapter', press:'--c-press', photo:'--c-photo', threed:'--c-threed'};
+const LEGEND = [['footage','Footage'],['graphic','Graphic'],['map','Map'],['photo','Photo FX'],['press','Headline'],['chapter','Chapter'],['still','Picture'],['threed','3D']];
+const col = t => `var(${COLORS[t] || '--c-graphic'})`;
+
+let D = null;              // the timeline as the server sees it
+let SEL = null;            // {kind:'slots', ids:[..]} | {kind:'label', id} | {kind:'caption', id} | {kind:'range', start, end}
+let PPS = 24;              // pixels per second
+let PEAKS = null;
+let sigItems = '', sigLabels = '', sigCaps = '', sigChat = '';
+let VBUST = 0;
+
+async function api(url, opt){
+  const r = await fetch(url, Object.assign({headers:{'Content-Type':'application/json'}}, opt || {}));
+  let j = {}; try{ j = await r.json(); }catch(e){}
+  if(!r.ok && !j.error) j.error = `Legion answered ${r.status}`;
+  return j;
+}
+const post = (url, body) => api(url, {method:'POST', body: JSON.stringify(body || {})});
+function toast(t, err){
+  const el = document.createElement('div'); el.className = 'toast' + (err ? ' err' : ''); el.textContent = t;
+  document.body.appendChild(el); setTimeout(() => el.remove(), err ? 6000 : 3000);
+}
+
+/* ── loading ─────────────────────────────────────────────────────────────── */
+async function load(first){
+  const d = await api(`/api/tl/${encodeURIComponent(SLUG)}`);
+  if(d.error){ if(first){ $('#title').textContent = d.error; } return; }
+  if(!d.editable){
+    $('#main').classList.add('hidden'); $('#tl').classList.add('hidden'); $('#cannot').classList.remove('hidden');
+    $('#cannotWhy').textContent = d.why || ''; $('#title').textContent = d.title || SLUG; return;
+  }
+  D = d;
+  if(first){
+    document.title = `✂ ${d.title} — Legion`;
+    $('#title').textContent = d.title;
+    $('#v').src = `${d.video}?r=${Date.now()}`;
+    $('#tcAll').textContent = fmt(d.duration, 0);
+    const w = $('#scroll').clientWidth;
+    PPS = Math.max(6, Math.min(40, (w - 40) / Math.max(1, d.duration)));
+    if(d.duration > 300) PPS = 18;
+    $('#zoom').value = ppsToSlider(PPS);
+    $('#legend').innerHTML = LEGEND.filter(([k]) => d.items.some(i => i.type === k))
+      .map(([k, t]) => `<span><i style="background:${col(k)}"></i>${t}</span>`).join('');
+    api(`/api/tl/${encodeURIComponent(SLUG)}/peaks`).then(p => { PEAKS = p; drawFixed(); });
+  }
+  $('#sub').textContent = `${d.style} · ${fmt(d.duration,0)} · ${d.items.length} shots · ${d.labels.length} labels · ${d.captions.length} captions`
+    + (d.catalog ? ` · ${d.catalog} logged shots to choose from` : '');
+  renderTimeline(first);
+  renderChat();
+  renderHeader();
+  if(SEL) renderInspector(false);
+}
+function renderHeader(){
+  const d = D, busy = d.busy, r = d.render;
+  const pend = (d.tasks || []).filter(t => t.state === 'queued' || t.state === 'working').length;
+  $('#changes').classList.toggle('hidden', !d.changes);
+  $('#changes').textContent = d.changes ? `${d.changes} change${d.changes > 1 ? 's' : ''} not rendered yet` : '';
+  $('#undo').disabled = !d.changes || !!busy;
+  $('#revert').disabled = !d.changes || !!busy;
+  const rendering = busy === 'running' || busy === 'queued';
+  $('#rprog').classList.toggle('hidden', !(rendering || (r && r.state === 'error')));
+  if(rendering){
+    $('#rfill').style.width = `${Math.round(((r && r.progress) || 0.02) * 100)}%`;
+    $('#rstate').textContent = busy === 'queued' ? 'Waiting for the render queue…' : (r && r.line ? r.line.replace(/^=+\s*|\s*=+.*$/g, '') : 'Rendering…');
+  } else if(r && r.state === 'error'){
+    $('#rfill').style.width = '0'; $('#rstate').textContent = `Render failed: ${r.error || ''}`;
+  }
+  const btn = $('#render');
+  btn.disabled = !!busy || pend > 0 || !d.changes;
+  btn.textContent = rendering ? 'Rendering…' : (pend ? `Waiting for ${pend} edit${pend > 1 ? 's' : ''}…`
+    : (d.changes ? `Render video · ~${etaText(d.render_eta || 0)}` : 'Render video'));
+  btn.title = !d.changes ? 'Nothing changed since the last render'
+    : `Put the video together again — untouched shots come from the cache. Takes about ${etaText(d.render_eta || 0)}.`;
+  $('#msg').placeholder = rendering ? 'The video is rendering — anything you ask now is queued and starts when the render is done.'
+    : 'Tell Claude what to change — “this shot doesn’t fit, show the control room instead”, “the date on this graphic is wrong, it’s 1970”, “put a map of the route here”…';
+  // a render that just finished: the new video plays
+  if(LAST_BUSY && !busy && r && r.state === 'done'){ $('#v').src = `${d.video}?r=${Date.now()}`; toast('Rendered — this is the new video.'); }
+  LAST_BUSY = busy;
+  const eta = (d.tasks || []).filter(t => t.state === 'queued' || t.state === 'working').reduce((m, t) => Math.max(m, t.eta || 0), 0);
+  const waiting = pend + (d.thinking || 0) + (d.deferred || []).length;
+  $('#qsum').innerHTML = (waiting ? `<span class="spin"></span> ${waiting} in the queue${pend ? ` · ready in ~${etaText(eta)}` : ''}` : 'Queue')
+    + ` ${QOPEN ? '▴' : '▾'}`;
+  if(waiting && !QSEEN){ QOPEN = true; QSEEN = true; }
+  renderQueue();
+}
+let QOPEN = false, QSEEN = false;
+// the queue: what Claude is reading, what is being made (with its place and time left), what waits for the render,
+// and the last few finished — plus the switch that renders the video by itself once it is all done
+function renderQueue(){
+  const d = D, q = $('#queue');
+  q.classList.toggle('hidden', !QOPEN);
+  if(!QOPEN) return;
+  const live = (d.tasks || []).filter(t => t.state === 'queued' || t.state === 'working');
+  const done = (d.tasks || []).filter(t => t.state === 'done' || t.state === 'failed').slice(-5).reverse();
+  const rows = [];
+  for(let k = 0; k < (d.thinking || 0); k++)
+    rows.push(`<div class="qrow"><span class="spin"></span><span class="lb">Claude is reading your message</span><span class="eta">~20 s</span><span></span></div>`);
+  live.forEach((t, k) => rows.push(`<div class="qrow"><span class="n">${t.state === 'working' ? '<span class="spin"></span>' : k + 1}</span>
+    <span class="lb" title="${esc(t.label)}">${esc(t.label)}${t.msg ? ` <small>— ${esc(t.msg)}</small>` : ''}</span>
+    <span class="eta">~${etaText(t.eta || 0)}</span>
+    ${t.state === 'queued' ? `<button class="x" data-cancel="${t.id}" title="Cancel">×</button>` : '<span></span>'}</div>`));
+  (d.deferred || []).forEach(x => rows.push(`<div class="qrow"><span class="n">⏸</span>
+    <span class="lb" title="${esc(x.label)}">${esc(x.type === 'chat' ? '“' + x.label + '”' : x.label)} <small>— after the render</small></span><span></span><span></span></div>`));
+  const doneRows = done.map(t => `<div class="qrow ${t.state}"><span class="n">${t.state === 'done' ? '✓' : '✗'}</span>
+    <span class="lb" title="${esc(t.label)}${t.msg ? ' — ' + esc(t.msg) : ''}">${esc(t.label)}${t.msg ? ` <small>— ${esc(t.msg)}</small>` : ''}</span><span></span><span></span></div>`).join('');
+  const total = live.reduce((m, t) => Math.max(m, t.eta || 0), 0);
+  q.innerHTML = `<div class="qh">Queue</div>${rows.join('') || '<div class="empty">Nothing waiting. Ask in the chat below, or change shots by hand — slow changes line up here.</div>'}
+    ${live.length || d.thinking ? `<div class="tot">Edits ready in <b>~${etaText(total + (d.thinking ? 20 : 0))}</b>${d.changes || live.length ? ` · then the render takes ~${etaText(d.render_eta || 0)}` : ''}</div>` : ''}
+    <label class="auto"><input type="checkbox" id="autoR" ${d.auto_render ? 'checked' : ''}> Render automatically when the queue is done</label>
+    ${doneRows ? `<div class="qh" style="margin-top:10px">Finished</div>${doneRows}` : ''}`;
+  q.querySelectorAll('[data-cancel]').forEach(b => b.onclick = async () => { await post(`/api/tl/${encodeURIComponent(SLUG)}/cancel/${b.dataset.cancel}`); load(); });
+  $('#autoR').onchange = async e => {
+    const r = await post(`/api/tl/${encodeURIComponent(SLUG)}/auto`, {on: e.target.checked});
+    if(r.error) toast(r.error, true);
+    else if(e.target.checked) toast(live.length || d.thinking ? 'The video renders by itself once the queue is done.' : (d.changes ? 'Rendering now.' : 'It will render once something is changed and the queue is done.'));
+    load();
+  };
+}
+$('#qsum').onclick = () => { QOPEN = !QOPEN; QSEEN = true; renderHeader(); };
+let LAST_BUSY = '';
+const etaText = s => s < 60 ? `${Math.max(5, Math.round(s/5)*5)} s` : `${Math.round(s/60)} min`;
+
+/* ── timeline ────────────────────────────────────────────────────────────── */
+const sliderToPps = v => 2 * Math.pow(120, v / 100);           // 2 … 240 px/s
+const ppsToSlider = p => Math.round(100 * Math.log(p / 2) / Math.log(120));
+const X = t => t * PPS;
+function renderTimeline(force){
+  const d = D;
+  $('#content').style.width = `${X(d.duration) + 60}px`;
+  const si = JSON.stringify(d.items.map(i => [i.t, i.dur, i.file, i.changed, i.preview, i.label])) + PPS;
+  if(force || si !== sigItems){
+    sigItems = si;
+    $('#laneV').innerHTML = d.items.map(i => {
+      const w = Math.max(2, X(i.dur) - 2);
+      const s = SEL && SEL.kind === 'slots' && SEL.ids.includes(i.i);
+      return `<div class="clip${i.changed ? ' changed' : ''}${s ? ' sel' : ''}" data-i="${i.i}" style="left:${X(i.t)+1}px;width:${w}px" title="${esc(fmt(i.t))} · ${esc(i.title)}${i.label ? ' — ' + esc(i.label) : ''}">
+        <div class="tint" style="background:${col(i.type)}"></div><div class="bar" style="background:${col(i.type)}"></div>
+        ${w > 46 ? `<span class="kind">${esc(i.title.split(' · ')[0])}</span>` : ''}
+        ${w > 70 ? `<span class="cap">${esc(i.label || '')}</span>` : ''}
+        ${w > 18 ? '<div class="eh l"></div><div class="eh r"></div>' : ''}</div>`;
+    }).join('');
+    observeThumbs();
+  }
+  const sl = JSON.stringify(d.labels) + PPS;
+  if(force || sl !== sigLabels){
+    sigLabels = sl;
+    $('#laneL').innerHTML = d.labels.map(l => `<div class="lab${SEL && SEL.kind === 'label' && SEL.id === l.i ? ' sel' : ''}" data-l="${l.i}"
+      style="left:${X(l.t)}px;width:${Math.max(14, X(l.dur))}px" title="${esc(l.text)}${l.sub ? ' — ' + esc(l.sub) : ''}"><b>${esc(l.style)}</b>${esc(l.text)}</div>`).join('');
+  }
+  const sc = JSON.stringify(d.captions.map(c => [c.t, c.end, c.text])) + PPS;
+  if(force || sc !== sigCaps){
+    sigCaps = sc;
+    $('#laneC').innerHTML = d.captions.map(c => `<div class="capb${SEL && SEL.kind === 'caption' && SEL.id === c.i ? ' sel' : ''}" data-c="${c.i}"
+      style="left:${X(c.t)}px;width:${Math.max(4, X(c.end - c.t) - 1)}px" title="${esc(c.text)}">${X(c.end - c.t) > 26 ? esc(c.text) : ''}</div>`).join('');
+  }
+  // chapters on the ruler, work in progress over the picture
+  $('#ruler').querySelectorAll('.chap').forEach(e => e.remove());
+  $('#ruler').insertAdjacentHTML('beforeend', d.chapters.map(c => `<div class="chap" style="left:${X(c.t)}px">${esc(c.title)}</div>`).join(''));
+  $('#laneV').querySelectorAll('.work').forEach(e => e.remove());
+  (d.tasks || []).filter(t => (t.state === 'queued' || t.state === 'working') && t.range).forEach(t => {
+    $('#laneV').insertAdjacentHTML('beforeend', `<div class="work" style="left:${X(t.range[0])}px;width:${Math.max(4, X(t.range[1]-t.range[0]))}px" title="${esc(t.label)}"></div>`);
+  });
+  drawRange();
+  placePlayhead();
+  drawFixed();
+}
+let IO = null;
+function observeThumbs(){
+  if(IO) IO.disconnect();
+  IO = new IntersectionObserver(es => es.forEach(e => {
+    if(!e.isIntersecting) return;
+    const el = e.target, it = D.items[+el.dataset.i];
+    if(it) el.style.backgroundImage = `url("${it.thumb}")`;
+    IO.unobserve(el);
+  }), {root: $('#scroll'), rootMargin: '0px 600px'});
+  $('#laneV').querySelectorAll('.clip').forEach(el => IO.observe(el));
+}
+function drawFixed(){
+  if(!D) return;
+  const sc = $('#scroll'), w = sc.clientWidth, left = sc.scrollLeft, dpr = window.devicePixelRatio || 1;
+  // ruler
+  const rc = $('#rulerCv'); rc.style.left = `${left}px`; rc.width = w * dpr; rc.height = 30 * dpr; rc.style.width = `${w}px`; rc.style.height = '30px';
+  let g = rc.getContext('2d'); g.scale(dpr, dpr); g.clearRect(0, 0, w, 30);
+  const steps = [0.5, 1, 2, 5, 10, 15, 30, 60, 120, 300, 600];
+  const major = steps.find(s => s * PPS >= 90) || 600;
+  const minor = steps.slice().reverse().find(s => s < major && s * PPS >= 12) || major;
+  g.font = '10px ui-sans-serif,-apple-system,system-ui'; g.textBaseline = 'top';
+  const t0 = left / PPS, t1 = (left + w) / PPS;
+  for(let t = Math.floor(t0 / minor) * minor; t <= t1; t += minor){
+    const x = Math.round(X(t) - left) + .5, isM = Math.abs(t / major - Math.round(t / major)) < 1e-6;
+    g.strokeStyle = isM ? 'rgba(255,255,255,.35)' : 'rgba(255,255,255,.13)';
+    g.beginPath(); g.moveTo(x, isM ? 14 : 22); g.lineTo(x, 30); g.stroke();
+    if(isM){ g.fillStyle = 'rgba(255,255,255,.5)'; g.fillText(fmt(t, major < 1 ? 1 : 0), x + 3, 3); }
+  }
+  // voice
+  const AH = $('#laneA').clientHeight || 58;
+  const wc = $('#waveCv'); wc.style.left = `${left}px`; wc.width = w * dpr; wc.height = AH * dpr; wc.style.width = `${w}px`; wc.style.height = `${AH}px`;
+  g = wc.getContext('2d'); g.scale(dpr, dpr); g.clearRect(0, 0, w, AH);
+  if(PEAKS && PEAKS.v && PEAKS.v.length){
+    const per = PEAKS.per_s, mid = AH / 2;
+    g.fillStyle = 'rgba(74,222,128,.55)';
+    for(let x = 0; x < w; x++){
+      const a = Math.floor((left + x) / PPS * per), b = Math.max(a + 1, Math.floor((left + x + 1) / PPS * per));
+      let m = 0; for(let k = a; k < b && k < PEAKS.v.length; k++) m = Math.max(m, PEAKS.v[k]);
+      const h = Math.max(1, m / 100 * (mid - 4)); g.fillRect(x, mid - h, 1, h * 2);
+    }
+  }
+}
+function placePlayhead(){ $('#ph').style.left = `${X(NOW)}px`; }
+function drawRange(){
+  $('#content').querySelectorAll('.range').forEach(e => e.remove());
+  if(SEL && SEL.kind === 'range')
+    $('#content').insertAdjacentHTML('beforeend', `<div class="range" style="left:${X(SEL.start)}px;width:${X(SEL.end - SEL.start)}px"></div>`);
+}
+
+/* ── player: the finished video, and each changed shot on top of it ──────── */
+const V = $('#v'), OV = $('#ov');
+let NOW = 0;
+function itemAt(t){
+  const it = D.items; let lo = 0, hi = it.length - 1;
+  while(lo < hi){ const m = (lo + hi + 1) >> 1; if(it[m].t <= t + 1e-4) lo = m; else hi = m - 1; }
+  return it[lo];
+}
+function syncOverlay(){
+  if(!D) return;
+  const it = itemAt(NOW);
+  const changed = it && it.changed;
+  $('#badge').classList.toggle('hidden', !changed);
+  if(changed && it.preview){
+    $('#wait').classList.add('hidden');
+    if(OV.dataset.src !== it.preview){ OV.dataset.src = it.preview; OV.src = it.preview; }
+    OV.classList.remove('hidden');
+    const want = Math.max(0, NOW - it.t);
+    if(Math.abs(OV.currentTime - want) > (V.paused ? 0.03 : 0.2)){ try{ OV.currentTime = want; }catch(e){} }
+    if(!V.paused && OV.paused) OV.play().catch(() => {});
+    if(V.paused && !OV.paused) OV.pause();
+  } else {
+    OV.classList.add('hidden'); if(!OV.paused) OV.pause();
+    $('#wait').classList.toggle('hidden', !changed);
+    if(changed){ $('#waitImg').src = it.thumb; $('#waitTxt').textContent = 'This shot changed — its preview is being rendered…'; }
+  }
+}
+function tick(){
+  NOW = V.currentTime || 0;
+  $('#tcNow').textContent = fmt(NOW);
+  placePlayhead(); syncOverlay();
+  if(!V.paused){
+    const sc = $('#scroll'), x = X(NOW);
+    if(x < sc.scrollLeft || x > sc.scrollLeft + sc.clientWidth - 60) sc.scrollLeft = Math.max(0, x - 80);
+  }
+  if(!SEL) $('#seltxt').textContent = `Playhead ${fmt(NOW)} — nothing selected`;
+  requestAnimationFrame(tick);
+}
+function seek(t){ t = Math.max(0, Math.min(D ? D.duration - 0.05 : 0, t)); V.currentTime = t; NOW = t; placePlayhead(); syncOverlay(); }
+function togglePlay(){ if(V.paused) V.play(); else V.pause(); }
+V.addEventListener('play', () => { $('#playIc').innerHTML = '<path d="M3 2h4v12H3zM9 2h4v12H9z"/>'; });
+V.addEventListener('pause', () => { $('#playIc').innerHTML = '<path d="M4 2v12l10-6z"/>'; OV.pause(); });
+$('#play').onclick = togglePlay;
+const cutAfter = t => { const n = D.items.find(i => i.t > t + 0.05); return n ? n.t : D.duration; };
+const cutBefore = t => { let c = 0; D.items.forEach(i => { if(i.t < t - 0.05) c = i.t; }); return c; };
+$('#nextCut').onclick = () => seek(cutAfter(NOW));
+$('#prevCut').onclick = () => seek(cutBefore(NOW));
+
+/* ── timeline interaction ─────────────────────────────────────────────────── */
+const SC = $('#scroll');
+SC.addEventListener('scroll', drawFixed);
+window.addEventListener('resize', drawFixed);
+SC.addEventListener('wheel', e => {
+  if(e.ctrlKey || e.metaKey){
+    e.preventDefault();
+    const r = SC.getBoundingClientRect(), x = e.clientX - r.left, t = (SC.scrollLeft + x) / PPS;
+    setZoom(PPS * Math.exp(-e.deltaY * 0.01), t, x);
+  } else if(Math.abs(e.deltaY) > Math.abs(e.deltaX)){
+    SC.scrollLeft += e.deltaY; e.preventDefault();
+  }
+}, {passive:false});
+function setZoom(p, anchorT, anchorX){
+  p = Math.max(2, Math.min(240, p));
+  if(anchorT == null){ anchorT = NOW; anchorX = X(NOW) - SC.scrollLeft; }
+  PPS = p; $('#zoom').value = ppsToSlider(p);
+  renderTimeline(true);
+  SC.scrollLeft = Math.max(0, X(anchorT) - anchorX);
+  drawFixed();
+}
+$('#zoom').oninput = e => setZoom(sliderToPps(+e.target.value));
+$('#fit').onclick = () => { setZoom((SC.clientWidth - 40) / D.duration, 0, 0); SC.scrollLeft = 0; };
+const tAt = e => (e.clientX - SC.getBoundingClientRect().left + SC.scrollLeft) / PPS;
+
+// ruler: drag scrubs, shift-drag marks a range
+$('#ruler').addEventListener('mousedown', e => {
+  const t0 = tAt(e), range = e.shiftKey;
+  if(!range) seek(t0);
+  const mv = ev => {
+    const t = Math.max(0, Math.min(D.duration, tAt(ev)));
+    if(range){ SEL = {kind:'range', start: Math.min(t0, t), end: Math.max(t0, t)}; drawRange(); }
+    else seek(t);
+  };
+  const up = () => { window.removeEventListener('mousemove', mv); window.removeEventListener('mouseup', up);
+    if(range && SEL && SEL.kind === 'range' && SEL.end - SEL.start > 0.4) select(SEL); };
+  window.addEventListener('mousemove', mv); window.addEventListener('mouseup', up);
+});
+// shots: click selects (shift adds), an edge drags a cut
+$('#laneV').addEventListener('mousedown', e => {
+  const el = e.target.closest('.clip'); if(!el) return;
+  const i = +el.dataset.i, it = D.items[i];
+  if(e.target.classList.contains('eh')){
+    e.preventDefault();
+    const right = e.target.classList.contains('r');
+    const lo = right ? it.t + 0.8 : (i > 0 ? D.items[i-1].t + 0.8 : 0);
+    const hi = right ? (i + 1 < D.items.length ? D.items[i+1].t + D.items[i+1].dur - 0.8 : it.t + it.dur) : it.t + it.dur - 0.8;
+    const gh = document.createElement('div'); gh.className = 'ghost'; $('#content').appendChild(gh);
+    let tt = right ? it.t + it.dur : it.t;
+    const mv = ev => { tt = Math.max(lo, Math.min(hi, tAt(ev))); gh.style.left = `${X(tt)}px`;
+      gh.innerHTML = `<span>${fmt(tt, 2)} (${(tt - (right ? it.t + it.dur : it.t)) >= 0 ? '+' : ''}${(tt - (right ? it.t + it.dur : it.t)).toFixed(2)} s)</span>`; seek(tt); };
+    const up = async () => { window.removeEventListener('mousemove', mv); window.removeEventListener('mouseup', up); gh.remove();
+      const was = right ? it.t + it.dur : it.t;
+      if(Math.abs(tt - was) < 0.05) return;
+      await op(right ? {op:'retime', slot:i, start:it.t, end:tt} : {op:'retime', slot:i, start:tt, end:it.t + it.dur});
+    };
+    mv(e); window.addEventListener('mousemove', mv); window.addEventListener('mouseup', up);
+    return;
+  }
+  if(e.shiftKey && SEL && SEL.kind === 'slots'){
+    const ids = SEL.ids.includes(i) ? SEL.ids.filter(x => x !== i) : SEL.ids.concat([i]);
+    select(ids.length ? {kind:'slots', ids: ids.sort((a,b)=>a-b)} : null);
+  } else {
+    select({kind:'slots', ids:[i]});
+    if(V.paused) seek(it.t + 0.02);
+  }
+});
+$('#laneV').addEventListener('dblclick', e => { const el = e.target.closest('.clip'); if(el){ seek(D.items[+el.dataset.i].t + 0.02); V.play(); } });
+// labels: click selects, drag moves
+$('#laneL').addEventListener('mousedown', e => {
+  const el = e.target.closest('.lab'); if(!el){ seek(tAt(e)); return; }
+  const k = +el.dataset.l, l = D.labels[k], x0 = e.clientX; let moved = false, nt = l.t;
+  select({kind:'label', id:k});
+  const mv = ev => { const dx = ev.clientX - x0; if(Math.abs(dx) > 3) moved = true; if(!moved) return;
+    nt = Math.max(0, Math.min(D.duration - l.dur, l.t + dx / PPS)); el.style.left = `${X(nt)}px`; };
+  const up = async () => { window.removeEventListener('mousemove', mv); window.removeEventListener('mouseup', up);
+    if(moved && Math.abs(nt - l.t) > 0.05) await op({op:'label_edit', label:k, start: Math.round(nt * 100) / 100}); else seek(l.t + 0.05); };
+  window.addEventListener('mousemove', mv); window.addEventListener('mouseup', up);
+});
+$('#laneC').addEventListener('mousedown', e => {
+  const el = e.target.closest('.capb'); if(!el){ seek(tAt(e)); return; }
+  const c = D.captions[+el.dataset.c]; select({kind:'caption', id:c.i}); seek(c.t + 0.02);
+});
+$('#laneA').addEventListener('mousedown', e => seek(tAt(e)));
+
+/* ── selection & inspector ───────────────────────────────────────────────── */
+function select(s){
+  SEL = s;
+  document.querySelectorAll('.clip.sel,.lab.sel,.capb.sel').forEach(e => e.classList.remove('sel'));
+  if(s && s.kind === 'slots') s.ids.forEach(i => { const el = $(`.clip[data-i="${i}"]`); if(el) el.classList.add('sel'); });
+  if(s && s.kind === 'label'){ const el = $(`.lab[data-l="${s.id}"]`); if(el) el.classList.add('sel'); }
+  if(s && s.kind === 'caption'){ const el = $(`.capb[data-c="${s.id}"]`); if(el) el.classList.add('sel'); }
+  drawRange();
+  renderInspector(true);
+  $('#seltxt').textContent = selText();
+}
+function selText(){
+  if(!SEL) return `Playhead ${fmt(NOW)} — nothing selected`;
+  if(SEL.kind === 'slots'){
+    if(SEL.ids.length > 1) return `${SEL.ids.length} shots selected`;
+    const it = D.items[SEL.ids[0]]; return it ? `Shot ${it.i} · ${fmt(it.t)}–${fmt(it.t + it.dur)} · ${it.title}` : '';
+  }
+  if(SEL.kind === 'label'){ const l = D.labels[SEL.id]; return l ? `Label “${l.text}” at ${fmt(l.t)}` : ''; }
+  if(SEL.kind === 'caption'){ const c = D.captions[SEL.id]; return c ? `Caption at ${fmt(c.t)}` : ''; }
+  return `Range ${fmt(SEL.start)}–${fmt(SEL.end)}`;
+}
+$('#selx').onclick = () => select(null);
+
+function renderInspector(fresh){
+  const box = $('#insp');
+  if(!fresh && box.contains(document.activeElement) && /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+  if(!SEL){ box.innerHTML = `<div class="empty">Click a shot, a label or a caption on the timeline to see it here. Drag the edge of a shot to move a cut. Shift-drag on the ruler to mark a range.</div>`; return; }
+  if(SEL.kind === 'slots' && SEL.ids.length === 1){
+    const it = D.items[SEL.ids[0]]; if(!it){ select(null); return; }
+    box.innerHTML = `<h3><span class="sw" style="background:${col(it.type)}"></span>${esc(it.title)}${it.changed ? ' <span style="color:var(--amber);font-size:11px;font-weight:600">· EDITED</span>' : ''}</h3>
+      <div class="when">Shot ${it.i} · ${fmt(it.t, 2)} – ${fmt(it.t + it.dur, 2)} · ${it.dur.toFixed(2)} s</div>
+      ${it.label ? `<div class="row"><div class="k">Shows</div><div class="v">${esc(it.label)}</div></div>` : ''}
+      ${it.source ? `<div class="row"><div class="k">From</div><div class="v">${esc(it.source)}</div></div>` : ''}
+      ${it.line ? `<div class="row"><div class="k">Narration here</div><div class="v quote">“${esc(it.line)}”</div></div>` : ''}
+      <div class="acts">
+        <button class="btn sm" id="iReplace">Replace…</button>
+        ${it.editable_gfx ? '<button class="btn sm" id="iEditGfx">Edit the text…</button>' : ''}
+        ${it.kind === 'photo' ? '<button class="btn sm" id="iPlain" title="Show this picture with the plain slow zoom — no subject lifted off it">No depth pop</button>' : ''}
+        <button class="btn sm" id="iAsk">Ask AI about it</button>
+        <button class="btn sm" id="iSwapN" ${it.i + 1 >= D.items.length ? 'disabled' : ''}>Swap with next</button>
+        <button class="btn sm bad" id="iDel">Delete</button>
+      </div><div id="gfxForm"></div>`;
+    $('#iReplace').onclick = () => openPool({slot: it.i});
+    $('#iAsk').onclick = () => { $('#msg').focus(); };
+    $('#iSwapN').onclick = () => op({op:'swap', a: it.i, b: it.i + 1});
+    $('#iDel').onclick = () => op({op:'delete', slots:[it.i]});
+    if(it.editable_gfx) $('#iEditGfx').onclick = () => gfxForm(it);
+    if(it.kind === 'photo') $('#iPlain').onclick = () => op({op:'plain', slots:[it.i]});
+    return;
+  }
+  if(SEL.kind === 'slots'){
+    const its = SEL.ids.map(i => D.items[i]).filter(Boolean);
+    const dur = its.reduce((s, i) => s + i.dur, 0);
+    box.innerHTML = `<h3>${its.length} shots</h3><div class="when">${dur.toFixed(1)} s in all</div>
+      <div class="acts"><button class="btn sm" id="iAsk">Ask AI about them</button><button class="btn sm bad" id="iDel">Delete all</button></div>
+      <div class="note">Shift-click adds or removes a shot.</div>`;
+    $('#iAsk').onclick = () => $('#msg').focus();
+    $('#iDel').onclick = () => op({op:'delete', slots: SEL.ids});
+    return;
+  }
+  if(SEL.kind === 'label'){
+    const l = D.labels[SEL.id]; if(!l){ select(null); return; }
+    const styles = ['name','place','number','date','phrase'];
+    if(!styles.includes(l.style)) styles.push(l.style);
+    box.innerHTML = `<h3>Text label</h3><div class="when">${fmt(l.t, 2)} · ${l.dur.toFixed(1)} s on screen</div>
+      <div class="field"><label>Text</label><input id="lText" value="${esc(l.text)}"></div>
+      <div class="field"><label>Small line under it</label><input id="lSub" value="${esc(l.sub)}"></div>
+      <div class="two"><div class="field"><label>Kind</label><select id="lStyle">${styles.map(s => `<option${s === l.style ? ' selected' : ''}>${esc(s)}</option>`).join('')}</select></div>
+      <div class="field"><label>Seconds on screen</label><input id="lDur" type="number" step="0.1" min="0.8" value="${l.dur}"></div></div>
+      <div class="acts"><button class="btn sm go" id="lSave">Save</button><button class="btn sm bad" id="lDel">Delete</button><button class="btn sm" id="lAdd">Add a label at the playhead</button></div>
+      <div class="note">Labels are burnt in when the video renders — the preview still shows the old ones.</div>`;
+    $('#lSave').onclick = () => op({op:'label_edit', label:l.i, text: $('#lText').value, sub: $('#lSub').value, style: $('#lStyle').value, dur: +$('#lDur').value});
+    $('#lDel').onclick = () => op({op:'label_delete', label:l.i}).then(() => select(null));
+    $('#lAdd').onclick = addLabel;
+    return;
+  }
+  if(SEL.kind === 'caption'){
+    const c = D.captions[SEL.id]; if(!c){ select(null); return; }
+    box.innerHTML = `<h3>Caption</h3><div class="when">${fmt(c.t, 2)} – ${fmt(c.end, 2)}</div>
+      <div class="field"><label>Words on screen</label><textarea id="cText">${esc(c.text)}</textarea></div>
+      <div class="acts"><button class="btn sm go" id="cSave">Save</button></div>
+      <div class="note">Only the words shown change — the voice says what it said. Captions are burnt in when the video renders.</div>`;
+    $('#cSave').onclick = () => op({op:'caption_edit', caption:c.i, text: $('#cText').value});
+    return;
+  }
+  if(SEL.kind === 'range'){
+    box.innerHTML = `<h3>Range</h3><div class="when">${fmt(SEL.start, 2)} – ${fmt(SEL.end, 2)} · ${(SEL.end - SEL.start).toFixed(1)} s</div>
+      <div class="acts"><button class="btn sm" id="rFill">Put a shot over it…</button><button class="btn sm" id="rLab">Add a label here</button><button class="btn sm" id="iAsk">Ask AI about it</button></div>
+      <div class="note">Shots under the range are trimmed to make room; the narration keeps its timing.</div>`;
+    $('#rFill').onclick = () => openPool({start: SEL.start, end: SEL.end});
+    $('#rLab').onclick = addLabel;
+    $('#iAsk').onclick = () => $('#msg').focus();
+  }
+}
+function addLabel(){
+  const t = SEL && SEL.kind === 'range' ? SEL.start : NOW;
+  const text = prompt('Label text (a name, a place, a number…)'); if(!text) return;
+  op({op:'label_add', start: Math.round(t * 100) / 100, dur: 2.6, style: 'phrase', text});
+}
+
+// a graphic's words, as a form: every field of its spec, nested lists included
+async function gfxForm(it){
+  const r = await post(`/api/tl/${encodeURIComponent(SLUG)}/op`, {op:'spec', slot: it.i});
+  const spec = r.spec; if(!spec){ toast(r.error || 'This graphic cannot be edited.', true); return; }
+  const SKIP = new Set(['type','ground','ground_soft','sep','cue','at_s','dur','duration','brand','colors','skin','targets','stops','hit','draw_s','dark','accent','dot','lat','lon','pitch','turn','z0','z1','drift']);
+  const build = (v, path) => {
+    if(Array.isArray(v)) return `<div class="spec">${v.map((x, k) => build(x, path.concat(k))).join('')}</div>`;
+    if(v && typeof v === 'object') return Object.keys(v).filter(k => !SKIP.has(k)).map(k => {
+      const x = v[k];
+      if(x && typeof x === 'object') return `<div class="field"><label>${esc(k)}</label>${build(x, path.concat(k))}</div>`;
+      return `<div class="field"><label>${esc(k)}</label><input data-p='${esc(JSON.stringify(path.concat(k)))}' data-t="${typeof x}" value="${esc(x)}"></div>`;
+    }).join('');
+    return '';
+  };
+  $('#gfxForm').innerHTML = `<div class="note" style="margin-top:12px">Change the words, then draw it again (about a minute).</div>${build(spec, [])}
+    <div class="acts"><button class="btn sm go" id="gSave">Draw it again</button></div>`;
+  $('#gSave').onclick = () => {
+    const out = JSON.parse(JSON.stringify(spec));
+    $('#gfxForm').querySelectorAll('input[data-p]').forEach(inp => {
+      const p = JSON.parse(inp.dataset.p); let o = out; p.slice(0, -1).forEach(k => o = o[k]);
+      const k = p[p.length - 1]; o[k] = inp.dataset.t === 'number' ? (parseFloat(inp.value) || 0) : inp.dataset.t === 'boolean' ? inp.value === 'true' : inp.value;
+    });
+    op({op:'graphic_edit', slot: it.i, spec: out});
+  };
+}
+
+async function op(o){
+  const r = await post(`/api/tl/${encodeURIComponent(SLUG)}/op`, o);
+  if(r.error){ toast(r.error, true); return r; }
+  (r.results || []).forEach(x => { if(x.error) toast(x.error, true); else if(x.done) toast(x.done);
+    else if(x.queued) toast(x.queued); else if(x.task) toast(`Queued: ${x.label}`); });
+  await load();
+  return r;
+}
+
+/* ── the shot browser ────────────────────────────────────────────────────── */
+let POOL = null;
+async function openPool(target){
+  POOL = target;
+  $('#pool').classList.remove('hidden');
+  $('#poolTitle').textContent = target.slot != null ? `Replace the shot at ${fmt(D.items[target.slot].t)}` : `A shot for ${fmt(target.start)}–${fmt(target.end)}`;
+  const it = target.slot != null ? D.items[target.slot] : null;
+  $('#poolQ').value = ''; $('#poolAsk').value = it && it.type === 'footage' ? '' : '';
+  $('#poolQ').focus();
+  poolSearch();
+}
+let poolT = null;
+$('#poolQ').oninput = () => { clearTimeout(poolT); poolT = setTimeout(poolSearch, 250); };
+async function poolSearch(){
+  $('#shots').innerHTML = '<div class="blank"><span class="spin"></span></div>';
+  const q = $('#poolQ').value.trim();
+  const r = await api(`/api/tl/${encodeURIComponent(SLUG)}/pool?q=${encodeURIComponent(q)}`);
+  const shots = r.shots || [];
+  $('#poolCount').textContent = shots.length ? `${r.local || 0} downloaded clip${r.local === 1 ? '' : 's'} ready now, then ${shots.length - (r.local || 0)} logged shots cut from YouTube${q ? ' — best matches first' : ''}` : '';
+  if(!shots.length){ $('#shots').innerHTML = `<div class="blank">${D.catalog ? 'No unused shot matches — describe it below and search YouTube, or draw a picture.' : 'This video has no logged footage to choose from — describe the shot below and search YouTube, or draw a picture.'}</div>`; return; }
+  $('#shots').innerHTML = shots.map((s, k) => {
+    if(s.local) return `<div class="shot local"><div class="im" style="background-image:url('${s.thumb}')"><span>${(s.dur || 0).toFixed(1)} s</span></div>
+      <div class="tx">${esc(s.shows)}<small><b class="ready">downloaded · ready now</b> · ${esc(s.title || s.video)}</small></div>
+      <button class="btn sm" data-k="${k}">Use</button></div>`;
+    const yt = s.video && !String(s.video).startsWith('ia:') ? `https://i.ytimg.com/vi/${encodeURIComponent(s.video)}/mqdefault.jpg` : '';
+    const watch = s.video && !String(s.video).startsWith('ia:') ? `https://www.youtube.com/watch?v=${encodeURIComponent(s.video)}&t=${Math.floor(s.start)}s` : '';
+    return `<div class="shot"><a class="im" ${watch ? `href="${watch}" target="_blank" rel="noopener" title="Watch this moment on YouTube"` : ''} style="${yt ? `background-image:url('${yt}')` : ''}"><span>${watch ? '▶ ' : ''}${fmt(s.start, 0)}</span></a>
+      <div class="tx">${esc(s.shows)}<small>${(s.end - s.start).toFixed(1)} s · ${esc(s.kind)} · cut from YouTube (~30 s) · ${esc(s.title || s.about || s.video)}</small></div>
+      <button class="btn sm" data-k="${k}">Use</button></div>`;
+  }).join('');
+  $('#shots').querySelectorAll('button[data-k]').forEach(b => b.onclick = async () => {
+    const s = shots[+b.dataset.k];
+    const body = Object.assign({op:'pick_shot', shot: s}, POOL.slot != null ? {slot: POOL.slot} : {start: POOL.start, end: POOL.end});
+    closePool(); await op(body);
+  });
+}
+function closePool(){ $('#pool').classList.add('hidden'); }
+$('#poolClose').onclick = closePool;
+$('#pool').addEventListener('mousedown', e => { if(e.target.id === 'pool') closePool(); });
+async function poolOp(from){
+  const want = $('#poolAsk').value.trim() || $('#poolQ').value.trim();
+  if(!want){ toast('Describe the shot first.', true); $('#poolAsk').focus(); return; }
+  const body = POOL.slot != null ? {op:'replace', slots:[POOL.slot], find: want, from} : {op:'place', start: POOL.start, end: POOL.end, find: want, from};
+  closePool(); await op(body);
+}
+$('#poolSearch').onclick = () => poolOp('search');
+$('#poolImage').onclick = () => poolOp('image');
+
+/* ── chat ────────────────────────────────────────────────────────────────── */
+function renderChat(){
+  const d = D, tasks = {}; (d.tasks || []).forEach(t => tasks[t.id] = t);
+  const s = JSON.stringify(d.chat) + JSON.stringify(d.tasks);
+  if(s === sigChat) return; sigChat = s;
+  const box = $('#msgs'), atEnd = box.scrollHeight - box.scrollTop - box.clientHeight < 40;
+  if(!d.chat.length){
+    box.innerHTML = `<div class="m sys">Tell Claude what to change — select a shot first so it knows which one.<br>It queues the work, tells you when it will be ready, and the timeline updates by itself.</div>`;
+    return;
+  }
+  box.innerHTML = d.chat.map(m => {
+    if(m.role === 'sys') return `<div class="m sys${m.ok ? ' ok' : ''}">${esc(m.text)}</div>`;
+    if(m.role === 'user') return `<div class="m user">${esc(m.text)}${m.sel && m.sel.label ? `<span class="selnote">${esc(m.sel.label)}</span>` : ''}</div>`;
+    if(m.pending) return `<div class="m ai"><span class="dots"><i></i><i></i><i></i></span> <span style="color:var(--dim)">reading the timeline…</span></div>`;
+    const res = (m.results || []).map(r => {
+      if(r.task){ const t = tasks[r.task] || {state:'queued', label: r.label};
+        const st = t.state === 'done' ? '✓' : t.state === 'failed' ? '✗' : t.state === 'cancelled' ? '–' : t.state === 'working' ? '<span class="spin"></span>' : '⏱';
+        return `<div class="task ${t.state}"><span class="st">${st}</span><span class="lb" title="${esc(t.label)}">${esc(t.label)}${t.msg ? ` — <span class="${t.state === 'failed' ? 'er' : ''}">${esc(t.msg)}</span>` : ''}</span>
+          ${(t.state === 'queued' || t.state === 'working') && t.eta ? `<span class="eta">~${etaText(t.eta)}</span>` : ''}
+          ${t.state === 'queued' ? `<button class="x" data-cancel="${t.id}" title="Cancel">×</button>` : ''}</div>`; }
+      if(r.done) return `<div class="task done"><span class="st">✓</span><span class="lb">${esc(r.done)}</span></div>`;
+      if(r.error) return `<div class="task failed"><span class="st">✗</span><span class="lb er">${esc(r.error)}</span></div>`;
+      return '';
+    }).join('');
+    return `<div class="m ai${m.error ? ' err' : ''}">${esc(m.text)}${res ? `<div class="res">${res}</div>` : ''}</div>`;
+  }).join('');
+  box.querySelectorAll('[data-cancel]').forEach(b => b.onclick = async () => { await post(`/api/tl/${encodeURIComponent(SLUG)}/cancel/${b.dataset.cancel}`); load(); });
+  if(atEnd) box.scrollTop = box.scrollHeight;
+}
+async function send(){
+  const t = $('#msg').value.trim(); if(!t) return;
+  const sel = SEL ? Object.assign({}, SEL, {label: selText()}) : {playhead: NOW, label: selText()};
+  $('#msg').value = '';
+  const r = await post(`/api/tl/${encodeURIComponent(SLUG)}/chat`, {message: t, sel});
+  if(r.error){ toast(r.error, true); $('#msg').value = t; return; }
+  if(r.queued) toast('Queued — it starts as soon as the render is done.');
+  sigChat = ''; await load();
+  const box = $('#msgs'); box.scrollTop = box.scrollHeight;
+}
+$('#send').onclick = send;
+$('#msg').addEventListener('keydown', e => { if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); send(); } });
+
+/* ── header buttons ──────────────────────────────────────────────────────── */
+$('#undo').onclick = async () => { const r = await post(`/api/tl/${encodeURIComponent(SLUG)}/undo`); if(r.error) toast(r.error, true); else toast(`Undone: ${r.undone}`); load(); };
+$('#revert').onclick = async () => { if(!confirm('Throw away every change since the last render?')) return;
+  const r = await post(`/api/tl/${encodeURIComponent(SLUG)}/revert`); if(r.error) toast(r.error, true); load(); };
+$('#render').onclick = async () => {
+  const r = await post(`/api/tl/${encodeURIComponent(SLUG)}/render`);
+  if(r.error){ toast(r.error, true); return; }
+  toast('Rendering — untouched shots come from the cache.'); LAST_BUSY = 'queued'; load();
+};
+
+/* ── keys ────────────────────────────────────────────────────────────────── */
+document.addEventListener('keydown', e => {
+  if(/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+  if(!$('#pool').classList.contains('hidden')){ if(e.key === 'Escape') closePool(); return; }
+  const k = e.key;
+  if(k === ' '){ e.preventDefault(); togglePlay(); }
+  else if(k === 'ArrowLeft'){ e.preventDefault(); seek(NOW - (e.shiftKey ? 1 : 1/30)); }
+  else if(k === 'ArrowRight'){ e.preventDefault(); seek(NOW + (e.shiftKey ? 1 : 1/30)); }
+  else if(k === 'ArrowUp'){ e.preventDefault(); seek(cutBefore(NOW)); }
+  else if(k === 'ArrowDown'){ e.preventDefault(); seek(cutAfter(NOW)); }
+  else if(k === '+' || k === '='){ setZoom(PPS * 1.4); }
+  else if(k === '-'){ setZoom(PPS / 1.4); }
+  else if((k === 'z' || k === 'Z') && (e.metaKey || e.ctrlKey)){ e.preventDefault(); $('#undo').click(); }
+  else if((k === 'Backspace' || k === 'Delete') && SEL){
+    e.preventDefault();
+    if(SEL.kind === 'slots') op({op:'delete', slots: SEL.ids}).then(() => select(null));
+    else if(SEL.kind === 'label') op({op:'label_delete', label: SEL.id}).then(() => select(null));
+  }
+  else if(k === 'Escape') select(null);
+});
+
+/* ── go ──────────────────────────────────────────────────────────────────── */
+load(true).then(() => { requestAnimationFrame(tick); });
+setInterval(() => {
+  if(!D) return;
+  const live = (D.tasks || []).some(t => t.state === 'queued' || t.state === 'working') || D.chat.some(m => m.pending) || D.busy;
+  if(live || Date.now() - (window.__lastLoad || 0) > 8000){ window.__lastLoad = Date.now(); load(); }
+}, 1500);
+</script>
+</body>
+</html>

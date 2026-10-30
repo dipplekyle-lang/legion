@@ -1,0 +1,115 @@
+{
+  "look": "Flat vector illustration with no outlines: solid fills, rounded geometry, saturated high-key colour. Skies are ONE vertical gradient that ends at 55 % of the height (violet to aqua, royal blue to sky, red-orange to amber), flat below. Faces and hair flat; objects shaded with one darker core shape away from the light, a lighter shape toward it, a white specular on glossy things, rounded highlight strokes on cylinders, and a white rim toward the light on hero objects; floor shadows cast to the side away from the light.",
+  "character": "People carry the Short: original flat people about 3.9 heads tall, legs 40 % of the height, wide shoulders (1.7 head widths), short necks, thick tapering arms, big hands; ROUND heads with dot eyes set wide at the middle of the face, usually no nose, brows and a mouth only when they speak or feel (a small smile curve, a small 'o'), small round ears or none; white eyes with a big iris only in close-ups and big smiles. Torsos are trapezoids, tubes, rounds or pears, never plain boxes; side two-tone shading (the half away from the light a step darker), cuffs, collars, shoe soles; hair hugs the skull (a cap with a side swoop and a tuft, a bob, a bun, a curly cap). They act: holding, leaning, sitting, pointing, arms open wide, three-quarter turns. ",
+  "shot_types": "About 40% a single character or personified object centred in the frame, acting or reacting. About 25% abstract or microscopic inside-the-body scenes (blood vessels with cells, a neuron synapse, a molecule in a magnifier circle, a cross-section of a head or torso). About 15% metaphor visuals (rain cloud over a sad brain, spotlit disco crowd, a rocket-like beam, a skull on a mound of powder, a banana behind prison bars). About 10% title and label cards on a plain gradient (a warning-tape banner, a big number). About 10% real-world room scenes (a kitchen, a living room, a dance floor). Space and what-if topics shift this: a navy starfield base with the personified cast acting the facts, planet surfaces lit by one off-frame star (light shafts over sky and ground), perspective grids and funnels for warped space, split screens for two worlds, a time-skip overlay, and full-bleed bright metaphor cutaways. Measured on all 141 Shorts (SPEC section 20): a hero alone on a colour field 22 %, a starfield 8 %, a landscape 6 %, an interior 6 %, a planet from space 6 %, cells 5 %, a diagram 5 %, inside the body 5 %, a home 4 %, a map or globe 4 %, galaxies and black holes 3 %, a lab or hospital 3 %.",
+  "assets": "All custom flat vector illustration and 2D motion graphics (AI-generated or built in code), with no real footage or stock. Pictures are built from layered shapes, so characters and props can slide, scale and bounce in. The same character models recur in the opening and closing shots. Overlays include a yellow-ringed magnifier circle for zoom-ins, hazard-tape banners, a chalk body outline, small icon badges (a heart, a gauge) and a text sticker for labels. About a quarter of shots are held stills with a slow drift. The rest are animated.",
+  "camera": "A virtual 2D camera LOCKED during holds (no push-in, no drift): life comes from the elements inside the frame (pops, slides, blinks, idle bobs, drifting particles). Shot changes are mostly hard cuts on a sentence start, plus vertical pushes and whips (~0.5 s, the planes moving at their own speeds), a zoom that dives into a magnifier ring or a point, dissolves for jumps, rarely an iris or one white flash.",
+  "scenes": "One idea per scene, and a scene EVOLVES for 4-8 s instead of cutting. The measured scene types: a lone glossy hero object on a bare sky with one burst of sparks when it lands; an insert (the object low and to one side, a big navy zoom bubble above it on a thin pointer, a yellow name label on its rim, the micro world inside); a close-up bust filling the width with a bubble over the head and a caveat plate at the top; a club or crowd scene with soft light cones and a big blurred crowd close to the lens; dark glowing inside-the-body cutaways; data scenes with small title-case tags, bars and counters; whole environments from big flat shapes; before-and-after of one diagram by a line wipe. Scene changes that keep the hero dissolve around it or iris out from its backdrop disc. Rooms: one flat saturated wall, the floor a little lighter meeting it at 0.73 of the height, every wall piece TONAL (the wall colour +6 to +14 L) so the cast stays the only focal point. Shading everywhere: the shade side ~10 L darker with a hue turn (yellow to orange, cyan to blue, blue to violet), the lit side turning the other way. DENSITY (measured on all 3,868 frames): 4 frames in 10 are busy (30+ flat shapes), 1 in 6 very busy (50+); every Short peaks near 85 shapes and dips near 5. The hook frame is the busiest (the title over a FULL scene). Places, people, examples and the bookend are busy: things repeated in perspective rows, a dense near-plane tangle from the bottom edge, tonal texture strokes on grounds, patterns on clothes, clouds, stars and far planes in the sky, detail inside every hero. A number, mechanism, scale or turn may be sparse: one big hero plus one device. PLACEMENT (measured on 535 frames): one hero on the middle line at mid-height (43-56 % of the height), ~56 % of the width, sized by the shot's job, cut by a side or bottom edge in ~1 shot in 3; the title centred at ~25 % height; a device ON or right against what it explains; three planes and ~7 separate things a frame, filled with copies of a few kinds; a big near shape cut by the frame in ~1 shot in 3, not every shot.",
+  "text": "Captions: white rounded geometric semi-bold sans, sentence case with punctuation, thin dark outline plus soft shadow, one line centred at 78 % of frame height, 2-5 words. The title: one designed lockup (mixed sizes, gradient key word, dark and light rings, extrusion). The yellow NAME label (plain #FDEE00 rectangle, heavy black caps, tilted 5-8 degrees, on a zoom bubble's rim or an object's top) names a substance or thing: the only caps text. A caveat plate (indigo hexagon, white bold tracked text, sentence case) for a source note. Small title-case tags for data, with a leader line when they point. Never sticker or meme phrases, signs, or caps words that comment or count.",
+  "hook": "The first line spoken IS the title on screen, word for word, from 0.0 s, said in 1.5-2.8 s: a plain question or a bold claim or proposal (the Short's whole subject in one line). The second sentence answers at once, often with a number. Frame 0: the title lockup, ONE big hero acting under it, a glowing gradient ground; nothing else. The title leaves at 2.5-3.2 s as the nearest plane while the hero carries on.",
+  "voice": "Calm, friendly, slightly playful adult narrator at about 3 words a second, no gaps between words, short pauses after sentence ends. Music and effects: see 'sound'.",
+  "sound": "Measured on 16 Shorts: a soft, slow music bed (52-85 bpm, mostly F or C major) of warm pads, gentle mallets or plucks and a round low end, no drums, about 22 dB under the voice and swelling between sections. Sound effects are RARE: about 3-6 in a 40 s Short (0.06-0.15 a second), each a soft tuned tick: a falling blip or a round pop when a key thing appears, a short mallet chime on a reveal, a short dry falling thump on a big push or zoom. Half of them sit inside the words, a third on cuts. Never cartoon boings, record scratches, meme sounds, real clicks or whooshy air.",
+  "dont": "No outlines, face shading, 3D, photos or realistic faces; no slow push-in during holds, shake or tilt; no random gradients, no everything-fading-in, no glow on text, no decorative particle bursts, no fake UI, no two things fighting for attention; no long cross-fades or black frames; no subscribe line, sponsor pill or reference mascot; never copy a reference's words, titles or characters. No mascot with gloves and sneakers carrying the Short (an original host may bookend in 3-6 shots), no defocus blur by default (about 1 shot in 8, soft near props only), no sticker or meme text ('WHAT HAPPENS NEXT?', 'X WINS', signs, caps words that comment or count), no gag prop that does not encode a fact (a walker on the slowest planet is right, a deckchair for fun is not), no 'winner' bookend, no characters crammed at the bottom edge, no two heroes fighting for the frame. Never draw the reference channel's recurring bird characters or anything close to them. No shading with plain black or highlights with plain white. Never a bald frame: one small hero on a bare gradient for a whole Short; never filler that doesn't belong to the place. Never a small hero low in the frame, a device floating far from what it explains, or a near edge shape in every shot. Never a move fired early by a guessed lead (its peak lands on the word); never a dead hold where nothing big moves; never a flurry of tiny snaps; never stiff people standing arms-down with box torsos; never a plain crossfade where a carry, reveal or zoom-through can link the ideas.",
+  "kind": "voiceover",
+  "pacing": "Measured at 60 fps: hard cuts about every 4-8 s (median 4.6 s over all 141 Shorts; ~14 words a shot), mostly just after a sentence ends; two idea changes in three happen INSIDE a shot (rebuild in place, carry, pan, bars, zoom-out reveal, zoom-through); inside a shot one clear move per idea, about 2.3 a second, each move's fastest frame ON the word that names it (it starts ~0.1 s before); moves ~0.3-0.45 s with long soft landings; the picture never stands still: ~12 % of the frame keeps moving (bodies rock and gesture, the hero turns or bobs, things drift behind).",
+  "script_rules": "About 3 words per second. The first sentence is the title, spoken. Then dense, flowing sentences (median 16 words, 12-24) that chain cause, mechanism and consequence, with real numbers written as digits in about a quarter of them, and the reader addressed as 'you' where it fits. Escalate to a turn near 60 % and land on a concrete, slightly ironic or hopeful fact. Dry humour comes from the facts themselves. Never one- or two-word sentences, never quips in the narration ('smug', 'harmless.', 'without drama', 'on its own schedule'; a personified thing may say 1-4 words in a speech bubble at its moment), never an 'X vs. Y' framing, no subscribe line. Pick ONE of four structures: the 'Let's do X' thought experiment (each step with its consequence); the tour of options (try A, its flaw, try B, its flaw, back home); the threat explainer ('silent killer', the mechanism, 'And it gets worse.', what we do, a hopeful last line); a question answered 'Yes and no.' with both halves. Escalate with 'But...', 'And it gets worse.', 'Sadly,'. The last shot returns to the first scene.",
+  "captions": {
+    "highlight": false,
+    "pop": false,
+    "words": 3,
+    "font": "Fredoka SemiBold",
+    "font_name": "Fredoka SemiBold",
+    "font_files": [
+      "Fredoka-SemiBold.ttf"
+    ],
+    "size": 59,
+    "colour": "#FFFFFF",
+    "y": 0.784,
+    "bold": false,
+    "outline": 2,
+    "shadow": 2,
+    "font_names": {
+      "Fredoka-SemiBold.ttf": "Fredoka SemiBold"
+    },
+    "centre": true
+  },
+  "name": "Animated Explainer",
+  "examples": [
+    "2cK8l5Yg5w8",
+    "KTu2V65Iiho",
+    "tZ8i1RxGSYM",
+    "VYhUa3WC4nU",
+    "Gn-KqiRv0XI",
+    "dwZgy7SNMRc"
+  ],
+  "created": 1792956997.504957,
+  "rhythm": {
+    "median_shot": 4.6,
+    "p90_shot": 12.3,
+    "cuts_first_3s": 0.33,
+    "still_share": 0.24,
+    "words_per_s": 3.15,
+    "narrated": true,
+    "sfx_on_cuts": 0.21,
+    "seconds": 60.7,
+    "studied": 141,
+    "busy_share": 0.42
+  },
+  "deep": true,
+  "deep_status": "ready",
+  "hook_examples": [
+    "How does [thing] work?",
+    "What actually is [everyday thing]?",
+    "What happens when you [do thing]?",
+    "Can we [impossible change]?",
+    "Your [body part] does [surprising thing].",
+    "Let's make [thing] [N] % [change].",
+    "This is your [organ] on [substance].",
+    "Around [N] people [surprising fact] every [period].",
+    "Let's [do an absurd, concrete thing].",
+    "Our [thing] has a silent killer.",
+    "Our [thing] is boring. Let's [replace it].",
+    "What happens if we [absurd act] all the [things]?",
+    "Does [habit] make you [result]? Yes and no.",
+    "[Threat] is back. What makes it so hard to stop?",
+    "This is the world's oldest [surprising thing].",
+    "There's a big dirty secret about [thing]."
+  ],
+  "transition": "linked: carry | pan | bars | reveal | into | rebuild; about 1 in 4 a cut or match cut",
+  "spec": "SPEC.md",
+  "deep_done": "2026-10-25",
+  "studied": [
+    "2cK8l5Yg5w8",
+    "KTu2V65Iiho",
+    "tZ8i1RxGSYM",
+    "VYhUa3WC4nU",
+    "Gn-KqiRv0XI",
+    "dwZgy7SNMRc"
+  ],
+  "suggested_engine": "scenes",
+  "engine": "flat",
+  "channel": {
+    "name": "",
+    "avatar": ""
+  },
+  "music_bed": "flatkit/bed_cosmic.wav",
+  "music_gain": "2dB",
+  "sfx_pack": "flatkit/sfx_cosmic",
+  "fps": 60,
+  "motion": {
+    "cam": "drift",
+    "trans": [
+      "carry",
+      "pan",
+      "into",
+      "reveal",
+      "carry",
+      "zoom",
+      "bars",
+      "pan"
+    ],
+    "weight": true,
+    "syllable": true,
+    "life": true
+  }
+}

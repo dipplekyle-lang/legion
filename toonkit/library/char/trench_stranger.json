@@ -1,0 +1,17 @@
+{
+ "name": "trench_stranger",
+ "kind": "char",
+ "desc": "trench coat stranger in a fedora",
+ "tags": [
+  "stranger",
+  "noir",
+  "character",
+  "trench"
+ ],
+ "usage": "char_trench_stranger()",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

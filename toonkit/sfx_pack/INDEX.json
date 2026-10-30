@@ -1,0 +1,2972 @@
+{
+"Anime/Anime Bell Reverb.mp3": {
+"role": "realise",
+"onset": 0.1491,
+"peak": 0.1591,
+"ring": 2.47,
+"dur": 2.624,
+"db": -22.1,
+"bright": 2814,
+"stamp": "64573:1792955405"
+},
+"Anime/Anime Shine 02.mp3": {
+"role": "realise",
+"onset": 0.268,
+"peak": 0.3078,
+"ring": 2.571,
+"dur": 2.992,
+"db": -23.4,
+"bright": 3432,
+"stamp": "48482:1792955405"
+},
+"Anime/Anime Shine 03.mp3": {
+"role": "realise",
+"onset": 0.0081,
+"peak": 0.0585,
+"ring": 1.004,
+"dur": 1.021,
+"db": -23.9,
+"bright": 3896,
+"stamp": "42240:1792955405"
+},
+"Anime/Anime Wow.mp3": {
+"role": "other",
+"onset": 0.1537,
+"peak": 0.3164,
+"ring": 3.293,
+"dur": 4.226,
+"db": -17.4,
+"bright": 2697,
+"stamp": "102817:1792955405"
+},
+"Anime/Awkward Moment 01.mp3": {
+"role": "gag",
+"onset": 0.0136,
+"peak": 0.0248,
+"ring": 1.064,
+"dur": 1.451,
+"db": -26.2,
+"bright": 3595,
+"stamp": "23823:1792955405"
+},
+"Anime/Awkward Moment 02.mp3": {
+"role": "gag",
+"onset": 0.2135,
+"peak": 0.2247,
+"ring": 1.063,
+"dur": 1.707,
+"db": -26.2,
+"bright": 3567,
+"stamp": "36216:1792955405"
+},
+"Anime/Awkward Spring Pluck.mp3": {
+"role": "gag",
+"onset": 0.0151,
+"peak": 0.1032,
+"ring": 0.9,
+"dur": 0.955,
+"db": -28.7,
+"bright": 1432,
+"stamp": "15881:1792955405"
+},
+"Anime/Bamboo Hit 01.mp3": {
+"role": "impact",
+"onset": 0.0112,
+"peak": 0.0524,
+"ring": 0.347,
+"dur": 0.615,
+"db": -22.6,
+"bright": 845,
+"stamp": "10448:1792955405"
+},
+"Anime/Bamboo Hit 02.mp3": {
+"role": "impact",
+"onset": 1.0608,
+"peak": 1.1019,
+"ring": 0.347,
+"dur": 1.625,
+"db": -12.4,
+"bright": 834,
+"stamp": "40750:1792955405"
+},
+"Anime/Big Disappointment.mp3": {
+"role": "other",
+"onset": 0.0349,
+"peak": 0.1165,
+"ring": 6.525,
+"dur": 7.041,
+"db": -24.0,
+"bright": 2528,
+"stamp": "113266:1792955405"
+},
+"Anime/Character Gone.mp3": {
+"role": "other",
+"onset": 0.023,
+"peak": 0.0371,
+"ring": 0.547,
+"dur": 0.772,
+"db": -19.8,
+"bright": 4383,
+"stamp": "12956:1792955405"
+},
+"Anime/Comical Disappointment.mp3": {
+"role": "gag",
+"onset": 0.0469,
+"peak": 0.6599,
+"ring": 1.474,
+"dur": 1.525,
+"db": -26.3,
+"bright": 3292,
+"stamp": "62400:1792955405"
+},
+"Anime/Comical Pop.mp3": {
+"role": "gag",
+"onset": 0.2357,
+"peak": 0.2685,
+"ring": 1.279,
+"dur": 1.672,
+"db": -35.7,
+"bright": 3034,
+"stamp": "41377:1792955405"
+},
+"Anime/Cricket.mp3": {
+"role": "gag",
+"onset": 0.4365,
+"peak": 4.1321,
+"ring": 3.829,
+"dur": 4.435,
+"db": -22.2,
+"bright": 4069,
+"stamp": "107832:1792955405"
+},
+"Anime/Magic Shine Glisten.mp3": {
+"role": "realise",
+"onset": 0.0882,
+"peak": 0.5288,
+"ring": 1.227,
+"dur": 1.637,
+"db": -18.9,
+"bright": 12363,
+"stamp": "40896:1792955405"
+},
+"Booms, Impacts and Horror Tension/Background Braam.mp3": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.0974,
+"ring": 6.693,
+"dur": 8.806,
+"db": -22.5,
+"bright": 279,
+"stamp": "240408:1792955405"
+},
+"Booms, Impacts and Horror Tension/Bass Boosted.mp3": {
+"role": "riser",
+"onset": 0.1176,
+"peak": 1.8979,
+"ring": 3.282,
+"dur": 3.413,
+"db": 0.8,
+"bright": 3367,
+"stamp": "83381:1792955405"
+},
+"Booms, Impacts and Horror Tension/Bass Drop.mp3": {
+"role": "riser",
+"onset": 3.3832,
+"peak": 5.9899,
+"ring": 4.17,
+"dur": 8.104,
+"db": 0.4,
+"bright": 128,
+"stamp": "196230:1792955405"
+},
+"Booms, Impacts and Horror Tension/Big Deep Impact.mp3": {
+"role": "riser",
+"onset": 0.014,
+"peak": 0.0962,
+"ring": 3.945,
+"dur": 5.547,
+"db": -20.1,
+"bright": 141,
+"stamp": "71064:1792955405"
+},
+"Booms, Impacts and Horror Tension/Big Explosion.mp3": {
+"role": "riser",
+"onset": 0.9025,
+"peak": 1.9126,
+"ring": 4.302,
+"dur": 7.523,
+"db": -6.0,
+"bright": 1630,
+"stamp": "181811:1792955405"
+},
+"Booms, Impacts and Horror Tension/Boom 01.mp3": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.8261,
+"ring": 4.213,
+"dur": 6.985,
+"db": -7.7,
+"bright": 157,
+"stamp": "169272:1792955405"
+},
+"Booms, Impacts and Horror Tension/Boom 02.mp3": {
+"role": "riser",
+"onset": 0.0823,
+"peak": 0.2073,
+"ring": 6.115,
+"dur": 9.66,
+"db": -13.0,
+"bright": 705,
+"stamp": "233220:1792955405"
+},
+"Booms, Impacts and Horror Tension/Car Crash.mp3": {
+"role": "riser",
+"onset": 0.2352,
+"peak": 0.4936,
+"ring": 2.466,
+"dur": 3.437,
+"db": -15.3,
+"bright": 3508,
+"stamp": "90048:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cavernous Boom.mp3": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.018,
+"ring": 4.994,
+"dur": 8.906,
+"db": -13.6,
+"bright": 265,
+"stamp": "215424:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cavernous Low End Boom.mp3": {
+"role": "riser",
+"onset": 0.0642,
+"peak": 0.2021,
+"ring": 3.617,
+"dur": 7.093,
+"db": -11.8,
+"bright": 125,
+"stamp": "171648:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cinematic Boom 01.wav": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.0827,
+"ring": 4.401,
+"dur": 7.5,
+"db": -21.8,
+"bright": 432,
+"stamp": "2880058:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cinematic Boom 02.mp3": {
+"role": "riser",
+"onset": 0.189,
+"peak": 0.2969,
+"ring": 4.191,
+"dur": 4.876,
+"db": -15.4,
+"bright": 93,
+"stamp": "118490:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cinematic Boom Hollow.mp3": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.0279,
+"ring": 2.645,
+"dur": 6.186,
+"db": -18.2,
+"bright": 332,
+"stamp": "149837:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cinematic Boom Long.mp3": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.6809,
+"ring": 6.003,
+"dur": 6.41,
+"db": -17.8,
+"bright": 136,
+"stamp": "155479:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cinematic Hit.mp3": {
+"role": "riser",
+"onset": 0.429,
+"peak": 16.3332,
+"ring": 21.255,
+"dur": 24.126,
+"db": -20.4,
+"bright": 4384,
+"stamp": "580544:1792955405"
+},
+"Booms, Impacts and Horror Tension/Cinematic Impact.mp3": {
+"role": "riser",
+"onset": 0.9926,
+"peak": 2.1749,
+"ring": 3.722,
+"dur": 7.929,
+"db": -15.9,
+"bright": 359,
+"stamp": "318693:1792955405"
+},
+"Booms, Impacts and Horror Tension/Crashing Impact.mp3": {
+"role": "riser",
+"onset": 0.5915,
+"peak": 1.0402,
+"ring": 3.819,
+"dur": 6.687,
+"db": -11.4,
+"bright": 3278,
+"stamp": "161856:1792955405"
+},
+"Booms, Impacts and Horror Tension/Dark Cave Impact.mp3": {
+"role": "riser",
+"onset": 0.0375,
+"peak": 0.2846,
+"ring": 2.271,
+"dur": 3.273,
+"db": -7.7,
+"bright": 159,
+"stamp": "80064:1792955405"
+},
+"Booms, Impacts and Horror Tension/Desert Eagle Gunshot.mp3": {
+"role": "riser",
+"onset": 1.3169,
+"peak": 3.2533,
+"ring": 3.414,
+"dur": 4.992,
+"db": -12.8,
+"bright": 5158,
+"stamp": "121625:1792955405"
+},
+"Booms, Impacts and Horror Tension/Dramatic Impact.mp3": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.0742,
+"ring": 2.671,
+"dur": 3.5,
+"db": -14.1,
+"bright": 211,
+"stamp": "85248:1792955405"
+},
+"Booms, Impacts and Horror Tension/Explosion.mp3": {
+"role": "riser",
+"onset": 0.23,
+"peak": 1.1215,
+"ring": 5.828,
+"dur": 6.13,
+"db": -8.7,
+"bright": 2149,
+"stamp": "148583:1792955405"
+},
+"Booms, Impacts and Horror Tension/Explosions.mp3": {
+"role": "riser",
+"onset": 1.2107,
+"peak": 16.4271,
+"ring": 26.962,
+"dur": 28.886,
+"db": -11.1,
+"bright": 3427,
+"stamp": "694647:1792955405"
+},
+"Booms, Impacts and Horror Tension/Flashbang.mp3": {
+"role": "riser",
+"onset": 1.5031,
+"peak": 1.634,
+"ring": 4.108,
+"dur": 6.014,
+"db": -10.8,
+"bright": 2564,
+"stamp": "146075:1792955405"
+},
+"Booms, Impacts and Horror Tension/Fortnite Boom.mp3": {
+"role": "riser",
+"onset": 0.349,
+"peak": 1.3496,
+"ring": 5.117,
+"dur": 6.06,
+"db": -6.6,
+"bright": 4335,
+"stamp": "146702:1792955405"
+},
+"Booms, Impacts and Horror Tension/Glass Crack Crunch.mp3": {
+"role": "riser",
+"onset": 2.6655,
+"peak": 3.1084,
+"ring": 6.599,
+"dur": 12.26,
+"db": -31.4,
+"bright": 7288,
+"stamp": "295914:1792955405"
+},
+"Booms, Impacts and Horror Tension/Gunshot Cocking And Shooting.mp3": {
+"role": "riser",
+"onset": 2.0458,
+"peak": 4.2985,
+"ring": 4.336,
+"dur": 6.838,
+"db": -17.6,
+"bright": 4643,
+"stamp": "105336:1792955405"
+},
+"Booms, Impacts and Horror Tension/Massive Braam.mp3": {
+"role": "riser",
+"onset": 0.7106,
+"peak": 2.1412,
+"ring": 6.792,
+"dur": 16.0,
+"db": -11.0,
+"bright": 1231,
+"stamp": "385344:1792955405"
+},
+"Booms, Impacts and Horror Tension/Metallic Thundering Impact.mp3": {
+"role": "riser",
+"onset": 0.2141,
+"peak": 0.6604,
+"ring": 2.094,
+"dur": 3.15,
+"db": -9.8,
+"bright": 2544,
+"stamp": "77184:1792955405"
+},
+"Booms, Impacts and Horror Tension/Quick Bass Impact.mp3": {
+"role": "riser",
+"onset": 0.1439,
+"peak": 0.1956,
+"ring": 5.706,
+"dur": 5.898,
+"db": -19.9,
+"bright": 644,
+"stamp": "142941:1792955405"
+},
+"Booms, Impacts and Horror Tension/Strange Alert.wav": {
+"role": "riser",
+"onset": 0.0,
+"peak": 0.005,
+"ring": 1.233,
+"dur": 2.376,
+"db": -15.8,
+"bright": 6502,
+"stamp": "419180:1792955405"
+},
+"Booms, Impacts and Horror Tension/Tense Riser Long.wav": {
+"role": "riser",
+"onset": 0.644,
+"peak": 3.7261,
+"ring": 3.614,
+"dur": 4.598,
+"db": -13.7,
+"bright": 291,
+"stamp": "2648450:1792955405"
+},
+"Booms, Impacts and Horror Tension/Transition Boom.mp3": {
+"role": "move",
+"onset": 0.6879,
+"peak": 1.2826,
+"ring": 2.559,
+"dur": 5.344,
+"db": -21.0,
+"bright": 2679,
+"stamp": "216000:1792955405"
+},
+"Booms, Impacts and Horror Tension/Vine Boom Long.mp3": {
+"role": "riser",
+"onset": 0.1782,
+"peak": 0.2758,
+"ring": 2.82,
+"dur": 3.042,
+"db": -7.9,
+"bright": 1155,
+"stamp": "45384:1792955405"
+},
+"Booms, Impacts and Horror Tension/Vine Boom.mp3": {
+"role": "riser",
+"onset": 0.0847,
+"peak": 0.1208,
+"ring": 1.147,
+"dur": 1.255,
+"db": -4.9,
+"bright": 1037,
+"stamp": "21314:1792955405"
+},
+"Comedy and Awkward Pauses/Applause 01.mp3": {
+"role": "gag",
+"onset": 0.1304,
+"peak": 3.6437,
+"ring": 8.495,
+"dur": 9.358,
+"db": -19.4,
+"bright": 3259,
+"stamp": "226324:1792955405"
+},
+"Comedy and Awkward Pauses/Applause 02.wav": {
+"role": "gag",
+"onset": 0.0145,
+"peak": 3.3803,
+"ring": 25.74,
+"dur": 25.759,
+"db": -14.2,
+"bright": 2090,
+"stamp": "284036:1792955405"
+},
+"Comedy and Awkward Pauses/Awkward Cricket.mp3": {
+"role": "gag",
+"onset": 0.4495,
+"peak": 4.1451,
+"ring": 3.83,
+"dur": 4.35,
+"db": -21.9,
+"bright": 4070,
+"stamp": "175542:1792955405"
+},
+"Comedy and Awkward Pauses/Awkward Pause 01.mp3": {
+"role": "gag",
+"onset": 0.1111,
+"peak": 0.133,
+"ring": 4.208,
+"dur": 4.925,
+"db": -28.4,
+"bright": 1405,
+"stamp": "79411:1792955405"
+},
+"Comedy and Awkward Pauses/Awkward Pause 02.mp3": {
+"role": "gag",
+"onset": 0.2134,
+"peak": 0.2247,
+"ring": 1.064,
+"dur": 1.695,
+"db": -26.7,
+"bright": 3554,
+"stamp": "28002:1792955405"
+},
+"Comedy and Awkward Pauses/Awkward Pause 03.mp3": {
+"role": "gag",
+"onset": 0.2659,
+"peak": 0.4405,
+"ring": 8.403,
+"dur": 9.288,
+"db": -28.3,
+"bright": 1540,
+"stamp": "224443:1792955405"
+},
+"Comedy and Awkward Pauses/Breast Twitch 01.mp3": {
+"role": "gag",
+"onset": 0.0776,
+"peak": 0.1109,
+"ring": 0.697,
+"dur": 0.805,
+"db": -25.3,
+"bright": 4027,
+"stamp": "33600:1792955405"
+},
+"Comedy and Awkward Pauses/Breast Twitch 02.mp3": {
+"role": "gag",
+"onset": 0.8529,
+"peak": 0.8862,
+"ring": 0.696,
+"dur": 2.02,
+"db": -28.8,
+"bright": 3971,
+"stamp": "50154:1792955405"
+},
+"Comedy and Awkward Pauses/Children Yay.mp3": {
+"role": "gag",
+"onset": 1.2866,
+"peak": 1.4466,
+"ring": 3.872,
+"dur": 7.082,
+"db": -17.2,
+"bright": 2779,
+"stamp": "114519:1792955405"
+},
+"Comedy and Awkward Pauses/Crickets 01.mp3": {
+"role": "gag",
+"onset": 0.0914,
+"peak": 9.1397,
+"ring": 9.314,
+"dur": 13.036,
+"db": -42.7,
+"bright": 2615,
+"stamp": "314095:1792955405"
+},
+"Comedy and Awkward Pauses/Crickets 02.mp3": {
+"role": "gag",
+"onset": 0.1348,
+"peak": 2.185,
+"ring": 9.293,
+"dur": 10.019,
+"db": -42.5,
+"bright": 2581,
+"stamp": "244896:1792955405"
+},
+"Comedy and Awkward Pauses/Joke Drum.mp3": {
+"role": "gag",
+"onset": 1.0909,
+"peak": 1.1898,
+"ring": 1.79,
+"dur": 3.019,
+"db": -20.6,
+"bright": 4095,
+"stamp": "73977:1792955405"
+},
+"Comedy and Awkward Pauses/Party Horn.wav": {
+"role": "gag",
+"onset": 0.0499,
+"peak": 0.1348,
+"ring": 0.751,
+"dur": 0.929,
+"db": -13.7,
+"bright": 4819,
+"stamp": "81964:1792955405"
+},
+"Comedy and Awkward Pauses/Record Disc Scratch.mp3": {
+"role": "gag",
+"onset": 6.2551,
+"peak": 9.7799,
+"ring": 3.536,
+"dur": 9.845,
+"db": -18.3,
+"bright": 2112,
+"stamp": "237608:1792955405"
+},
+"Comedy and Awkward Pauses/Record Scratch.mp3": {
+"role": "gag",
+"onset": 0.1574,
+"peak": 0.5615,
+"ring": 0.732,
+"dur": 1.091,
+"db": -20.4,
+"bright": 2141,
+"stamp": "23376:1792955405"
+},
+"Comedy and Awkward Pauses/Sad.mp3": {
+"role": "gag",
+"onset": 0.738,
+"peak": 3.1601,
+"ring": 9.8,
+"dur": 10.541,
+"db": -22.0,
+"bright": 1213,
+"stamp": "169272:1792955405"
+},
+"Comedy and Awkward Pauses/SpongeBob Boo-Womp.mp3": {
+"role": "gag",
+"onset": 0.7806,
+"peak": 1.0688,
+"ring": 0.349,
+"dur": 1.974,
+"db": -13.1,
+"bright": 641,
+"stamp": "48900:1792955405"
+},
+"Comedy and Awkward Pauses/Wow.mp3": {
+"role": "gag",
+"onset": 0.267,
+"peak": 0.4298,
+"ring": 3.293,
+"dur": 4.076,
+"db": -28.4,
+"bright": 3086,
+"stamp": "99055:1792955405"
+},
+"Foley/Bullet Shell Falling On Concrete.mp3": {
+"role": "foley",
+"onset": 0.6779,
+"peak": 1.3695,
+"ring": 1.169,
+"dur": 1.927,
+"db": -19.9,
+"bright": 8573,
+"stamp": "47646:1792955405"
+},
+"Foley/Camera Click.mp3": {
+"role": "appear",
+"onset": 0.0649,
+"peak": 0.1948,
+"ring": 0.23,
+"dur": 0.961,
+"db": -18.7,
+"bright": 6970,
+"stamp": "40320:1792955405"
+},
+"Foley/Camera Flash.mp3": {
+"role": "foley",
+"onset": 0.1113,
+"peak": 0.1791,
+"ring": 0.379,
+"dur": 2.09,
+"db": -15.3,
+"bright": 5547,
+"stamp": "51408:1792955405"
+},
+"Foley/Camera Shutter 01.mp3": {
+"role": "foley",
+"onset": 0.1527,
+"peak": 0.6103,
+"ring": 0.6,
+"dur": 0.757,
+"db": -26.1,
+"bright": 6998,
+"stamp": "15216:1792955405"
+},
+"Foley/Camera Shutter 02.wav": {
+"role": "foley",
+"onset": 0.1524,
+"peak": 0.6103,
+"ring": 0.601,
+"dur": 0.757,
+"db": -26.1,
+"bright": 6997,
+"stamp": "72722:1792955405"
+},
+"Foley/Camera Shutter 03.mp3": {
+"role": "foley",
+"onset": 0.173,
+"peak": 0.2478,
+"ring": 0.485,
+"dur": 0.853,
+"db": -26.0,
+"bright": 6287,
+"stamp": "35520:1792955405"
+},
+"Foley/Cartoon Running 01.mp3": {
+"role": "gag",
+"onset": 0.2811,
+"peak": 2.4973,
+"ring": 7.847,
+"dur": 8.197,
+"db": -18.1,
+"bright": 1921,
+"stamp": "198111:1792955405"
+},
+"Foley/Cartoon Running 02.mp3": {
+"role": "gag",
+"onset": 0.1847,
+"peak": 5.317,
+"ring": 6.308,
+"dur": 6.502,
+"db": -16.6,
+"bright": 2036,
+"stamp": "157248:1792955405"
+},
+"Foley/Door Creaking.mp3": {
+"role": "foley",
+"onset": 0.86,
+"peak": 0.8693,
+"ring": 1.428,
+"dur": 5.224,
+"db": -20.3,
+"bright": 3542,
+"stamp": "126640:1792955405"
+},
+"Foley/Fax Machine.mp3": {
+"role": "foley",
+"onset": 0.1067,
+"peak": 11.9774,
+"ring": 15.209,
+"dur": 15.464,
+"db": -12.5,
+"bright": 2099,
+"stamp": "372400:1792955405"
+},
+"Foley/Footsteps.mp3": {
+"role": "foley",
+"onset": 0.5441,
+"peak": 3.6538,
+"ring": 4.691,
+"dur": 6.107,
+"db": -24.1,
+"bright": 1069,
+"stamp": "147956:1792955405"
+},
+"Foley/Keyboard Typing.mp3": {
+"role": "ui",
+"onset": 0.6941,
+"peak": 7.1174,
+"ring": 6.543,
+"dur": 7.43,
+"db": -33.3,
+"bright": 4432,
+"stamp": "179930:1792955405"
+},
+"Foley/Pencil.mp3": {
+"role": "foley",
+"onset": 0.7684,
+"peak": 1.1147,
+"ring": 0.56,
+"dur": 1.904,
+"db": -27.4,
+"bright": 8868,
+"stamp": "47019:1792955405"
+},
+"Foley/Plate Breaking.mp3": {
+"role": "foley",
+"onset": 2.087,
+"peak": 2.0979,
+"ring": 1.181,
+"dur": 4.064,
+"db": -18.4,
+"bright": 7793,
+"stamp": "99055:1792955405"
+},
+"Foley/Punch.wav": {
+"role": "impact",
+"onset": 0.0609,
+"peak": 0.12,
+"ring": 0.477,
+"dur": 0.766,
+"db": -6.9,
+"bright": 3116,
+"stamp": "67628:1792955405"
+},
+"Foley/Slap.mp3": {
+"role": "foley",
+"onset": 0.2195,
+"peak": 0.272,
+"ring": 0.433,
+"dur": 1.556,
+"db": -5.0,
+"bright": 3017,
+"stamp": "38869:1792955405"
+},
+"Foley/Sliding Stone.mp3": {
+"role": "realise",
+"onset": 0.3353,
+"peak": 6.0449,
+"ring": 6.03,
+"dur": 7.268,
+"db": -17.5,
+"bright": 1847,
+"stamp": "176168:1792955405"
+},
+"Foley/SpongeBob Walking 01.mp3": {
+"role": "foley",
+"onset": 0.5724,
+"peak": 5.3939,
+"ring": 5.112,
+"dur": 5.689,
+"db": -33.6,
+"bright": 2993,
+"stamp": "137925:1792955405"
+},
+"Foley/SpongeBob Walking 02.mp3": {
+"role": "foley",
+"onset": 0.5129,
+"peak": 12.6179,
+"ring": 13.86,
+"dur": 14.861,
+"db": -33.5,
+"bright": 2996,
+"stamp": "357981:1792955405"
+},
+"Foley/Squidward Walking.mp3": {
+"role": "foley",
+"onset": 0.2358,
+"peak": 2.9445,
+"ring": 5.449,
+"dur": 5.689,
+"db": -35.9,
+"bright": 2309,
+"stamp": "137925:1792955405"
+},
+"Foley/Typewriter 02.mp3": {
+"role": "foley",
+"onset": 0.2662,
+"peak": 0.3717,
+"ring": 3.59,
+"dur": 4.087,
+"db": -30.2,
+"bright": 6352,
+"stamp": "99682:1792955405"
+},
+"Funny/Cartoon and goofy/Alert.mp3": {
+"role": "gag",
+"onset": 0.2104,
+"peak": 0.483,
+"ring": 0.671,
+"dur": 1.164,
+"db": -9.5,
+"bright": 3004,
+"stamp": "28839:1792955405"
+},
+"Funny/Cartoon and goofy/Bell.mp3": {
+"role": "gag",
+"onset": 0.0858,
+"peak": 0.2395,
+"ring": 1.698,
+"dur": 1.811,
+"db": -13.7,
+"bright": 1430,
+"stamp": "29952:1792955405"
+},
+"Funny/Cartoon and goofy/Big Water Splash.mp3": {
+"role": "gag",
+"onset": 0.1174,
+"peak": 0.2706,
+"ring": 2.72,
+"dur": 3.564,
+"db": -16.2,
+"bright": 5172,
+"stamp": "87984:1792955405"
+},
+"Funny/Cartoon and goofy/Boing.mp3": {
+"role": "gag",
+"onset": 0.3553,
+"peak": 4.0067,
+"ring": 7.916,
+"dur": 8.608,
+"db": -13.3,
+"bright": 1730,
+"stamp": "138343:1792955405"
+},
+"Funny/Cartoon and goofy/Bone Crack 01.mp3": {
+"role": "gag",
+"onset": 0.4322,
+"peak": 0.4636,
+"ring": 1.03,
+"dur": 1.625,
+"db": -23.6,
+"bright": 3803,
+"stamp": "67917:1792955405"
+},
+"Funny/Cartoon and goofy/Bone Crack 02.mp3": {
+"role": "gag",
+"onset": 0.3959,
+"peak": 0.4273,
+"ring": 0.796,
+"dur": 1.567,
+"db": -22.9,
+"bright": 3900,
+"stamp": "27072:1792955405"
+},
+"Funny/Cartoon and goofy/Boom Bam Bop Badabop Boomp Pow.mp3": {
+"role": "impact",
+"onset": 0.0,
+"peak": 8.6149,
+"ring": 20.743,
+"dur": 20.779,
+"db": -13.7,
+"bright": 1481,
+"stamp": "499968:1792955405"
+},
+"Funny/Cartoon and goofy/Car Acceleration Mouth.mp3": {
+"role": "gag",
+"onset": 0.1585,
+"peak": 10.7451,
+"ring": 10.89,
+"dur": 11.192,
+"db": -20.6,
+"bright": 2293,
+"stamp": "270209:1792955405"
+},
+"Funny/Cartoon and goofy/Cartoon Slip.mp3": {
+"role": "gag",
+"onset": 0.4218,
+"peak": 0.5807,
+"ring": 0.196,
+"dur": 2.052,
+"db": -10.6,
+"bright": 3498,
+"stamp": "50154:1792955405"
+},
+"Funny/Cartoon and goofy/Cursed Horror.mp3": {
+"role": "gag",
+"onset": 0.1951,
+"peak": 5.6435,
+"ring": 18.836,
+"dur": 19.064,
+"db": -11.9,
+"bright": 611,
+"stamp": "305945:1792955405"
+},
+"Funny/Cartoon and goofy/Duck Quack.mp3": {
+"role": "gag",
+"onset": 0.2324,
+"peak": 0.2608,
+"ring": 0.188,
+"dur": 3.037,
+"db": -9.8,
+"bright": 2109,
+"stamp": "49152:1792955405"
+},
+"Funny/Cartoon and goofy/Eagle Cry.mp3": {
+"role": "gag",
+"onset": 0.1059,
+"peak": 0.8961,
+"ring": 4.061,
+"dur": 4.226,
+"db": -32.7,
+"bright": 2670,
+"stamp": "102817:1792955405"
+},
+"Funny/Cartoon and goofy/Goofy Ahh Sleep.mp3": {
+"role": "gag",
+"onset": 0.2574,
+"peak": 3.843,
+"ring": 7.039,
+"dur": 7.512,
+"db": -9.2,
+"bright": 3626,
+"stamp": "181440:1792955405"
+},
+"Funny/Cartoon and goofy/Goofy Intro.mp3": {
+"role": "gag",
+"onset": 0.0,
+"peak": 2.5266,
+"ring": 3.553,
+"dur": 3.561,
+"db": -25.4,
+"bright": 3379,
+"stamp": "86976:1792955405"
+},
+"Funny/Cartoon and goofy/Kiss.mp3": {
+"role": "gag",
+"onset": 0.0555,
+"peak": 1.0212,
+"ring": 1.02,
+"dur": 5.039,
+"db": -28.8,
+"bright": 5829,
+"stamp": "122252:1792955405"
+},
+"Funny/Cartoon and goofy/Licking Sound 01.mp3": {
+"role": "gag",
+"onset": 0.5186,
+"peak": 4.2942,
+"ring": 10.097,
+"dur": 11.09,
+"db": -26.2,
+"bright": 1935,
+"stamp": "178049:1792955405"
+},
+"Funny/Cartoon and goofy/Licking Sound 02.mp3": {
+"role": "gag",
+"onset": 0.2821,
+"peak": 0.6053,
+"ring": 5.171,
+"dur": 5.735,
+"db": -24.9,
+"bright": 4452,
+"stamp": "92368:1792955405"
+},
+"Funny/Cartoon and goofy/Minecraft Hit.mp3": {
+"role": "impact",
+"onset": 0.1273,
+"peak": 0.2788,
+"ring": 0.839,
+"dur": 1.068,
+"db": -18.4,
+"bright": 1564,
+"stamp": "26957:1792955405"
+},
+"Funny/Cartoon and goofy/Monkey Thumping Chest.mp3": {
+"role": "gag",
+"onset": 0.6024,
+"peak": 1.4984,
+"ring": 1.122,
+"dur": 2.206,
+"db": -16.0,
+"bright": 1142,
+"stamp": "54542:1792955405"
+},
+"Funny/Cartoon and goofy/Pufferfish Eating A Carrot.mp3": {
+"role": "gag",
+"onset": 0.0775,
+"peak": 0.1915,
+"ring": 2.211,
+"dur": 2.299,
+"db": -17.3,
+"bright": 3331,
+"stamp": "37615:1792955405"
+},
+"Funny/Cartoon and goofy/Roblox Death 01.mp3": {
+"role": "gag",
+"onset": 0.3178,
+"peak": 0.4008,
+"ring": 0.299,
+"dur": 0.949,
+"db": -5.6,
+"bright": 1164,
+"stamp": "11712:1792955405"
+},
+"Funny/Cartoon and goofy/Shock.wav": {
+"role": "gag",
+"onset": 0.2367,
+"peak": 0.3649,
+"ring": 1.125,
+"dur": 1.573,
+"db": -19.5,
+"bright": 4346,
+"stamp": "277496:1792955405"
+},
+"Funny/Cartoon and goofy/Shocked 01.mp3": {
+"role": "gag",
+"onset": 0.4093,
+"peak": 0.4406,
+"ring": 1.094,
+"dur": 2.67,
+"db": -12.2,
+"bright": 3195,
+"stamp": "39360:1792955405"
+},
+"Funny/Cartoon and goofy/Shocked 02.mp3": {
+"role": "gag",
+"onset": 0.118,
+"peak": 0.2122,
+"ring": 1.117,
+"dur": 1.999,
+"db": -14.9,
+"bright": 3700,
+"stamp": "32599:1792955405"
+},
+"Funny/Cartoon and goofy/Squish.mp3": {
+"role": "gag",
+"onset": 0.6172,
+"peak": 0.7097,
+"ring": 0.424,
+"dur": 1.544,
+"db": -12.3,
+"bright": 1905,
+"stamp": "15024:1792955405"
+},
+"Funny/Cartoon and goofy/Stretch Bend.mp3": {
+"role": "gag",
+"onset": 0.0915,
+"peak": 0.3946,
+"ring": 1.36,
+"dur": 1.556,
+"db": -18.2,
+"bright": 4600,
+"stamp": "38869:1792955405"
+},
+"Funny/Cartoon and goofy/Whisker Pluck.mp3": {
+"role": "gag",
+"onset": 0.3232,
+"peak": 0.3473,
+"ring": 0.255,
+"dur": 1.509,
+"db": -13.9,
+"bright": 1790,
+"stamp": "37615:1792955405"
+},
+"Funny/Farts/Fart And Poop.mp3": {
+"role": "gag",
+"onset": 0.226,
+"peak": 2.8541,
+"ring": 3.495,
+"dur": 4.296,
+"db": -18.7,
+"bright": 2092,
+"stamp": "104697:1792955405"
+},
+"Funny/Farts/Fart Meme.mp3": {
+"role": "gag",
+"onset": 0.5735,
+"peak": 0.801,
+"ring": 1.23,
+"dur": 1.927,
+"db": -23.1,
+"bright": 2873,
+"stamp": "31763:1792955405"
+},
+"Funny/Farts/Fart Reverb Long.mp3": {
+"role": "gag",
+"onset": 0.1649,
+"peak": 0.2496,
+"ring": 6.018,
+"dur": 7.709,
+"db": -15.4,
+"bright": 1258,
+"stamp": "311378:1792955405"
+},
+"Funny/Farts/Fart Reverb Short.mp3": {
+"role": "gag",
+"onset": 0.3726,
+"peak": 0.4175,
+"ring": 1.374,
+"dur": 1.904,
+"db": -25.6,
+"bright": 2207,
+"stamp": "47019:1792955405"
+},
+"Funny/Farts/Fart With Reverb.mp3": {
+"role": "gag",
+"onset": 0.0895,
+"peak": 0.2656,
+"ring": 3.721,
+"dur": 3.901,
+"db": -14.2,
+"bright": 1278,
+"stamp": "95293:1792955405"
+},
+"Funny/Farts/Fart.mp3": {
+"role": "gag",
+"onset": 0.0945,
+"peak": 0.2483,
+"ring": 0.877,
+"dur": 0.975,
+"db": -19.5,
+"bright": 839,
+"stamp": "16512:1792955405"
+},
+"Funny/Farts/Loud Fart.mp3": {
+"role": "gag",
+"onset": 0.1676,
+"peak": 0.3959,
+"ring": 1.156,
+"dur": 1.393,
+"db": -19.1,
+"bright": 2391,
+"stamp": "23404:1792955405"
+},
+"Funny/Memes and voice lines/Ahh Echo.mp3": {
+"role": "other",
+"onset": 0.3742,
+"peak": 0.5493,
+"ring": 4.49,
+"dur": 5.108,
+"db": -16.1,
+"bright": 2696,
+"stamp": "124132:1792955405"
+},
+"Funny/Memes and voice lines/Aughghh.mp3": {
+"role": "other",
+"onset": 0.3533,
+"peak": 1.2643,
+"ring": 9.488,
+"dur": 9.95,
+"db": -8.5,
+"bright": 1559,
+"stamp": "240192:1792955405"
+},
+"Funny/Memes and voice lines/Aw Hell Nah.mp3": {
+"role": "other",
+"onset": 0.2295,
+"peak": 3.9569,
+"ring": 9.814,
+"dur": 10.797,
+"db": -13.0,
+"bright": 2128,
+"stamp": "260805:1792955405"
+},
+"Funny/Memes and voice lines/Awhhh.mp3": {
+"role": "other",
+"onset": 0.1594,
+"peak": 1.064,
+"ring": 2.808,
+"dur": 2.993,
+"db": -14.6,
+"bright": 1612,
+"stamp": "48768:1792955405"
+},
+"Funny/Memes and voice lines/Aww.mp3": {
+"role": "other",
+"onset": 0.203,
+"peak": 0.4614,
+"ring": 1.434,
+"dur": 1.834,
+"db": -15.8,
+"bright": 1335,
+"stamp": "30510:1792955405"
+},
+"Funny/Memes and voice lines/Ayo WTF.mp3": {
+"role": "other",
+"onset": 0.208,
+"peak": 1.8646,
+"ring": 4.39,
+"dur": 4.621,
+"db": -18.3,
+"bright": 4457,
+"stamp": "112221:1792955405"
+},
+"Funny/Memes and voice lines/Boy Ain't No Way Boy.mp3": {
+"role": "other",
+"onset": 0.2698,
+"peak": 17.5895,
+"ring": 17.761,
+"dur": 18.061,
+"db": -21.5,
+"bright": 3290,
+"stamp": "289536:1792955405"
+},
+"Funny/Memes and voice lines/Boy What The Hell Boy.mp3": {
+"role": "other",
+"onset": 0.0352,
+"peak": 0.7754,
+"ring": 1.136,
+"dur": 1.226,
+"db": -17.9,
+"bright": 3029,
+"stamp": "51840:1792955405"
+},
+"Funny/Memes and voice lines/Bruh 01.mp3": {
+"role": "other",
+"onset": 0.5171,
+"peak": 0.5908,
+"ring": 0.437,
+"dur": 1.184,
+"db": -15.3,
+"bright": 1359,
+"stamp": "20061:1792955405"
+},
+"Funny/Memes and voice lines/Bruh 02.mp3": {
+"role": "other",
+"onset": 0.5301,
+"peak": 0.6039,
+"ring": 0.437,
+"dur": 1.242,
+"db": -15.1,
+"bright": 1358,
+"stamp": "30719:1792955405"
+},
+"Funny/Memes and voice lines/Bye Have A Great Time.mp3": {
+"role": "other",
+"onset": 0.1532,
+"peak": 0.3268,
+"ring": 1.309,
+"dur": 1.561,
+"db": -27.5,
+"bright": 1896,
+"stamp": "64320:1792955405"
+},
+"Funny/Memes and voice lines/Daddy Chill.mp3": {
+"role": "other",
+"onset": 0.0305,
+"peak": 0.5339,
+"ring": 0.77,
+"dur": 0.886,
+"db": -22.6,
+"bright": 2110,
+"stamp": "37440:1792955405"
+},
+"Funny/Memes and voice lines/Daequan Bop.mp3": {
+"role": "other",
+"onset": 0.2337,
+"peak": 0.388,
+"ring": 0.482,
+"dur": 0.766,
+"db": -12.3,
+"bright": 2571,
+"stamp": "13373:1792955405"
+},
+"Funny/Memes and voice lines/Damn.mp3": {
+"role": "other",
+"onset": 0.0648,
+"peak": 0.1896,
+"ring": 0.334,
+"dur": 0.416,
+"db": -24.9,
+"bright": 2629,
+"stamp": "7406:1792955405"
+},
+"Funny/Memes and voice lines/Dog Bomboclat.mp3": {
+"role": "other",
+"onset": 0.3192,
+"peak": 6.9769,
+"ring": 12.885,
+"dur": 13.261,
+"db": -16.2,
+"bright": 3107,
+"stamp": "212736:1792955405"
+},
+"Funny/Memes and voice lines/Fahh.mp3": {
+"role": "other",
+"onset": 0.9846,
+"peak": 1.0661,
+"ring": 2.152,
+"dur": 4.528,
+"db": -20.9,
+"bright": 2820,
+"stamp": "110340:1792955405"
+},
+"Funny/Memes and voice lines/Fortnite Cracked.mp3": {
+"role": "other",
+"onset": 0.2329,
+"peak": 0.327,
+"ring": 0.896,
+"dur": 1.858,
+"db": -16.9,
+"bright": 7348,
+"stamp": "46392:1792955405"
+},
+"Funny/Memes and voice lines/Gah Damn.mp3": {
+"role": "other",
+"onset": 0.7187,
+"peak": 11.0454,
+"ring": 14.878,
+"dur": 15.975,
+"db": -12.8,
+"bright": 2765,
+"stamp": "384939:1792955405"
+},
+"Funny/Memes and voice lines/Huh 01.mp3": {
+"role": "other",
+"onset": 0.0858,
+"peak": 0.2245,
+"ring": 0.368,
+"dur": 1.161,
+"db": -17.4,
+"bright": 1524,
+"stamp": "19584:1792955405"
+},
+"Funny/Memes and voice lines/Huh 02.mp3": {
+"role": "other",
+"onset": 0.0483,
+"peak": 0.1725,
+"ring": 0.369,
+"dur": 1.103,
+"db": -17.0,
+"bright": 1514,
+"stamp": "13920:1792955405"
+},
+"Funny/Memes and voice lines/Huh Soulja.mp3": {
+"role": "other",
+"onset": 0.1114,
+"peak": 0.2149,
+"ring": 0.611,
+"dur": 0.778,
+"db": -8.3,
+"bright": 1876,
+"stamp": "20160:1792955405"
+},
+"Funny/Memes and voice lines/Lights Out.mp3": {
+"role": "other",
+"onset": 0.3067,
+"peak": 0.3893,
+"ring": 4.323,
+"dur": 4.807,
+"db": -11.4,
+"bright": 1217,
+"stamp": "116609:1792955405"
+},
+"Funny/Memes and voice lines/Love.mp3": {
+"role": "other",
+"onset": 0.0425,
+"peak": 0.154,
+"ring": 1.449,
+"dur": 1.672,
+"db": -1.0,
+"bright": 836,
+"stamp": "27584:1792955405"
+},
+"Funny/Memes and voice lines/Man Shut Yo B Ahh Up.mp3": {
+"role": "other",
+"onset": 0.0998,
+"peak": 1.3904,
+"ring": 10.227,
+"dur": 10.525,
+"db": -14.4,
+"bright": 1138,
+"stamp": "168960:1792955405"
+},
+"Funny/Memes and voice lines/Nerd Emoji.mp3": {
+"role": "other",
+"onset": 0.068,
+"peak": 5.0247,
+"ring": 11.991,
+"dur": 12.098,
+"db": -13.8,
+"bright": 3876,
+"stamp": "292152:1792955405"
+},
+"Funny/Memes and voice lines/Rizz.wav": {
+"role": "other",
+"onset": 1.0539,
+"peak": 1.1574,
+"ring": 1.26,
+"dur": 3.257,
+"db": -10.0,
+"bright": 479,
+"stamp": "625448:1792955405"
+},
+"Funny/Memes and voice lines/Shut Your F Mouth.mp3": {
+"role": "other",
+"onset": 0.0454,
+"peak": 2.8241,
+"ring": 9.058,
+"dur": 9.209,
+"db": -23.1,
+"bright": 2871,
+"stamp": "221935:1792955405"
+},
+"Funny/Memes and voice lines/Sike.mp3": {
+"role": "other",
+"onset": 0.1432,
+"peak": 0.5916,
+"ring": 1.111,
+"dur": 1.266,
+"db": -14.4,
+"bright": 5666,
+"stamp": "13200:1792955405"
+},
+"Funny/Memes and voice lines/Skibidi Toilet Flush.mp3": {
+"role": "other",
+"onset": 0.1566,
+"peak": 0.5771,
+"ring": 4.149,
+"dur": 4.365,
+"db": -21.3,
+"bright": 1580,
+"stamp": "106578:1792955405"
+},
+"Funny/Memes and voice lines/Steal A Brainrot Alarm.mp3": {
+"role": "other",
+"onset": 0.032,
+"peak": 1.0059,
+"ring": 1.83,
+"dur": 1.909,
+"db": -18.0,
+"bright": 2871,
+"stamp": "46656:1792955405"
+},
+"Funny/Memes and voice lines/Stop The Cap.mp3": {
+"role": "other",
+"onset": 0.0324,
+"peak": 4.5737,
+"ring": 8.172,
+"dur": 8.29,
+"db": -13.2,
+"bright": 2566,
+"stamp": "200619:1792955405"
+},
+"Funny/Memes and voice lines/Suspicious.mp3": {
+"role": "other",
+"onset": 0.0804,
+"peak": 0.9179,
+"ring": 1.831,
+"dur": 2.104,
+"db": -16.3,
+"bright": 784,
+"stamp": "51408:1792955405"
+},
+"Funny/Memes and voice lines/Yeet.mp3": {
+"role": "other",
+"onset": 0.3251,
+"peak": 0.6924,
+"ring": 2.159,
+"dur": 2.509,
+"db": -5.0,
+"bright": 2142,
+"stamp": "61439:1792955405"
+},
+"Funny/Memes and voice lines/You Need To Leave.mp3": {
+"role": "other",
+"onset": 0.0441,
+"peak": 3.0504,
+"ring": 4.033,
+"dur": 4.11,
+"db": -17.7,
+"bright": 1718,
+"stamp": "100309:1792955405"
+},
+"Gaming, Money and Anime/Among Us.mp3": {
+"role": "money",
+"onset": 0.2687,
+"peak": 1.1107,
+"ring": 3.791,
+"dur": 4.551,
+"db": -22.7,
+"bright": 2156,
+"stamp": "110967:1792955405"
+},
+"Gaming, Money and Anime/Anime Shine 01.mp3": {
+"role": "realise",
+"onset": 0.2549,
+"peak": 0.2947,
+"ring": 2.571,
+"dur": 3.088,
+"db": -23.3,
+"bright": 3430,
+"stamp": "75858:1792955405"
+},
+"Gaming, Money and Anime/Anvil Drop.mp3": {
+"role": "money",
+"onset": 0.0112,
+"peak": 0.0716,
+"ring": 0.721,
+"dur": 0.772,
+"db": -27.5,
+"bright": 2538,
+"stamp": "12956:1792955405"
+},
+"Gaming, Money and Anime/Cash Register 01.wav": {
+"role": "money",
+"onset": 0.0881,
+"peak": 0.4081,
+"ring": 1.375,
+"dur": 2.755,
+"db": -18.2,
+"bright": 6997,
+"stamp": "971842:1792955405"
+},
+"Gaming, Money and Anime/Cash Register 02.mp3": {
+"role": "money",
+"onset": 0.4694,
+"peak": 0.9605,
+"ring": 1.145,
+"dur": 3.088,
+"db": -26.5,
+"bright": 6321,
+"stamp": "50572:1792955405"
+},
+"Gaming, Money and Anime/Caught A Pokemon.mp3": {
+"role": "money",
+"onset": 0.0252,
+"peak": 3.0861,
+"ring": 3.676,
+"dur": 5.042,
+"db": -12.3,
+"bright": 2295,
+"stamp": "81501:1792955405"
+},
+"Gaming, Money and Anime/Cha Ching.mp3": {
+"role": "money",
+"onset": 2.923,
+"peak": 3.1246,
+"ring": 2.022,
+"dur": 5.248,
+"db": -28.5,
+"bright": 6749,
+"stamp": "127267:1792955405"
+},
+"Gaming, Money and Anime/Fortnite Kill Sounds.mp3": {
+"role": "money",
+"onset": 0.222,
+"peak": 6.5829,
+"ring": 8.394,
+"dur": 9.149,
+"db": -20.0,
+"bright": 5492,
+"stamp": "231936:1792955405"
+},
+"Gaming, Money and Anime/Fortnite Victory Royale.mp3": {
+"role": "money",
+"onset": 0.115,
+"peak": 1.0495,
+"ring": 4.099,
+"dur": 4.923,
+"db": -11.8,
+"bright": 4643,
+"stamp": "119744:1792955405"
+},
+"Gaming, Money and Anime/Frying Pan Hit.mp3": {
+"role": "impact",
+"onset": 0.1025,
+"peak": 0.1279,
+"ring": 0.602,
+"dur": 0.725,
+"db": -4.2,
+"bright": 3115,
+"stamp": "19008:1792955405"
+},
+"Gaming, Money and Anime/Item Purchase.wav": {
+"role": "money",
+"onset": 0.0013,
+"peak": 0.0698,
+"ring": 0.767,
+"dur": 1.242,
+"db": -19.3,
+"bright": 5305,
+"stamp": "219044:1792955405"
+},
+"Gaming, Money and Anime/Katana.wav": {
+"role": "money",
+"onset": 0.0276,
+"peak": 0.1511,
+"ring": 0.96,
+"dur": 4.432,
+"db": -10.5,
+"bright": 7525,
+"stamp": "781932:1792955405"
+},
+"Gaming, Money and Anime/Mario Coin.mp3": {
+"role": "money",
+"onset": 0.0168,
+"peak": 0.0273,
+"ring": 0.865,
+"dur": 0.928,
+"db": -14.8,
+"bright": 3478,
+"stamp": "7731:1792955405"
+},
+"Gaming, Money and Anime/Mario Death.mp3": {
+"role": "money",
+"onset": 0.0368,
+"peak": 1.0996,
+"ring": 2.602,
+"dur": 2.74,
+"db": -14.7,
+"bright": 2204,
+"stamp": "40416:1792955405"
+},
+"Gaming, Money and Anime/Mario Die.mp3": {
+"role": "money",
+"onset": 0.0157,
+"peak": 0.6236,
+"ring": 6.555,
+"dur": 6.701,
+"db": -16.1,
+"bright": 1540,
+"stamp": "53916:1792955405"
+},
+"Gaming, Money and Anime/Mario Jump.mp3": {
+"role": "money",
+"onset": 0.4716,
+"peak": 0.4934,
+"ring": 0.529,
+"dur": 2.241,
+"db": -3.3,
+"bright": 3296,
+"stamp": "20016:1792955405"
+},
+"Gaming, Money and Anime/Mario Life.mp3": {
+"role": "money",
+"onset": 0.0135,
+"peak": 0.2122,
+"ring": 0.923,
+"dur": 0.955,
+"db": -17.3,
+"bright": 2062,
+"stamp": "7940:1792955405"
+},
+"Gaming, Money and Anime/Mario Pipe Down.mp3": {
+"role": "money",
+"onset": 0.0193,
+"peak": 0.0302,
+"ring": 0.826,
+"dur": 0.928,
+"db": -14.7,
+"bright": 1571,
+"stamp": "7731:1792955405"
+},
+"Gaming, Money and Anime/Minecraft Button.mp3": {
+"role": "money",
+"onset": 0.6752,
+"peak": 0.6857,
+"ring": 0.056,
+"dur": 1.059,
+"db": -30.0,
+"bright": 3504,
+"stamp": "17553:1792955405"
+},
+"Gaming, Money and Anime/Minecraft Chest.mp3": {
+"role": "money",
+"onset": 2.8524,
+"peak": 6.7348,
+"ring": 4.032,
+"dur": 8.847,
+"db": -24.3,
+"bright": 2974,
+"stamp": "213785:1792955405"
+},
+"Gaming, Money and Anime/Minecraft Death.mp3": {
+"role": "money",
+"onset": 0.4986,
+"peak": 0.6721,
+"ring": 0.338,
+"dur": 1.509,
+"db": -17.6,
+"bright": 1679,
+"stamp": "13776:1792955405"
+},
+"Gaming, Money and Anime/Minecraft Stone Placing.mp3": {
+"role": "money",
+"onset": 0.3826,
+"peak": 4.5919,
+"ring": 6.71,
+"dur": 8.19,
+"db": -38.1,
+"bright": 2334,
+"stamp": "131656:1792955405"
+},
+"Gaming, Money and Anime/Money Counter.mp3": {
+"role": "money",
+"onset": 0.2855,
+"peak": 3.0848,
+"ring": 3.159,
+"dur": 4.087,
+"db": -14.8,
+"bright": 4431,
+"stamp": "99682:1792955405"
+},
+"Gaming, Money and Anime/Pokemon Ball.mp3": {
+"role": "money",
+"onset": 0.041,
+"peak": 0.0726,
+"ring": 1.35,
+"dur": 1.405,
+"db": -35.5,
+"bright": 3046,
+"stamp": "57600:1792955405"
+},
+"Gaming, Money and Anime/Pokemon Low Health.mp3": {
+"role": "money",
+"onset": 0.115,
+"peak": 9.408,
+"ring": 9.526,
+"dur": 9.706,
+"db": -22.4,
+"bright": 3289,
+"stamp": "155897:1792955405"
+},
+"Gaming, Money and Anime/Pokemon Plink.mp3": {
+"role": "money",
+"onset": 0.4114,
+"peak": 0.4224,
+"ring": 0.6,
+"dur": 2.065,
+"db": -27.8,
+"bright": 3929,
+"stamp": "34271:1792955405"
+},
+"Gaming, Money and Anime/Powerup.wav": {
+"role": "money",
+"onset": 0.0,
+"peak": 0.0571,
+"ring": 0.509,
+"dur": 0.995,
+"db": -22.6,
+"bright": 7909,
+"stamp": "175604:1792955405"
+},
+"Gaming, Money and Anime/Roblox Death 02.mp3": {
+"role": "money",
+"onset": 0.6256,
+"peak": 0.7257,
+"ring": 0.299,
+"dur": 2.961,
+"db": -3.9,
+"bright": 1307,
+"stamp": "18096:1792955405"
+},
+"Gaming, Money and Anime/Slot Machine Jackpot.mp3": {
+"role": "money",
+"onset": 0.5769,
+"peak": 0.646,
+"ring": 2.628,
+"dur": 11.169,
+"db": -8.0,
+"bright": 1790,
+"stamp": "269582:1792955405"
+},
+"Gaming, Money and Anime/Sonic The Hedgehog Ring.mp3": {
+"role": "money",
+"onset": 0.0489,
+"peak": 0.0854,
+"ring": 0.761,
+"dur": 0.817,
+"db": -13.7,
+"bright": 5928,
+"stamp": "34560:1792955405"
+},
+"Gaming, Money and Anime/Steam Achievement.mp3": {
+"role": "money",
+"onset": 2.9883,
+"peak": 3.0979,
+"ring": 0.348,
+"dur": 6.711,
+"db": -28.9,
+"bright": 2566,
+"stamp": "162376:1792955405"
+},
+"Gaming, Money and Anime/Sword Blood.wav": {
+"role": "money",
+"onset": 0.0375,
+"peak": 0.1284,
+"ring": 0.781,
+"dur": 1.437,
+"db": -21.0,
+"bright": 8106,
+"stamp": "413900:1792955405"
+},
+"Gaming, Money and Anime/Xbox 360 Turn On.mp3": {
+"role": "money",
+"onset": 3.2684,
+"peak": 3.4025,
+"ring": 0.897,
+"dur": 4.249,
+"db": -32.9,
+"bright": 2869,
+"stamp": "103444:1792955405"
+},
+"Gaming, Money and Anime/Xbox Death.mp3": {
+"role": "money",
+"onset": 0.0869,
+"peak": 0.1297,
+"ring": 0.376,
+"dur": 0.51,
+"db": -32.0,
+"bright": 2757,
+"stamp": "13164:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Button Click.wav": {
+"role": "appear",
+"onset": 0.2505,
+"peak": 0.2665,
+"ring": 0.127,
+"dur": 0.75,
+"db": -22.2,
+"bright": 5961,
+"stamp": "287930:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Focal Shutter.mp3": {
+"role": "appear",
+"onset": 0.2225,
+"peak": 4.1844,
+"ring": 8.021,
+"dur": 8.418,
+"db": -24.5,
+"bright": 6879,
+"stamp": "203328:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Glitch Click.mp3": {
+"role": "appear",
+"onset": 0.0401,
+"peak": 0.1442,
+"ring": 0.381,
+"dur": 0.555,
+"db": -18.9,
+"bright": 6759,
+"stamp": "10030:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Mouse Click 01.mp3": {
+"role": "appear",
+"onset": 0.0549,
+"peak": 0.0643,
+"ring": 0.142,
+"dur": 0.325,
+"db": -23.0,
+"bright": 5581,
+"stamp": "5760:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Mouse Click 02.mp3": {
+"role": "appear",
+"onset": 1.024,
+"peak": 1.0335,
+"ring": 0.143,
+"dur": 3.065,
+"db": -22.9,
+"bright": 5626,
+"stamp": "50154:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Pen Click.mp3": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0243,
+"ring": 0.157,
+"dur": 0.16,
+"db": -24.0,
+"bright": 7915,
+"stamp": "8640:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Switch Click 01.mp3": {
+"role": "appear",
+"onset": 0.332,
+"peak": 0.34,
+"ring": 0.05,
+"dur": 1.045,
+"db": -24.4,
+"bright": 6164,
+"stamp": "26330:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Switch Click 02.mp3": {
+"role": "appear",
+"onset": 0.0084,
+"peak": 0.0563,
+"ring": 0.068,
+"dur": 0.109,
+"db": -22.5,
+"bright": 11586,
+"stamp": "4608:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Switch Click 03.wav": {
+"role": "appear",
+"onset": 0.0552,
+"peak": 0.135,
+"ring": 0.29,
+"dur": 0.495,
+"db": -31.4,
+"bright": 9212,
+"stamp": "142698:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Tick.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.005,
+"ring": 0.05,
+"dur": 0.012,
+"db": -15.4,
+"bright": 5289,
+"stamp": "2370:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Typewriter 01.mp3": {
+"role": "appear",
+"onset": 0.1271,
+"peak": 14.9077,
+"ring": 24.098,
+"dur": 24.328,
+"db": -37.2,
+"bright": 6366,
+"stamp": "585216:1792955405"
+},
+"Pops, Clicks and UI/Clicks/Watery Click.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0033,
+"ring": 0.05,
+"dur": 0.007,
+"db": -13.3,
+"bright": 3688,
+"stamp": "1322:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Alert Tone.mp3": {
+"role": "realise",
+"onset": 0.0136,
+"peak": 0.1245,
+"ring": 0.284,
+"dur": 0.802,
+"db": -11.5,
+"bright": 1914,
+"stamp": "21024:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Apple Pay Ding.mp3": {
+"role": "realise",
+"onset": 0.4051,
+"peak": 0.5502,
+"ring": 1.064,
+"dur": 2.136,
+"db": -17.8,
+"bright": 3211,
+"stamp": "52661:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Bell Notification.mp3": {
+"role": "realise",
+"onset": 1.1052,
+"peak": 1.1621,
+"ring": 6.381,
+"dur": 8.94,
+"db": -23.8,
+"bright": 1548,
+"stamp": "144194:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Church Bell.mp3": {
+"role": "realise",
+"onset": 0.1851,
+"peak": 0.9099,
+"ring": 4.266,
+"dur": 4.505,
+"db": -20.3,
+"bright": 627,
+"stamp": "109713:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Ding 01.mp3": {
+"role": "realise",
+"onset": 0.0389,
+"peak": 0.048,
+"ring": 0.361,
+"dur": 0.537,
+"db": -21.9,
+"bright": 5465,
+"stamp": "22986:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Ding 02.mp3": {
+"role": "realise",
+"onset": 0.2553,
+"peak": 0.3247,
+"ring": 1.176,
+"dur": 2.786,
+"db": -18.7,
+"bright": 3045,
+"stamp": "39408:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Discord Join.mp3": {
+"role": "realise",
+"onset": 0.559,
+"peak": 0.5699,
+"ring": 0.618,
+"dur": 1.765,
+"db": -16.0,
+"bright": 663,
+"stamp": "43884:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Discord Notification.mp3": {
+"role": "realise",
+"onset": 0.6326,
+"peak": 0.7541,
+"ring": 0.199,
+"dur": 1.8,
+"db": -9.0,
+"bright": 674,
+"stamp": "15216:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Favorite.wav": {
+"role": "realise",
+"onset": 0.3679,
+"peak": 0.3939,
+"ring": 0.329,
+"dur": 1.176,
+"db": -27.6,
+"bright": 5301,
+"stamp": "451642:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Hovering Inventory.wav": {
+"role": "realise",
+"onset": 0.2598,
+"peak": 0.6649,
+"ring": 1.301,
+"dur": 1.968,
+"db": -37.7,
+"bright": 7061,
+"stamp": "755770:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Idea.mp3": {
+"role": "realise",
+"onset": 0.1604,
+"peak": 0.1865,
+"ring": 1.673,
+"dur": 2.339,
+"db": -24.9,
+"bright": 2883,
+"stamp": "38033:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/iPhone Message.mp3": {
+"role": "realise",
+"onset": 5.9603,
+"peak": 12.6793,
+"ring": 6.894,
+"dur": 15.001,
+"db": -19.5,
+"bright": 822,
+"stamp": "71328:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Message Sound.mp3": {
+"role": "realise",
+"onset": 0.1509,
+"peak": 0.3252,
+"ring": 0.551,
+"dur": 1.059,
+"db": -24.3,
+"bright": 2365,
+"stamp": "26292:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Negative Notification Bleep.mp3": {
+"role": "realise",
+"onset": 0.0545,
+"peak": 0.2938,
+"ring": 0.817,
+"dur": 1.475,
+"db": -10.1,
+"bright": 129,
+"stamp": "36864:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Pokemon Ding.mp3": {
+"role": "realise",
+"onset": 0.1471,
+"peak": 0.2129,
+"ring": 0.742,
+"dur": 0.925,
+"db": -26.0,
+"bright": 3187,
+"stamp": "19200:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Positive Notification.mp3": {
+"role": "realise",
+"onset": 0.2055,
+"peak": 0.3761,
+"ring": 0.637,
+"dur": 2.792,
+"db": -17.3,
+"bright": 1791,
+"stamp": "68544:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Siri.mp3": {
+"role": "realise",
+"onset": 1.1773,
+"peak": 1.199,
+"ring": 2.303,
+"dur": 4.69,
+"db": -23.6,
+"bright": 887,
+"stamp": "114101:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Sonar Pluck.mp3": {
+"role": "realise",
+"onset": 0.0475,
+"peak": 0.0606,
+"ring": 1.577,
+"dur": 3.855,
+"db": -16.6,
+"bright": 706,
+"stamp": "93888:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Twinkling Notification.mp3": {
+"role": "realise",
+"onset": 0.0515,
+"peak": 0.1421,
+"ring": 1.243,
+"dur": 3.1,
+"db": -14.7,
+"bright": 1723,
+"stamp": "76032:1792955405"
+},
+"Pops, Clicks and UI/Dings and notifications/Twitter Notification.mp3": {
+"role": "realise",
+"onset": 0.8493,
+"peak": 0.9054,
+"ring": 0.378,
+"dur": 1.904,
+"db": -10.9,
+"bright": 2271,
+"stamp": "13128:1792955405"
+},
+"Pops, Clicks and UI/Pops/Bubble Pop.wav": {
+"role": "appear",
+"onset": 0.1209,
+"peak": 0.2147,
+"ring": 0.731,
+"dur": 1.506,
+"db": -22.3,
+"bright": 5216,
+"stamp": "867698:1792955405"
+},
+"Pops, Clicks and UI/Pops/Cartoon Pop 01.mp3": {
+"role": "gag",
+"onset": 0.3674,
+"peak": 0.4356,
+"ring": 0.205,
+"dur": 0.836,
+"db": -8.8,
+"bright": 2881,
+"stamp": "21315:1792955405"
+},
+"Pops, Clicks and UI/Pops/Cartoon Pop 02.wav": {
+"role": "gag",
+"onset": 0.0269,
+"peak": 0.04,
+"ring": 0.109,
+"dur": 0.14,
+"db": -15.7,
+"bright": 1183,
+"stamp": "1586:1792955405"
+},
+"Pops, Clicks and UI/Pops/Cute Pop.mp3": {
+"role": "appear",
+"onset": 0.6914,
+"peak": 2.7041,
+"ring": 4.342,
+"dur": 6.734,
+"db": -24.4,
+"bright": 2349,
+"stamp": "163003:1792955405"
+},
+"Pops, Clicks and UI/Pops/Main Pop.mp3": {
+"role": "appear",
+"onset": 0.0407,
+"peak": 0.0638,
+"ring": 0.096,
+"dur": 0.157,
+"db": -19.6,
+"bright": 4194,
+"stamp": "4608:1792955405"
+},
+"Pops, Clicks and UI/Pops/Orb.mp3": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0054,
+"ring": 0.38,
+"dur": 0.768,
+"db": -20.8,
+"bright": 5739,
+"stamp": "9177:1792955405"
+},
+"Pops, Clicks and UI/Pops/Pop 01.mp3": {
+"role": "appear",
+"onset": 0.9825,
+"peak": 1.0016,
+"ring": 0.181,
+"dur": 2.052,
+"db": -15.7,
+"bright": 1159,
+"stamp": "50154:1792955405"
+},
+"Pops, Clicks and UI/Pops/Pop 02.mp3": {
+"role": "appear",
+"onset": 0.043,
+"peak": 0.0835,
+"ring": 0.274,
+"dur": 0.394,
+"db": -31.3,
+"bright": 1616,
+"stamp": "18807:1792955405"
+},
+"Pops, Clicks and UI/Pops/Pop 03.wav": {
+"role": "appear",
+"onset": 0.1783,
+"peak": 0.2484,
+"ring": 0.075,
+"dur": 0.528,
+"db": -14.2,
+"bright": 4008,
+"stamp": "101420:1792955405"
+},
+"Pops, Clicks and UI/Pops/Pop 04.mp3": {
+"role": "appear",
+"onset": 0.9694,
+"peak": 0.9886,
+"ring": 0.181,
+"dur": 2.067,
+"db": -15.9,
+"bright": 1167,
+"stamp": "34271:1792955405"
+},
+"Pops, Clicks and UI/Pops/Watery Pop.wav": {
+"role": "appear",
+"onset": 0.1615,
+"peak": 0.6398,
+"ring": 0.638,
+"dur": 1.08,
+"db": -24.2,
+"bright": 1248,
+"stamp": "207404:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/5 Second Countdown.mp3": {
+"role": "realise",
+"onset": 0.1836,
+"peak": 2.2106,
+"ring": 5.054,
+"dur": 6.084,
+"db": -16.3,
+"bright": 1035,
+"stamp": "147329:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Border.mp3": {
+"role": "realise",
+"onset": 0.0,
+"peak": 0.0409,
+"ring": 0.087,
+"dur": 0.1,
+"db": -21.5,
+"bright": 2910,
+"stamp": "6720:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Censor.mp3": {
+"role": "realise",
+"onset": 0.5613,
+"peak": 1.2025,
+"ring": 0.942,
+"dur": 1.927,
+"db": -0.8,
+"bright": 1036,
+"stamp": "47646:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Correct And Wrong 01.mp3": {
+"role": "realise",
+"onset": 2.814,
+"peak": 3.1255,
+"ring": 2.805,
+"dur": 9.845,
+"db": -14.0,
+"bright": 2388,
+"stamp": "73536:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Correct And Wrong 02.mp3": {
+"role": "realise",
+"onset": 2.8503,
+"peak": 3.1618,
+"ring": 2.908,
+"dur": 9.892,
+"db": -14.5,
+"bright": 2387,
+"stamp": "238862:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Dial Up Internet.mp3": {
+"role": "realise",
+"onset": 0.4381,
+"peak": 9.1816,
+"ring": 10.992,
+"dur": 12.074,
+"db": -21.3,
+"bright": 1868,
+"stamp": "291525:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Digital Text.mp3": {
+"role": "realise",
+"onset": 1.0581,
+"peak": 2.0515,
+"ring": 1.014,
+"dur": 3.599,
+"db": -30.0,
+"bright": 10842,
+"stamp": "87770:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/iPhone Charging Sound.mp3": {
+"role": "realise",
+"onset": 5.3302,
+"peak": 5.4033,
+"ring": 0.808,
+"dur": 9.381,
+"db": -30.9,
+"bright": 610,
+"stamp": "226950:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/iPhone Recording.mp3": {
+"role": "realise",
+"onset": 0.3687,
+"peak": 5.0249,
+"ring": 4.764,
+"dur": 5.224,
+"db": -57.3,
+"bright": 4488,
+"stamp": "126640:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Microsoft Windows XP Error.mp3": {
+"role": "realise",
+"onset": 0.5415,
+"peak": 0.7254,
+"ring": 0.766,
+"dur": 3.037,
+"db": -13.7,
+"bright": 414,
+"stamp": "49152:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Mystery Accent.mp3": {
+"role": "realise",
+"onset": 0.0048,
+"peak": 0.3549,
+"ring": 2.632,
+"dur": 5.047,
+"db": -15.7,
+"bright": 1029,
+"stamp": "122879:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Piano Accent.mp3": {
+"role": "realise",
+"onset": 0.0303,
+"peak": 0.4197,
+"ring": 2.648,
+"dur": 6.857,
+"db": -16.8,
+"bright": 831,
+"stamp": "165888:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Reverse Cymbal Ping.mp3": {
+"role": "realise",
+"onset": 0.0465,
+"peak": 0.1955,
+"ring": 2.892,
+"dur": 6.5,
+"db": -8.1,
+"bright": 145,
+"stamp": "157248:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Shine.mp3": {
+"role": "realise",
+"onset": 0.2549,
+"peak": 0.2947,
+"ring": 2.571,
+"dur": 3.088,
+"db": -23.0,
+"bright": 3428,
+"stamp": "101145:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Trailer Accent.mp3": {
+"role": "realise",
+"onset": 0.0417,
+"peak": 0.5249,
+"ring": 3.854,
+"dur": 5.5,
+"db": -12.2,
+"bright": 1332,
+"stamp": "221517:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Windows 10 Error Sound.mp3": {
+"role": "realise",
+"onset": 0.13,
+"peak": 0.2789,
+"ring": 1.688,
+"dur": 2.752,
+"db": -17.9,
+"bright": 545,
+"stamp": "67392:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Windows XP Error.mp3": {
+"role": "realise",
+"onset": 0.1654,
+"peak": 0.2333,
+"ring": 0.765,
+"dur": 1.068,
+"db": -12.6,
+"bright": 440,
+"stamp": "26957:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Wrong Answer Buzzer.mp3": {
+"role": "realise",
+"onset": 0.0077,
+"peak": 2.0217,
+"ring": 2.168,
+"dur": 3.263,
+"db": -31.2,
+"bright": 7224,
+"stamp": "29952:1792955405"
+},
+"Pops, Clicks and UI/UI, errors and accents/Wrong Buzzer.wav": {
+"role": "realise",
+"onset": 0.5291,
+"peak": 0.6515,
+"ring": 1.133,
+"dur": 2.717,
+"db": -12.2,
+"bright": 2314,
+"stamp": "239660:1792955405"
+},
+"Whooshes, Risers and Transitions/Airy Stutter Riser Into Braam.mp3": {
+"role": "move",
+"onset": 0.3451,
+"peak": 1.6696,
+"ring": 4.619,
+"dur": 7.273,
+"db": -14.5,
+"bright": 2978,
+"stamp": "176256:1792955405"
+},
+"Whooshes, Risers and Transitions/Bass Swoosh.mp3": {
+"role": "move",
+"onset": 0.2153,
+"peak": 0.5076,
+"ring": 0.967,
+"dur": 1.357,
+"db": -13.9,
+"bright": 899,
+"stamp": "55680:1792955405"
+},
+"Whooshes, Risers and Transitions/Big Whoosh.mp3": {
+"role": "move",
+"onset": 0.1471,
+"peak": 0.4969,
+"ring": 1.037,
+"dur": 4.545,
+"db": -18.4,
+"bright": 895,
+"stamp": "110592:1792955405"
+},
+"Whooshes, Risers and Transitions/Breath Riser.mp3": {
+"role": "move",
+"onset": 1.455,
+"peak": 3.1762,
+"ring": 4.559,
+"dur": 9.209,
+"db": -18.8,
+"bright": 1807,
+"stamp": "369893:1792955405"
+},
+"Whooshes, Risers and Transitions/Cartoon Swipe.mp3": {
+"role": "move",
+"onset": 0.1098,
+"peak": 0.1507,
+"ring": 0.188,
+"dur": 0.42,
+"db": -15.3,
+"bright": 1858,
+"stamp": "11910:1792955405"
+},
+"Whooshes, Risers and Transitions/Cinematic Suspense Riser.mp3": {
+"role": "move",
+"onset": 0.4727,
+"peak": 6.3922,
+"ring": 7.514,
+"dur": 10.077,
+"db": -14.6,
+"bright": 1133,
+"stamp": "243251:1792955405"
+},
+"Whooshes, Risers and Transitions/Cold Cinematic Riser.mp3": {
+"role": "move",
+"onset": 1.1677,
+"peak": 2.5639,
+"ring": 1.472,
+"dur": 2.937,
+"db": -22.8,
+"bright": 1319,
+"stamp": "72000:1792955405"
+},
+"Whooshes, Risers and Transitions/Cold Suspense Impact Whoosh.mp3": {
+"role": "move",
+"onset": 0.3893,
+"peak": 1.385,
+"ring": 4.224,
+"dur": 4.69,
+"db": -11.9,
+"bright": 3397,
+"stamp": "151135:1792955405"
+},
+"Whooshes, Risers and Transitions/Dramatic Riser.mp3": {
+"role": "move",
+"onset": 0.0324,
+"peak": 6.5931,
+"ring": 6.612,
+"dur": 7.221,
+"db": -12.1,
+"bright": 1007,
+"stamp": "174915:1792955405"
+},
+"Whooshes, Risers and Transitions/Equip Riser 01.wav": {
+"role": "move",
+"onset": 0.5281,
+"peak": 1.137,
+"ring": 0.662,
+"dur": 1.194,
+"db": -23.9,
+"bright": 4488,
+"stamp": "210712:1792955405"
+},
+"Whooshes, Risers and Transitions/Equip Riser 02.mp3": {
+"role": "move",
+"onset": 0.6376,
+"peak": 1.2412,
+"ring": 0.65,
+"dur": 1.354,
+"db": -20.2,
+"bright": 3758,
+"stamp": "33853:1792955405"
+},
+"Whooshes, Risers and Transitions/Fast Woosh 01.mp3": {
+"role": "move",
+"onset": 0.0247,
+"peak": 0.111,
+"ring": 0.22,
+"dur": 0.275,
+"db": -16.6,
+"bright": 917,
+"stamp": "10030:1792955405"
+},
+"Whooshes, Risers and Transitions/Fast Woosh 02.mp3": {
+"role": "move",
+"onset": 0.0495,
+"peak": 0.1001,
+"ring": 0.152,
+"dur": 0.249,
+"db": -14.6,
+"bright": 1428,
+"stamp": "9194:1792955405"
+},
+"Whooshes, Risers and Transitions/Fast Woosh 03.mp3": {
+"role": "move",
+"onset": 0.0674,
+"peak": 0.1132,
+"ring": 0.154,
+"dur": 0.275,
+"db": -15.6,
+"bright": 1005,
+"stamp": "10030:1792955405"
+},
+"Whooshes, Risers and Transitions/Fast Woosh 04.mp3": {
+"role": "move",
+"onset": 0.0474,
+"peak": 0.1048,
+"ring": 0.132,
+"dur": 0.197,
+"db": -20.1,
+"bright": 1423,
+"stamp": "7522:1792955405"
+},
+"Whooshes, Risers and Transitions/Film Projector Transition.mp3": {
+"role": "move",
+"onset": 1.0229,
+"peak": 4.7877,
+"ring": 5.452,
+"dur": 9.247,
+"db": -19.0,
+"bright": 8000,
+"stamp": "223488:1792955405"
+},
+"Whooshes, Risers and Transitions/Flutter Whoosh 01.wav": {
+"role": "move",
+"onset": 0.2977,
+"peak": 0.5565,
+"ring": 2.046,
+"dur": 4.212,
+"db": -18.9,
+"bright": 3317,
+"stamp": "743084:1792955405"
+},
+"Whooshes, Risers and Transitions/Flutter Whoosh 02.mp3": {
+"role": "move",
+"onset": 0.2855,
+"peak": 0.7005,
+"ring": 2.512,
+"dur": 4.827,
+"db": -18.4,
+"bright": 2319,
+"stamp": "117236:1792955405"
+},
+"Whooshes, Risers and Transitions/Flutter Whoosh 03.mp3": {
+"role": "move",
+"onset": 0.6187,
+"peak": 1.6341,
+"ring": 3.242,
+"dur": 5.561,
+"db": -15.3,
+"bright": 3200,
+"stamp": "134790:1792955405"
+},
+"Whooshes, Risers and Transitions/Gust Whoosh.wav": {
+"role": "move",
+"onset": 0.2719,
+"peak": 1.244,
+"ring": 2.285,
+"dur": 3.473,
+"db": -19.8,
+"bright": 814,
+"stamp": "612652:1792955405"
+},
+"Whooshes, Risers and Transitions/Impact Whoosh Drum.mp3": {
+"role": "move",
+"onset": 0.1945,
+"peak": 0.6796,
+"ring": 3.152,
+"dur": 4.276,
+"db": -13.2,
+"bright": 3806,
+"stamp": "104256:1792955405"
+},
+"Whooshes, Risers and Transitions/Kick Reverberant.mp3": {
+"role": "move",
+"onset": 0.0,
+"peak": 12.4792,
+"ring": 15.877,
+"dur": 18.157,
+"db": -22.7,
+"bright": 573,
+"stamp": "297912:1792955405"
+},
+"Whooshes, Risers and Transitions/Long Riser.mp3": {
+"role": "move",
+"onset": 16.6614,
+"peak": 26.6792,
+"ring": 10.319,
+"dur": 27.725,
+"db": -21.0,
+"bright": 4639,
+"stamp": "667061:1792955405"
+},
+"Whooshes, Risers and Transitions/Magic Wand Whoosh.wav": {
+"role": "move",
+"onset": 0.0257,
+"peak": 0.1739,
+"ring": 0.354,
+"dur": 1.355,
+"db": -15.3,
+"bright": 1333,
+"stamp": "780356:1792955405"
+},
+"Whooshes, Risers and Transitions/Perfect Riser.mp3": {
+"role": "move",
+"onset": 1.1677,
+"peak": 2.5639,
+"ring": 1.472,
+"dur": 2.937,
+"db": -22.8,
+"bright": 1319,
+"stamp": "72000:1792955405"
+},
+"Whooshes, Risers and Transitions/Riser 01.mp3": {
+"role": "move",
+"onset": 0.229,
+"peak": 1.9415,
+"ring": 2.366,
+"dur": 4.037,
+"db": -14.7,
+"bright": 1549,
+"stamp": "163003:1792955405"
+},
+"Whooshes, Risers and Transitions/Riser 02.mp3": {
+"role": "move",
+"onset": 1.2264,
+"peak": 4.8543,
+"ring": 5.789,
+"dur": 7.07,
+"db": -15.2,
+"bright": 903,
+"stamp": "153864:1792955405"
+},
+"Whooshes, Risers and Transitions/Riser 03.mp3": {
+"role": "move",
+"onset": 2.2984,
+"peak": 5.1777,
+"ring": 2.966,
+"dur": 5.294,
+"db": -34.5,
+"bright": 976,
+"stamp": "128521:1792955405"
+},
+"Whooshes, Risers and Transitions/Shockwave Whoosh 01.mp3": {
+"role": "move",
+"onset": 0.0991,
+"peak": 1.0911,
+"ring": 2.711,
+"dur": 10.75,
+"db": -9.9,
+"bright": 832,
+"stamp": "259551:1792955405"
+},
+"Whooshes, Risers and Transitions/Shockwave Whoosh 02.wav": {
+"role": "move",
+"onset": 0.0247,
+"peak": 0.7362,
+"ring": 1.57,
+"dur": 1.646,
+"db": -12.8,
+"bright": 332,
+"stamp": "290348:1792955405"
+},
+"Whooshes, Risers and Transitions/Stereo Air Whoosh.mp3": {
+"role": "move",
+"onset": 1.0833,
+"peak": 2.5814,
+"ring": 3.525,
+"dur": 6.402,
+"db": -12.4,
+"bright": 982,
+"stamp": "154944:1792955405"
+},
+"Whooshes, Risers and Transitions/Suction Riser.mp3": {
+"role": "move",
+"onset": 1.2118,
+"peak": 2.8472,
+"ring": 1.765,
+"dur": 5.991,
+"db": -16.8,
+"bright": 2441,
+"stamp": "145448:1792955405"
+},
+"Whooshes, Risers and Transitions/Swipe.mp3": {
+"role": "move",
+"onset": 1.0712,
+"peak": 1.1752,
+"ring": 0.288,
+"dur": 2.005,
+"db": -20.9,
+"bright": 1802,
+"stamp": "32640:1792955405"
+},
+"Whooshes, Risers and Transitions/Swish Boom 02.mp3": {
+"role": "move",
+"onset": 0.1666,
+"peak": 0.3336,
+"ring": 1.961,
+"dur": 3.488,
+"db": -14.1,
+"bright": 1292,
+"stamp": "141060:1792955405"
+},
+"Whooshes, Risers and Transitions/Swish Boom 03.mp3": {
+"role": "move",
+"onset": 0.1422,
+"peak": 0.3032,
+"ring": 2.047,
+"dur": 3.697,
+"db": -15.4,
+"bright": 1771,
+"stamp": "149420:1792955405"
+},
+"Whooshes, Risers and Transitions/Swoosh 01.wav": {
+"role": "move",
+"onset": 0.1006,
+"peak": 0.2677,
+"ring": 0.658,
+"dur": 0.763,
+"db": -26.1,
+"bright": 2168,
+"stamp": "146532:1792955405"
+},
+"Whooshes, Risers and Transitions/Swoosh 02.mp3": {
+"role": "move",
+"onset": 0.2443,
+"peak": 0.4809,
+"ring": 1.134,
+"dur": 1.405,
+"db": -10.6,
+"bright": 860,
+"stamp": "34296:1792955405"
+},
+"Whooshes, Risers and Transitions/Vacuum Whoosh.mp3": {
+"role": "move",
+"onset": 0.3257,
+"peak": 0.8335,
+"ring": 2.836,
+"dur": 4.075,
+"db": -18.5,
+"bright": 2552,
+"stamp": "99072:1792955405"
+},
+"Whooshes, Risers and Transitions/Whoosh 01.mp3": {
+"role": "move",
+"onset": 0.7153,
+"peak": 1.3652,
+"ring": 2.48,
+"dur": 3.933,
+"db": -17.8,
+"bright": 2095,
+"stamp": "158823:1792955405"
+},
+"Whooshes, Risers and Transitions/Whoosh 02.mp3": {
+"role": "move",
+"onset": 0.3528,
+"peak": 0.9256,
+"ring": 1.336,
+"dur": 3.044,
+"db": -17.3,
+"bright": 1907,
+"stamp": "123297:1792955405"
+},
+"Whooshes, Risers and Transitions/Whoosh 03.mp3": {
+"role": "move",
+"onset": 0.3893,
+"peak": 1.385,
+"ring": 4.224,
+"dur": 4.69,
+"db": -11.9,
+"bright": 3397,
+"stamp": "151135:1792955405"
+},
+"Whooshes, Risers and Transitions/Whoosh 04.mp3": {
+"role": "move",
+"onset": 0.3218,
+"peak": 0.4546,
+"ring": 2.591,
+"dur": 2.992,
+"db": -12.0,
+"bright": 1450,
+"stamp": "96860:1792955405"
+},
+"Whooshes, Risers and Transitions/Whoosh 05.mp3": {
+"role": "move",
+"onset": 0.5268,
+"peak": 0.7738,
+"ring": 3.59,
+"dur": 4.168,
+"db": -13.3,
+"bright": 1815,
+"stamp": "134435:1792955405"
+},
+"Whooshes, Risers and Transitions/Whoosh Hit.mp3": {
+"role": "move",
+"onset": 0.1765,
+"peak": 0.5351,
+"ring": 3.27,
+"dur": 6.0,
+"db": -11.9,
+"bright": 561,
+"stamp": "145152:1792955405"
+},
+"Whooshes, Risers and Transitions/Woosh 02.mp3": {
+"role": "move",
+"onset": 0.1909,
+"peak": 0.7299,
+"ring": 1.357,
+"dur": 2.006,
+"db": -26.3,
+"bright": 1440,
+"stamp": "82546:1792955405"
+}
+}

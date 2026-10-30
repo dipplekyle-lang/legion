@@ -1,0 +1,20 @@
+{
+ "name": "snowy_pine",
+ "kind": "prop",
+ "desc": "a three-tier pine with a shade half and snow caps",
+ "tags": [
+  "snow",
+  "winter",
+  "ice",
+  "cold",
+  "freeze",
+  "forest",
+  "mountain",
+  "arctic",
+  "alpine"
+ ],
+ "usage": "prop_snowy_pine(g, x, groundY, size, '#1E6A7A')",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "g.fillStyle='#9FD8F0'; g.fillRect(0,0,1080,1080); prop_snowy_pine(g, 540, 1020, 860, '#1E6A7A')"
+}

@@ -1,0 +1,21 @@
+{
+ "name": "sweat_drop",
+ "kind": "fx",
+ "desc": "a sweat drop (pale top, bright cyan below) for a worried face",
+ "tags": [
+  "worry",
+  "worried",
+  "stress",
+  "fear",
+  "panic",
+  "nervous",
+  "scared",
+  "sweat",
+  "heatwave",
+  "danger"
+ ],
+ "usage": "fx_sweat_drop(g, x, y, size)",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "fx_sweat_drop(g, 540, 600, 360)"
+}

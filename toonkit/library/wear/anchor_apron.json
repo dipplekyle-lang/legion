@@ -1,0 +1,17 @@
+{
+ "name": "anchor_apron",
+ "kind": "wear",
+ "desc": "white apron with an anchor on the chest",
+ "tags": [
+  "diner",
+  "apron",
+  "anchor",
+  "outfit"
+ ],
+ "usage": "wear_anchor_apron({anchor})",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

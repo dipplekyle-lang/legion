@@ -1,0 +1,171 @@
+{
+  "name": "workshop",
+  "order": 6,
+  "label": "WORKSHOP",
+  "description": "The man who has done the job for forty years shows you how, on paper. He is on screen about 18 seconds of every minute — at the bench, by the fire, out in the yard, a different camera every time — and what he explains is drawn as a hand-tinted engraving on an aged sheet laid over his own place: the cut, the tool, the wrong way beside the right one, the list he keeps. His rules land on torn paper strips over the picture, struck out in red or ticked in green. The video is numbered, and the row of chapters in the corner fills in as he goes.",
+  "tagline": "Forty years of doing it, drawn on paper.",
+  "points": [
+    "The presenter carries the video — about 18 seconds of every minute",
+    "A different camera set-up for every appearance, same room, same man",
+    "Hand-tinted engravings drawn for each point, on aged paper",
+    "Torn paper strips over the picture, a spiral notepad, taped photographs",
+    "A numbered chapter row on every frame that fills in as the video goes",
+    "The sound of the place: his room on the voice, the barn under it, paper and grease pencil"
+  ],
+  "script_craft": "story",
+  "cost": "about $0.70 a minute",
+  "render_x": 2.8,
+  "language": "English",
+  "voice": {
+    "provider": "ai33",
+    "chunk_chars": 4000,
+    "ai33_model": "eleven_multilingual_v2",
+    "ai33_model_note": "eleven_v3 acts every line and drifts: in the 2-minute sample its pitch rose ~50 Hz over the closing lines and the founder heard a different voice. multilingual_v2 keeps one man.",
+    "voice_id": "elevenlabs_3kcyZGqJDoHVxOnQ78Ek",
+    "voice_name": "warm baritone, African-American, 60s",
+    "gender": "male",
+    "note": "A man who has done the job for forty years. Swapping it means swapping the presenter's gender too — the library is filtered by it."
+  },
+  "features": {
+    "offered": [
+      "youtube",
+      "stock",
+      "ai_images",
+      "depth",
+      "sound",
+      "avatar",
+      "motion"
+    ],
+    "on": [
+      "youtube",
+      "ai_images",
+      "depth",
+      "sound",
+      "avatar",
+      "motion"
+    ],
+    "prefer": "youtube"
+  },
+  "look": {
+    "graphics": "kit",
+    "title_font": "'Oswald', Impact, sans-serif",
+    "title_weight": 700,
+    "accent": [
+      "#B3301F",
+      "#EFE4CE",
+      "#2E7D32",
+      "#8A5A32"
+    ],
+    "warn": "#B3301F",
+    "good": "#2E7D32",
+    "skins": [
+      "noir"
+    ],
+    "caption_accent": "&H4CB4E9&",
+    "captions": {
+      "off": true,
+      "font": "Barlow Condensed SemiBold",
+      "size": 72,
+      "upper": true,
+      "karaoke": false,
+      "box": true,
+      "outline": 0.4,
+      "outline_colour": "&H2E120F0A",
+      "shadow": 0.0,
+      "line_chars": 30,
+      "margin_v": 66
+    },
+    "sound": {
+      "room": {
+        "rt": 0.6,
+        "wet_db": -14,
+        "predelay_ms": 14,
+        "hp": 220,
+        "lp": 5200
+      },
+      "ambience": {
+        "file": "sfx/es/workshop/ambience_1.wav",
+        "db": -14
+      },
+      "sfx_db": -16,
+      "music_rel_db": -11,
+      "duck_db": -7,
+      "epidemic": {
+        "music": {
+          "dramatic": "slow warm blues guitar americana",
+          "quiet": "calm acoustic guitar americana fingerpicking",
+          "inspiring": "warm uplifting acoustic americana folk guitar",
+          "": "warm acoustic americana guitar"
+        },
+        "sfx_flavor": "workshop wood paper",
+        "avoid": [
+          "comedy",
+          "funny",
+          "quirky",
+          "cartoon",
+          "kids",
+          "trap",
+          "edm",
+          "christmas",
+          "electronic",
+          "orchestral",
+          "epic"
+        ]
+      }
+    },
+    "footage_grade": "eq=contrast=1.05:saturation=0.96:gamma=1.02",
+    "dust": false,
+    "vignette": false,
+    "leak": false,
+    "encode": {
+      "preset": "medium",
+      "tune": "film",
+      "crf": 19
+    },
+    "options_note": "The presenter is the channel: he is on screen about 18 seconds of every minute, from a different camera each time. Turn the AI presenter off and this becomes an ordinary picture channel.",
+    "photofx": {
+      "every_s": 18,
+      "gap_s": 3,
+      "depth_subjects": "any",
+      "depth_every": 3
+    },
+    "director": true,
+    "placement": "story",
+    "kit": "workshop",
+    "youtube": {
+      "window_s": 20,
+      "hook_s": 60,
+      "hook_window_s": 15,
+      "strict_text": true
+    },
+    "stills": {
+      "place_ref": true,
+      "palette": false,
+      "note": "Every photograph is drawn with the presenter's library photograph as the reference for the PLACE (make_video.PLACE_REF_NOTE), so the video is one shed, not a dozen stock rooms; the accent colours stay out of the photographs (the art director painted a red lantern and a green moss patch into every one). Add \"model\": \"bytedance/seedream-v5.0-pro\" to draw them on WaveSpeed instead — measured about $0.10 a 2K picture against Siray's few cents, and no more real.",
+      "realism": "home_video"
+    },
+    "still_suffix": " A frame grabbed from an ordinary home video filmed on a smartphone by the person doing it, not a photograph and not food photography: deep focus with the background as sharp as the subject (no bokeh, no blur), plain mixed light of the place itself (a ceiling fixture, a window, the open side of a shed), slightly warm, highlights blown out on metal, grease and wet surfaces, the auto exposure a little off. A real place that is used every day: worn and stained surfaces, the clutter that lives there at the edges of the frame (jars, rags, paper towels, tools, a mug, a spoon rest), nothing arranged for the camera. Handheld framing, slightly tilted, things cut off by the edges of the frame; when someone is working, only their hands and forearms are in frame — real hands with veins, spots and creases, at most one pair and both the same person's, never a stray extra hand. Food as it really looks while cooking: uneven slices, opaque white fat, crumbs, spills. Mild digital noise and the slightly over-sharpened, compressed look of a phone video. No cinematic lighting, no studio, no styling, no text, no logo, no watermark.",
+    "scene_prompt": "You are the stills photographer on a channel where one tradesman explains his craft.\n\nCHANNEL: [INSERT CHANNEL HERE]\n\nBelow is the full spoken SCRIPT. Design [INSERT COUNT HERE] photographs that carry this video.\n\nTHE ONE RULE ABOUT PEOPLE: the presenter is the only person this channel has. A scene either shows HIM — and then it is him and nobody else — or it shows no face at all: the thing itself, a pair of hands at work, the place. Never another man, never a crowd, never a customer, never a stranger at a bench. A second person in a one-man channel reads as stock footage.\n\nTHE SECOND RULE: each category below may be used AT MOST ONCE per ten scenes. Work through the script in order and take the category that has gone longest unused.\n\n 1. THE THING ITSELF, CLOSE — the cut, the joint, the grain, the surface, filling the frame.\n 2. THE PLACE, WIDE — the whole working place, lit by whatever light it really has, empty of people.\n 3. HANDS AT WORK — one pair of hands mid-action, no face: turning, trimming, wiping, lifting.\n 4. THE TOOL — the implement of this trade where it lives: on its hook, in the fire, on the bench.\n 5. THE MISTAKE — the ruined version, photographed plainly: burnt, dried out, split, grey.\n 6. THE RIGHT RESULT — the same thing done properly, undramatic and believable.\n 7. THE DETAIL NOBODY PHOTOGRAPHS — the seam, the drip, the ash, the scar in the wood.\n 8. THE MEASURE — the dial, the gauge, the clock, the thermometer, read at the moment it matters.\n 9. THE MATERIAL BEFORE IT IS USED — raw, stacked, waiting: wood, meat, metal, stone.\n10. WHAT IT IS FOR — the finished thing set down where it will be used or eaten, nobody in frame.\n\nREAL PHOTOGRAPHS\n- Real footage carries most of this video; these photographs show what footage cannot: the specific cut, the specific mistake, his own place and tools. Each prompt describes ONE frame of a real home video that the man filmed himself on his phone — what is in frame, how close the phone is, whose hands are working (only his: older dark-skinned working hands), what clutter sits at the edges, and the light the place really has (daylight through the open side, firelight, a bare bulb at night). Never name a lens, a focal length, an f-stop, 'macro', 'cinematic' or 'bokeh': everything is in focus, the way a phone films it.\n- Never put an object in a picture for its colour: no colour-coded props, no palette. Colours are whatever the real thing is.\n\nALSO\n- Each scene illustrates a MOMENT the narrator actually reaches, in the script's order.\n- No text, letters, numbers, labels or packaging writing anywhere in frame.\n- A real working place: soot, sawdust, grease, worn handles, mismatched tools. Never a showroom, never a studio, never a stock photo.\n- Vary the distance as well — wide, middle, close — but distance is not variety on its own.\n\nReturn ONLY a JSON array of [INSERT COUNT HERE] objects:\n\n  {\"text\": \"<the line of narration this scene belongs to>\",\n   \"prompt\": \"<a complete image-generation prompt>\"}\n\nSCRIPT:\n[INSERT SCRIPT HERE]"
+  },
+  "pacing": {
+    "graphic_every_min": 0.75,
+    "graphic_ratio": 0.4,
+    "graphic_dur_s": 7.0,
+    "graphic_max_s": 9.0,
+    "cold_open_s": 0,
+    "white_fade": 0.0,
+    "punch": false,
+    "wpm": 148,
+    "photo_every_s": 6,
+    "clips_per_min": 0
+  },
+  "stock_queries": [],
+  "prompts": {
+    "outline": "You are the writer for a channel where one old tradesman explains his craft to camera.\n\nTITLE: [INSERT TITLE HERE]\nLENGTH: [INSERT LENGTH — e.g., 8 minutes, 12 minutes]\n\nHe has done this work for forty years. He is not a teacher and not a salesman: he is the man people in his town ring up when it goes wrong.\n\nPlan the video as FIVE numbered parts, each about a fifth of the running time, plus an opening and a close. Write them in plain prose.\n- The opening is him, on camera, naming the mistake everyone makes. No greeting, no channel name.\n- Each numbered part is ONE thing: a cut, a tool, a temperature, a step, a myth he kills. It has a name you could burn into a plank in four words.\n- Every part is anchored to something you can DRAW: an object, a cut, a before and after, a number he counts.\n- At least twice in the video he tells a story from his own working life — a place, a year, a person who got it wrong — with the detail only someone who was there would keep.\n- The close returns to the mistake from the opening and says what to do instead, once.\nFor each part: the number, its four-word name, one line on what happens, and the things the edit can show or draw.",
+    "script": "Write the complete narration from the plan below.\n\nTHE PLAN:\n[INSERT OUTLINE HERE]\n\nHOW HE SOUNDS\n- One man talking to one person across a bench. Short sentences. Contractions. Dry, certain, never excited. He says 'you' and he means it.\n- The FIRST THREE SENTENCES are spoken to camera: the mistake, then the cost of it. No preamble.\n- He names real things: the cut, the tool, the temperature, the year, the town. Round numbers and say 'about' when unsure. Never invent a study or a statistic.\n- Once a part, one sentence that only a man who has done it would say — what it smells like when it is right, what the handle feels like when it is wrong.\n- Plain spoken text only: no headings, no stage directions, no speaker labels, no lists, no numbers written as digits — write them as they are read aloud.\n- He never says 'in this video'. He ends on the one thing to do next time, then one short line asking people to subscribe."
+  },
+  "thumbnail": {
+    "brief": "His face to one side, weathered and serious, the object of the video big on the other — the cut, the tool, the fire. Daylight, nothing studio, one red hand-lettered word.",
+    "accent": "#B3301F"
+  }
+}

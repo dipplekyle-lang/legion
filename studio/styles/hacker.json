@@ -1,0 +1,171 @@
+{
+  "name": "hacker",
+  "order": 23,
+  "label": "Breach",
+  "description": "True stories of hackers, hacker groups, cyber attacks and the people who stop them, told as a fast documentary made almost entirely of motion graphics on pure black. Colour is the side: the hackers are green neon line figures, the enemy is red, police, agencies and platforms are blue, neutral facts are white. Every date decodes out of pixel noise, every number rolls up in pixel digits, every place is found on a dark globe that whip-spins to it or a flat dark map that fills it, every person or institution the hackers deal with is a glass badge at the end of a dotted line. Posts, intercepted messages and documents are rebuilt as dark cards and taped paper notes with red stamps and yellow highlighter; a hidden speaker's words are typed beside a line mask in a monitor. Real footage appears only inside a dark monitor turned in 3D that powers on with a glitch. Chapters open on dripping red titles with the music up. No captions.",
+  "tagline": "Cyber-war stories in neon.",
+  "points": [
+    "Neon line characters: green hackers, red enemy, blue institutions",
+    "Dates and numbers decode in pixel digits",
+    "A dark globe that whip-spins to each named country",
+    "Networks that grow and change colour",
+    "Posts, chats and documents rebuilt as cards and notes",
+    "Footage only inside a tilted monitor, glitch cuts, no captions"
+  ],
+  "script_craft": "story",
+  "cost": "about $0.05 a minute with the Gemini free tier (the voice); the graphics are drawn on your computer, no image models",
+  "render_x": 3.0,
+  "language": "English",
+  "voice": {
+    "provider": "ai33",
+    "engine": "elevenlabs",
+    "model": "eleven_multilingual_v2",
+    "chunk_chars": 900,
+    "voice_id": "yl2ZDV1MzN4HbQJbMihG",
+    "voice_name": "Alex — Upbeat, Energetic and Clear",
+    "wavespeed_voice": "Brian",
+    "note": "The reference narrator is a young, energetic male storyteller at ~200 words a minute with 0.26 s between sentences. Any ElevenLabs voice id works.",
+    "gender": "male",
+    "speed": 1.12
+  },
+  "features": {
+    "offered": [
+      "youtube",
+      "stock",
+      "motion",
+      "sound"
+    ],
+    "on": [
+      "youtube",
+      "motion",
+      "sound"
+    ],
+    "prefer": "youtube"
+  },
+  "look": {
+    "graphics": "kit",
+    "kit": "hacker",
+    "director": true,
+    "title_font": "'Archivo Black', 'Arial Black', sans-serif",
+    "title_weight": "400",
+    "accent": [
+      "#2FD84A",
+      "#E8243C",
+      "#2F8BFF",
+      "#F2F2F2",
+      "#D8CB12"
+    ],
+    "warn": "#E8243C",
+    "good": "#2FD84A",
+    "skins": [
+      "noir"
+    ],
+    "caption_accent": "&H4AD82F&",
+    "captions": {
+      "off": true,
+      "font": "Inter SemiBold",
+      "size": 46,
+      "upper": false,
+      "karaoke": false,
+      "outline": 0.4,
+      "shadow": 0.0,
+      "line_chars": 46
+    },
+    "footage_grade": "eq=contrast=1.04:saturation=0.9",
+    "dust": false,
+    "vignette": false,
+    "leak": false,
+    "encode": {
+      "preset": "medium",
+      "tune": "animation",
+      "crf": 19
+    },
+    "cinema": {
+      "frame": "tilt",
+      "frame_all": true,
+      "chapter_cards": false,
+      "title_card": false,
+      "year_cards": false,
+      "labels": false,
+      "dust_on_archive": false,
+      "framed_every": 0,
+      "tv_every": 0,
+      "pop_every": 9999,
+      "note": "chapter_cards is off on purpose: the kit draws every chapter card itself (hacker.arrange) — cinema leaves a kit's first chapter without a card; the chapter pauses are still cut into the voice; pop_every 9999 = never (cinema reads 0 as its default 11): no person is ever lifted off a still in this style"
+    },
+    "sound": {
+      "sfx_db": -9,
+      "music_rel_db": -3.5,
+      "duck_db": -5,
+      "epidemic": {
+        "music": {
+          "dramatic": "dark cyber electronic tension pulse",
+          "quiet": "dark ambient drone suspense",
+          "inspiring": "driving synthwave electronic"
+        },
+        "sfx_flavor": "digital glitch interface",
+        "avoid": [
+          "comedy",
+          "cartoon",
+          "vocals",
+          "orchestral trailer"
+        ]
+      },
+      "note": "Measured against the reference channel: the bed sits about 8 dB under the voice while it speaks (music_rel_db -3.5 between sentences + duck_db -5 under speech) and rises on the voiceless chapter cards; effects peak about -21 dBFS after a cut (sfx_db -9 plus each mark's own level).",
+      "music_note": "Music: Epidemic Sound when your key is set (the searches below), else your own tracks in assets/music/hacker/ (mood folders dramatic/, quiet/, inspiring/ work) or straight under assets/music/."
+    },
+    "youtube": {
+      "hook_s": 60,
+      "hook_window_s": 16,
+      "window_s": 24,
+      "candidates": 3,
+      "repeat": false,
+      "watcher": "gemini",
+      "sources": [
+        "youtube"
+      ],
+      "archive_watch": 0,
+      "no_drawn": true
+    },
+    "footage_taste": "News footage and documentary B-roll of the real events and places: newsrooms reporting the attack, affected hospitals, offices, factories, city streets at night, server rooms, screens with code or error messages, police and officials at podiums, anonymous hands on keyboards. Short, dark, moody clips that sit inside a monitor. Never close-ups of private people's faces, never memes, never AI imagery, never a video game. Never another video's own graphics: no maps, title cards, text screens, logo animations or diagrams made by other channels, no shots with burned-in subtitles or a channel's watermark, no screen recordings of news websites.",
+    "options_note": "HACKER: motion graphics on black (neon characters colour-coded by side, a whip-spinning globe, flat dark maps, networks, pixel decodes of every date and number, rebuilt posts, chats and paper notes, a typed mask monitor for hidden speakers), footage only inside a tilted monitor, chapter cards in dripping red caps, glitch and black-dip cuts, no captions.",
+    "reference": "styles/hacker.jpg"
+  },
+  "pacing": {
+    "graphic_every_min": 1.0,
+    "graphic_ratio": 0.87,
+    "graphic_dur_s": 3.6,
+    "graphic_max_s": 9.0,
+    "cold_open_s": 0,
+    "white_fade": 0.0,
+    "punch": false,
+    "wpm": 190,
+    "cut_s": 3.7,
+    "hook_s": 34,
+    "scene_share_hook": 0.95,
+    "scene_share_body": 0.88,
+    "same_tool_penalty": 0.3,
+    "hook_notes": "The hook is the first ~30 seconds and cuts every 2-2.5 seconds, a DIFFERENT graphic type each time, nothing longer than 4 seconds. Its order: the story's date as a decode ('the year is…', 'on the twelfth of May…'), the enemy as a red neon operative, the scale on a globe (hotspots or dots), one real footage shot in the monitor, the method as a network or a terminal, the hackers as the green neon figure, the clash as a duel, then one picture per teaser item (1.3-2.5 s each: footage, a post wall, a terminal, a link to the institution involved), then the video's title as a title scene on the words 'this is the story of…'. Colour every scene by side from the first second: the hackers green, the enemy red, institutions blue.",
+    "body_notes": "Open every chapter with a chapter scene on its first cue (8 s, voiceless on the music) — about every five minutes. Then something new every 3-4 seconds, never the same type twice in a row. A named DATE or TIME always gets a decode, a NUMBER a decode with a label (or a pair), a PLACE a map (one country or city) or the globe (continents, several countries, 'around the world' — one stop per country named, in the order said, with beats on those words), a PERSON or INSTITUTION the hackers deal with a link (to: shield, person, cuffs), a list said aloud words or globe stops with beats. Anything abstract (motive, power, fear, success, 'someone had to do something') goes to a neon character — the green hacker, the red operative, a crowd of three, a terminal beside the hacker restating the action as a command — or to a network (growth = spread, bans = ban, being wiped out = die, one side taking over = infect). A post, a message or a statement that is quoted becomes a post (kind chat for intercepted messages), a finding or a document a note, a hidden group's statement a mask with the words typed on their beats. Real footage is used for filmable things the narration names (a hospital, a factory, a city, a newsroom) and plays inside the tilted monitor; about one shot in eight. The conflict itself gets a duel, at most once a minute. Never show a photo of a person: people are characters and names on badges."
+  },
+  "stock_queries": [
+    "hacker typing dark room",
+    "server room corridor",
+    "code on screen close up",
+    "city at night aerial",
+    "news studio anchor",
+    "police press conference"
+  ],
+  "prompts": {
+    "outline": "You are the head writer of a documentary channel that tells TRUE stories from the internet's underground: hacker groups, cyber attacks, ransomware, leaks, online wars between hackers, criminals, terrorists and states — fast, gripping, told like a thriller but accurate like an investigation.\n\nTITLE: [INSERT TITLE HERE]\nLENGTH: [INSERT LENGTH — e.g., 2 minutes, 10 minutes, 20 minutes]\n\nPlan the video in beats of 20-40 seconds.\n- Everything is real: real groups, real people (by name only where their names are public), real dates, real numbers, real places, real institutions (FBI, Europol, the NSA, national police), real posts and statements. Use only facts you are certain of; where sources disagree, give the figure and say who reported it.\n- Beat 1 is the hook (about 30 seconds): open on the date and the stakes, name the enemy and the scale, name the hackers, then three or four quick teasers of what is coming ('from… to… to even…'), and end on 'this is the story of…' with the title.\n- Then tell it in order. Every beat has one date, number, place, name or institution the video can show, and one consequence.\n- Mark every list the narration will say aloud (countries, groups, platforms) — each item gets its own picture.\n- Quote real posts, statements and messages only as they were published.\n- End on what happened to the people involved and one closing line that recasts the title.\nCHAPTERS Group the beats into chapters of about five minutes (a video under four minutes has one chapter). The cold open is not a chapter: chapter 1 begins right after it, and every chapter opens on its own card (CHAPTER I, II… and the title in dripping red caps, eight seconds on the music). The beat that opens a chapter carries at the end of its label \"[CHAPTER: Title | mood]\" — the title 2 to 4 words, concrete and ominous, never a question and never a spoiler; the mood one of dramatic, inspiring or quiet (the music of that chapter follows it).\nFor each beat write the facts it states and what can be shown for each (a date, a figure, a place, a person, a post, a document, a piece of footage).",
+    "script": "Write the complete narration from the plan below.\n\nTHE PLAN:\n[INSERT OUTLINE HERE]\n\nHOW IT SOUNDS\n- A young, energetic storyteller talking fast to one viewer who loves internet stories: short punchy sentences, present tense in the hook, past tense after.\n- The first sentence gives the date or the year. The hook ends on 'this is the story of…' and the title's promise.\n- Every sentence carries something the video can show: a date, a number, a place, a person or group, an institution, a post, a document, or a clear image (a hospital, a server room).\n- Name the sides clearly: who the hackers are, who they are fighting, who the authorities are.\n- Say lists one item at a time ('Spain. France. Germany. Russia.').\n- Say numbers the way they are read aloud ('two hundred thousand', 'ten dollars and sixty-nine cents', 'May twelfth, twenty seventeen'), never digits or symbols.\n- Real facts only. Posts and statements are quoted exactly; nothing invented; disputed points are attributed ('according to Europol', 'US officials said').\n- Plain spoken text only: no stage directions, no speaker labels, no lists.\n- CHAPTER HEADINGS When a beat's label ends with [CHAPTER: … | mood], begin that beat's narration with one line holding only \"## \", the chapter title exactly as given, then \" | \" and the mood (for example \"## The Stolen Weapon | dramatic\") — nothing else on that line — then the narration on the next line. The cold open before the first heading is not a chapter. Never write any other heading.\n- Never say 'in this video'. End on the line that recasts the title; then one short line asking viewers to subscribe."
+  },
+  "thumbnail": {
+    "brief": "Pure black. A green neon hooded hacker line figure on the left facing a red neon masked figure on the right, eye lasers meeting in a white spark between them; or one neon figure with a dark globe glowing red in one country. Two to four words in dripping red horror caps across the bottom third with a red glow, one word green. No photos, no faces, no arrows.",
+    "accent": "#2FD84A",
+    "note": "The look of the channel's chapter cards and neon characters (assets/kits/hacker.js) is the thumbnail language."
+  },
+  "chapters": {
+    "pause_s": 6.0
+  }
+}

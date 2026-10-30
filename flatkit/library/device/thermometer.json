@@ -1,0 +1,20 @@
+{
+ "name": "thermometer",
+ "kind": "device",
+ "desc": "a thermometer: glass tube, bulb, liquid up to p (0..1), ticks; mark it as a device",
+ "tags": [
+  "temperature",
+  "heat",
+  "cold",
+  "climate",
+  "fever",
+  "weather",
+  "warming",
+  "freeze",
+  "degrees"
+ ],
+ "usage": "device_thermometer(g, x, centreY, height, level /* 0..1 */, '#E5262B')  // marks itself as a device",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "device_thermometer(g, 540, 470, 800, 0.7, '#E5262B')"
+}

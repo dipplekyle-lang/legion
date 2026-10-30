@@ -1,0 +1,16 @@
+{
+ "name": "hoodie",
+ "kind": "wear",
+ "desc": "hoodie cloth painter with strings and pocket",
+ "tags": [
+  "outfit",
+  "hoodie",
+  "casual"
+ ],
+ "usage": "cloth: wear_hoodie()",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

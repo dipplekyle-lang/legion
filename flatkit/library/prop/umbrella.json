@@ -1,0 +1,17 @@
+{
+ "name": "umbrella",
+ "kind": "prop",
+ "desc": "a beach umbrella with a striped canopy and a soft shadow (use with strew for rows)",
+ "tags": [
+  "beach",
+  "holiday",
+  "summer",
+  "sunbathing",
+  "shore",
+  "tourist"
+ ],
+ "usage": "prop_umbrella(g, x, groundY, size, '#FF3C6E', '#FFF4E0')",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "prop_umbrella(g, 540, 1000, 600, '#FF3C6E', '#FFF4E0')"
+}

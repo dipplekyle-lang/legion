@@ -1,0 +1,18 @@
+{
+ "name": "rowboat",
+ "kind": "prop",
+ "desc": "a little rowboat lying on its keel on the sand: flat hull, light rim, shade side, mast stub",
+ "tags": [
+  "boat",
+  "beach",
+  "harbour",
+  "stranded",
+  "tide",
+  "fishing",
+  "shore"
+ ],
+ "usage": "prop_rowboat(g, x, groundY, width)",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "prop_rowboat(g, 540, 700, 900)"
+}

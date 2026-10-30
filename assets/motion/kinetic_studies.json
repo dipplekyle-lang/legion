@@ -1,0 +1,730 @@
+[
+ {
+  "summary": "10 s neon heartbeat logo sting, 16:9, 30 fps, -23 LUFS, 10 cuts all in the last 4 s, avg shot 0.9 s",
+  "beats": "ecg (a green heartbeat line on black, a tick on every peak, ~108 BPM) -> type ('f' '[brand]' typed letter by letter in green, ONE tick per letter ~0.1 s apart) -> wave (the line turns into an audio bar burst, whooshes on the glitch) -> type again in pink neon with a red line, a blinking cursor -> a fast number roll of big grey digits (glitch cuts every 2-3 frames, 6.4-6.7 s) -> the logo mark builds from squares -> logo + '[brand]' + tagline 'code into motion', ONE hit on the reveal, hold. SOUND: ticks follow letters, whooshes follow glitch moves, one hit on the logo; almost nothing lands on cuts. Lesson: sound is attached to ACTIONS (a letter, a swipe, a reveal), never to cuts by default."
+ },
+ {
+  "summary": "27 s text-led motion piece on cream paper (no voiceover, music at 120 BPM), 4:3, 24 fps, -14 LUFS, cuts every 2-5 s ON the beat",
+  "beats": "type ('how do you make AI produce stunning results in one shot?' typed with a cursor, the key word 'stunning' circled by a hand-drawn red loop with sparks; only typing clicks, quiet, 0-6 s) -> black + an orange flat-silhouette gun: 'you can't.' with a target reticle -- THE MUSIC DROPS IN LOUD exactly on this reveal (6.1 s) -> 'humans spot repeating patterns.' over a row of identical orange silhouettes walking (one breaks out) -> a one-beat drop-out (silence) -> 'we call it slop.' stamped with black and red ink splats over a dirty plate -> 'AI is a tool.' with scribbled pen loops, 'tool' underlined -> black, 'you are the author.' with an orange dancer silhouette -> another one-beat drop-out -> 'be yourself.' on cream -> 'create.' with dozens of tool icons orbiting and swarming -> 'create with [brand]' wordmark, music fades out. SOUND: quiet intro, music drop on the first big reveal, every cut on a whole beat, a short drop-out right before each new section, a fade at the end. Lesson: a text-only piece is carried by the music arc (quiet -> drop -> breaks -> fade); put the cuts on the beat grid and let silence set up the hits."
+ },
+ {
+  "summary": "41 s SaaS explainer (Creatools), 16:9, 60 fps, -15 LUFS, only 6 hard cuts: one continuous flow of morphs and camera moves, avg shot 6 s",
+  "beats": "logo glows orange out of black -> one orange word on white ('collaboration') -> sentence with inline avatar/icon chips between words ('Between [face] creators [icon] agencies [icon] brands') -> a dark product card rises with an orange rim glow -> table rows stack in 3D with status pills -> dashboard tilts in perspective with a soft orange halo -> 'Manage your campaigns': an input field types a filename, a cursor clicks the green button -> words fly in one by one, key word in the accent ('Take your agency to the\u2026') -> a budget slider fills -> a face in a circle -> a grid of 100 avatars with '+99 clients' -> back to black, the orange dot becomes the logo, 'Try it now!' pill button.",
+  "measured": {
+   "still_pct": 22.3,
+   "avg_motion": 4.96,
+   "moves_per_10s": 6.8,
+   "move_dur_median": 0.53,
+   "move_dur_p25_p75": [
+    0.3,
+    0.81
+   ],
+   "easing_mix": {
+    "ease-out": 10,
+    "ease-in-out": 10,
+    "ease-in": 18
+   },
+   "longest_still_s": 1.07,
+   "bpm": 105.3,
+   "hits_per_10s": 12.6,
+   "moves_starting_within_120ms_of_a_hit_pct": 29.0,
+   "median_move_vs_hit_ms": 15.0
+  },
+  "sound_kinds": {
+   "pop / blip": 33,
+   "riser into a hit": 10,
+   "whoosh / swish": 4,
+   "impact / boom": 10,
+   "click / tick": 8,
+   "tonal hit (note, chime, beat)": 11
+  },
+  "first_sounds": [
+   {
+    "t": 0.03,
+    "kind": "pop / blip",
+    "dur": 0.0,
+    "bright_hz": 1461
+   },
+   {
+    "t": 0.74,
+    "kind": "riser into a hit",
+    "dur": 0.36,
+    "bright_hz": 424
+   },
+   {
+    "t": 0.85,
+    "kind": "riser into a hit",
+    "dur": 0.25,
+    "bright_hz": 631
+   },
+   {
+    "t": 1.85,
+    "kind": "whoosh / swish",
+    "dur": 0.19,
+    "bright_hz": 1503
+   },
+   {
+    "t": 2.42,
+    "kind": "pop / blip",
+    "dur": 0.13,
+    "bright_hz": 2937
+   },
+   {
+    "t": 2.99,
+    "kind": "impact / boom",
+    "dur": 0.25,
+    "bright_hz": 433
+   },
+   {
+    "t": 3.55,
+    "kind": "pop / blip",
+    "dur": 0.13,
+    "bright_hz": 2653
+   },
+   {
+    "t": 3.84,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 3028
+   },
+   {
+    "t": 4.09,
+    "kind": "impact / boom",
+    "dur": 0.22,
+    "bright_hz": 327
+   },
+   {
+    "t": 4.33,
+    "kind": "riser into a hit",
+    "dur": 0.27,
+    "bright_hz": 940
+   },
+   {
+    "t": 4.69,
+    "kind": "pop / blip",
+    "dur": 0.12,
+    "bright_hz": 2283
+   },
+   {
+    "t": 4.85,
+    "kind": "pop / blip",
+    "dur": 0.0,
+    "bright_hz": 1854
+   }
+  ],
+  "palette": [
+   [
+    "#f0f0f0",
+    50.7
+   ],
+   [
+    "#101010",
+    28.1
+   ],
+   [
+    "#301010",
+    6.4
+   ],
+   [
+    "#303030",
+    1.9
+   ],
+   [
+    "#b0b0b0",
+    1.9
+   ],
+   [
+    "#503010",
+    1.1
+   ]
+  ],
+  "frame_by_frame": "input field: the text types in, a cursor glides to the button, the button's rim glows orange as it is pressed. Orbit: concentric glowing rings, social icons pop onto the rings ONE at a time (a pop sound each), the centre logo dots pulse. 'Set your': the words stay put while a card grows under them from a grey blur to sharp. Table rows slide in from the right in a stagger with a slight skew, then the whole table drifts as a block. 'Analyze your data in real-time': words type on one by one while the dashboard rises out of the dark with an orange underglow. An avatar grid drifts slowly behind a fixed '+100 clients' line."
+ },
+ {
+  "summary": "26 s 3D launch film (SaaSWAVE), 16:9, 24 fps, -21 LUFS, 10 cuts, letterbox bars for the cinematic part",
+  "beats": "pastel pink/purple 3D desk, objects floating (phone, notes, pens) -> UI chips pop out of the scene -> a big glossy 'Publish' button pressed by a 3D cursor -> the press explodes into a burst of shards on white -> paper, ribbons and a highlighter drawing a line -> pink spike burst -> an umbrella floating in a blue sky -> giant word wiped by a pink ring, a folder icon replaces a letter -> type 'Building' -> the logo draws itself as a pink stroke. Lesson: one hero BUTTON PRESS that detonates into the next scene.",
+  "measured": {
+   "still_pct": 31.6,
+   "avg_motion": 7.18,
+   "moves_per_10s": 6.8,
+   "move_dur_median": 0.57,
+   "move_dur_p25_p75": [
+    0.29,
+    0.9
+   ],
+   "easing_mix": {
+    "ease-out": 6,
+    "ease-in-out": 10,
+    "ease-in": 12
+   },
+   "longest_still_s": 2.3,
+   "bpm": 88.2,
+   "hits_per_10s": 11.4,
+   "moves_starting_within_120ms_of_a_hit_pct": 28.0,
+   "median_move_vs_hit_ms": -40.0
+  },
+  "sound_kinds": {
+   "click / tick": 3,
+   "riser into a hit": 4,
+   "pop / blip": 12,
+   "tonal hit (note, chime, beat)": 9,
+   "whoosh / swish": 19,
+   "impact / boom": 6
+  },
+  "first_sounds": [
+   {
+    "t": 0.05,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 3809
+   },
+   {
+    "t": 0.55,
+    "kind": "riser into a hit",
+    "dur": 0.0,
+    "bright_hz": 2549
+   },
+   {
+    "t": 0.71,
+    "kind": "pop / blip",
+    "dur": 0.0,
+    "bright_hz": 1957
+   },
+   {
+    "t": 0.81,
+    "kind": "tonal hit (note, chime, beat)",
+    "dur": 0.22,
+    "bright_hz": 2288
+   },
+   {
+    "t": 1.34,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 3624
+   },
+   {
+    "t": 2.31,
+    "kind": "tonal hit (note, chime, beat)",
+    "dur": 0.22,
+    "bright_hz": 2049
+   },
+   {
+    "t": 2.87,
+    "kind": "whoosh / swish",
+    "dur": 1.33,
+    "bright_hz": 1977
+   },
+   {
+    "t": 3.11,
+    "kind": "whoosh / swish",
+    "dur": 0.23,
+    "bright_hz": 2329
+   },
+   {
+    "t": 3.36,
+    "kind": "riser into a hit",
+    "dur": 0.84,
+    "bright_hz": 1735
+   },
+   {
+    "t": 4.22,
+    "kind": "pop / blip",
+    "dur": 0.11,
+    "bright_hz": 1323
+   },
+   {
+    "t": 4.46,
+    "kind": "pop / blip",
+    "dur": 0.07,
+    "bright_hz": 1487
+   },
+   {
+    "t": 4.55,
+    "kind": "impact / boom",
+    "dur": 0.17,
+    "bright_hz": 768
+   }
+  ],
+  "palette": [
+   [
+    "#f0f0f0",
+    38.8
+   ],
+   [
+    "#d0d0d0",
+    10.2
+   ],
+   [
+    "#101010",
+    5.2
+   ],
+   [
+    "#d0b0d0",
+    3.8
+   ],
+   [
+    "#f0d0d0",
+    3.7
+   ],
+   [
+    "#f0d0f0",
+    3.3
+   ]
+  ],
+  "frame_by_frame": "a 3D camera dollies through pastel rooms; speed lines burst out from the centre on the big transition; a marker draws a red line in real time; ribbons and paper fly past the lens; HUGE 3D letters ('many', 'Real') bigger than the frame slide across; a painted brush texture wipes in behind a word ('start!!!!'). Letterbox bars appear for the cinematic part only."
+ },
+ {
+  "summary": "42 s SaaS launch (HeyGrow), 16:9, 24 fps, -16 LUFS, 21 cuts (avg 2 s), quiet minimal type on solid grounds",
+  "beats": "soft 3D blue shapes assemble into the logo -> single words on solid blue/grey/black ('Every' / 'there's one' / 'Don't miss it.' with the key word in blue) -> stacked paper layers -> candidate table with scores, one column highlighted blue -> UI panels lie flat in perspective and fly through ('Summarize insights at a glance') -> outline buttons in a row (Curriculum / Interviews / All stages) -> a typing AI reply with a sparkle loader -> phone mockups and posters on dark -> a laptop glows -> 'final decision' / 'match' white on black. Lesson: restraint; one idea per card; the accent colour marks exactly one word.",
+  "measured": {
+   "still_pct": 59.7,
+   "avg_motion": 3.46,
+   "moves_per_10s": 3.1,
+   "move_dur_median": 1.1,
+   "move_dur_p25_p75": [
+    0.63,
+    1.73
+   ],
+   "easing_mix": {
+    "ease-out": 9,
+    "ease-in-out": 0,
+    "ease-in": 4
+   },
+   "longest_still_s": 4.3,
+   "bpm": 93.8,
+   "hits_per_10s": 13.4,
+   "moves_starting_within_120ms_of_a_hit_pct": 62.0,
+   "median_move_vs_hit_ms": -60.0
+  },
+  "sound_kinds": {
+   "pop / blip": 17,
+   "riser into a hit": 5,
+   "tonal hit (note, chime, beat)": 13,
+   "impact / boom": 11,
+   "whoosh / swish": 22,
+   "click / tick": 10
+  },
+  "first_sounds": [
+   {
+    "t": 0.01,
+    "kind": "pop / blip",
+    "dur": 0.0,
+    "bright_hz": 298
+   },
+   {
+    "t": 0.59,
+    "kind": "riser into a hit",
+    "dur": 0.19,
+    "bright_hz": 959
+   },
+   {
+    "t": 1.14,
+    "kind": "tonal hit (note, chime, beat)",
+    "dur": 0.93,
+    "bright_hz": 1291
+   },
+   {
+    "t": 2.26,
+    "kind": "pop / blip",
+    "dur": 0.09,
+    "bright_hz": 1559
+   },
+   {
+    "t": 3.09,
+    "kind": "tonal hit (note, chime, beat)",
+    "dur": 0.33,
+    "bright_hz": 1027
+   },
+   {
+    "t": 4.26,
+    "kind": "pop / blip",
+    "dur": 0.12,
+    "bright_hz": 185
+   },
+   {
+    "t": 4.4,
+    "kind": "impact / boom",
+    "dur": 0.43,
+    "bright_hz": 159
+   },
+   {
+    "t": 6.75,
+    "kind": "whoosh / swish",
+    "dur": 0.38,
+    "bright_hz": 1996
+   },
+   {
+    "t": 7.2,
+    "kind": "tonal hit (note, chime, beat)",
+    "dur": 0.27,
+    "bright_hz": 1976
+   },
+   {
+    "t": 7.5,
+    "kind": "whoosh / swish",
+    "dur": 0.32,
+    "bright_hz": 2980
+   },
+   {
+    "t": 7.86,
+    "kind": "whoosh / swish",
+    "dur": 0.23,
+    "bright_hz": 2520
+   },
+   {
+    "t": 8.15,
+    "kind": "pop / blip",
+    "dur": 0.11,
+    "bright_hz": 4985
+   }
+  ],
+  "palette": [
+   [
+    "#f0f0f0",
+    34.7
+   ],
+   [
+    "#101010",
+    24.0
+   ],
+   [
+    "#303030",
+    8.9
+   ],
+   [
+    "#d0d0f0",
+    4.4
+   ],
+   [
+    "#5070d0",
+    3.9
+   ],
+   [
+    "#5050d0",
+    3.6
+   ]
+  ],
+  "frame_by_frame": "soft 3D shapes rotate slowly into the logo; a stack of paper sheets ripples in 3D; 'hidden gem': the two words part and a diamond icon pops in between them; single words hold centred on solid grounds for 1-2 s ('Introducing'); a dark 'Generate Feedback' button slides in with motion blur, then the UI it produces crossfades in; UI panels lie on a tilted plane and drift.",
+  "intro_audio": "Opens with an airline-captain announcement ('Ladies and gentlemen, this is your captain speaking'). Measured: for the first 2.3 s, 90 % of the sound sits between 300 Hz and 3.4 kHz (almost nothing below or above) = a telephone/intercom band-pass on the voice. A short rising swell at 0.59 s, a long chime-like tonal hit at 1.14 s (rings ~0.9 s), a pop at 2.26 s, a second tonal hit at 3.09 s, then the low end takes over: a deep impact at 4.40 s (rings ~0.4 s, under 300 Hz). First big picture move at 1.23 s, right after the first chime.",
+  "intercom_recipe": "band-pass 300-3400 Hz, light saturation, a small metallic room (short reverb ~0.3 s), a faint hiss bed, slight compression"
+ },
+ {
+  "summary": "25 s AI SaaS ad (Haze), 16:9, 30 fps, LOUD -8.6 LUFS, cuts fast in the opening (4 in the first 3.5 s) then long product moves",
+  "beats": "huge bold words on black with a moving pink light ribbon ('Design it.' / 'Paste it.' / 'Ship it.', each word wiped by the ribbon) -> app windows tilt in 3D with a pink glow -> a plugin panel: cursor clicks 'Copy selection', the 'Download JSON' button flashes pink -> windows stack and fan out -> a glowing pill 'Building your\u2026' with a light running round its edge -> 'from Figma' -> logo + URL over a rising pink gradient -> 'Turn your design into a real desktop app'. Lesson: 3-word rhythm opener (verb it. verb it. verb it.), light sweeps as transitions.",
+  "measured": {
+   "still_pct": 39.3,
+   "avg_motion": 3.26,
+   "moves_per_10s": 6.9,
+   "move_dur_median": 0.73,
+   "move_dur_p25_p75": [
+    0.67,
+    0.87
+   ],
+   "easing_mix": {
+    "ease-out": 11,
+    "ease-in-out": 5,
+    "ease-in": 6
+   },
+   "longest_still_s": 3.57,
+   "bpm": 130.4,
+   "hits_per_10s": 9.0,
+   "moves_starting_within_120ms_of_a_hit_pct": 24.0,
+   "median_move_vs_hit_ms": 65.0
+  },
+  "sound_kinds": {
+   "pop / blip": 3,
+   "click / tick": 4,
+   "whoosh / swish": 9,
+   "tonal hit (note, chime, beat)": 6,
+   "impact / boom": 1,
+   "riser into a hit": 4
+  },
+  "first_sounds": [
+   {
+    "t": 0.03,
+    "kind": "pop / blip",
+    "dur": 0.0,
+    "bright_hz": 1328
+   },
+   {
+    "t": 0.12,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 4088
+   },
+   {
+    "t": 0.35,
+    "kind": "whoosh / swish",
+    "dur": 3.0,
+    "bright_hz": 2113
+   },
+   {
+    "t": 0.8,
+    "kind": "click / tick",
+    "dur": 0.04,
+    "bright_hz": 4921
+   },
+   {
+    "t": 1.2,
+    "kind": "whoosh / swish",
+    "dur": 0.28,
+    "bright_hz": 2781
+   },
+   {
+    "t": 1.55,
+    "kind": "whoosh / swish",
+    "dur": 1.83,
+    "bright_hz": 1984
+   },
+   {
+    "t": 3.4,
+    "kind": "whoosh / swish",
+    "dur": 1.81,
+    "bright_hz": 1583
+   },
+   {
+    "t": 3.87,
+    "kind": "whoosh / swish",
+    "dur": 1.34,
+    "bright_hz": 1531
+   },
+   {
+    "t": 4.9,
+    "kind": "whoosh / swish",
+    "dur": 0.31,
+    "bright_hz": 1577
+   },
+   {
+    "t": 5.25,
+    "kind": "tonal hit (note, chime, beat)",
+    "dur": 1.81,
+    "bright_hz": 1144
+   },
+   {
+    "t": 6.76,
+    "kind": "whoosh / swish",
+    "dur": 0.29,
+    "bright_hz": 1503
+   },
+   {
+    "t": 7.1,
+    "kind": "tonal hit (note, chime, beat)",
+    "dur": 1.83,
+    "bright_hz": 1091
+   }
+  ],
+  "palette": [
+   [
+    "#101010",
+    58.8
+   ],
+   [
+    "#301010",
+    8.3
+   ],
+   [
+    "#b07070",
+    3.5
+   ],
+   [
+    "#b03050",
+    2.4
+   ],
+   [
+    "#303030",
+    2.4
+   ],
+   [
+    "#501010",
+    2.1
+   ]
+  ],
+  "frame_by_frame": "each big word arrives sliding from the left with heavy motion blur and settles, a pink light ribbon sweeping through behind it; the app window swings in tilted with a pink glow. BUTTON PRESS, frame by frame: the button grows its label ('Copy' -> 'Copy selection'), its fill fades white -> pink over ~5 frames, then the next button ('Download JSON') turns red: the press moves DOWN the panel. 'from Figma to App': the accent word fills in red, then a giant H shape wipes the frame and becomes the logo."
+ },
+ {
+  "summary": "15 s product teaser (Spaces AI), 16:9, 24 fps, -20.5 LUFS, 4 cuts: a continuous device flythrough",
+  "beats": "a phone swings in front of a big word ('tired') -> Pinterest-style cards fan out round a line of text -> a photo of a room, tapped in a photo picker (hand cursor) -> the app's purple-glow UI: drag a photo in, tap 'Continue' -> before/after slider redesigns the room, sparkle stars on new items, shop tags pop on products -> a pill cart '$50.00' -> checklist 'Community-backed / Fully shoppable / Completely free' -> 'Create' with a glowing dot -> 'Join the waitlist' glowing pill on purple -> logo on black. Lesson: show the ONE magic moment (before -> after) with a slider, and sparkles where the AI changed things.",
+  "measured": {
+   "still_pct": 33.3,
+   "avg_motion": 8.09,
+   "moves_per_10s": 3.2,
+   "move_dur_median": 1.27,
+   "move_dur_p25_p75": [
+    0.27,
+    3.17
+   ],
+   "easing_mix": {
+    "ease-out": 2,
+    "ease-in-out": 2,
+    "ease-in": 3
+   },
+   "longest_still_s": 1.97,
+   "bpm": 120.0,
+   "hits_per_10s": 13.6,
+   "moves_starting_within_120ms_of_a_hit_pct": 40.0,
+   "median_move_vs_hit_ms": 10.0
+  },
+  "sound_kinds": {
+   "pop / blip": 9,
+   "click / tick": 18,
+   "whoosh / swish": 2,
+   "riser into a hit": 1
+  },
+  "first_sounds": [
+   {
+    "t": 0.02,
+    "kind": "pop / blip",
+    "dur": 0.0,
+    "bright_hz": 1555
+   },
+   {
+    "t": 0.23,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 3111
+   },
+   {
+    "t": 1.23,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 2875
+   },
+   {
+    "t": 1.73,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 3502
+   },
+   {
+    "t": 2.23,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 2596
+   },
+   {
+    "t": 2.73,
+    "kind": "whoosh / swish",
+    "dur": 0.16,
+    "bright_hz": 2586
+   },
+   {
+    "t": 3.23,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 2739
+   },
+   {
+    "t": 3.42,
+    "kind": "whoosh / swish",
+    "dur": 0.55,
+    "bright_hz": 1786
+   },
+   {
+    "t": 4.24,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 2806
+   },
+   {
+    "t": 4.74,
+    "kind": "pop / blip",
+    "dur": 0.13,
+    "bright_hz": 2708
+   },
+   {
+    "t": 5.74,
+    "kind": "click / tick",
+    "dur": 0.0,
+    "bright_hz": 3407
+   },
+   {
+    "t": 6.24,
+    "kind": "pop / blip",
+    "dur": 0.0,
+    "bright_hz": 2451
+   }
+  ],
+  "palette": [
+   [
+    "#f0f0f0",
+    27.4
+   ],
+   [
+    "#101010",
+    16.4
+   ],
+   [
+    "#d0d0f0",
+    8.0
+   ],
+   [
+    "#d0d0d0",
+    7.3
+   ],
+   [
+    "#101050",
+    3.1
+   ],
+   [
+    "#b0b0f0",
+    2.6
+   ]
+  ],
+  "frame_by_frame": "a phone spins in front of a big word; image cards fan out in 3D; a hand cursor taps (the target dims), a sparkle-star loader spins. SLIDE-TO-BUY pill: a round knob slides along 'Add to Cart $50.00', the label wipes away behind it, the pill collapses into the circle, which then morphs into the next word. Checklist: each line types on with its check icon spinning in. 'Join the waitlist' pill drops in with motion blur, tilts in 3D and settles with a small bounce on a purple glow."
+ },
+ {
+  "summary": "21.8 s product launch film, 16:9, 60 fps, 12 shots, a new shot every ~1.4 s (longest 3.6 s), 0 cuts in the first 3 s, 50% held still: light, airy, UI-led",
+  "beats": "badge \"3,138\" (an app tile on white, its red notification count jumping 330 -> 3,138 in four pops while the camera pushes in, a soft orange glow blooms) -> prompt \"Best launch films\" (a search bar on grass footage, a cursor clicks) -> type \"Hey, plan a 30-second launch film\" (an email types, the cursor hits Send, the draft flies away) -> uibutton \"Plan video\" (a checklist ticks Launch refs / Frame sheets / Timeline, the cursor presses the orange button) -> pilljoin \"Refs | Claude\" (two names in pills, a link chip spins in between and turns violet) -> statsheet \"avg shot 2.06s | cuts 25 | views 11K | frames 24\" (a dark mono readout counting up) -> lightwords \"Show the film.\" -> endcard \"refs.\"",
+  "new_moves": [
+   "badge",
+   "pilljoin",
+   "statsheet"
+  ],
+  "lesson": "Make the viewer feel they are USING it: every scene is one small action (a count climbing, a click, a tick, a send) on a clean light ground, the camera always gently pushing, and the proof arrives as hard numbers on a dark readout just before the wordmark.",
+  "source": "launch film (motion_style)",
+  "date": "2026-10-12"
+ },
+ {
+  "summary": "44.9 s calm health-app film, 16:9, 30 fps, only 7 hard cuts (median shot 6.5 s): one continuous flow of mask reveals, morphs and slow camera moves on navy and violet gradients",
+  "beats": "cloudreveal \"Ask anything about your health\" (a white sparkle on navy opens into a cloud-edged window onto the sky, a glass search bar types the question) -> lightwords \"Which doctor is right\" (words light up one by one, the key word violet) -> logo -> lightwords \"An AI-powered health navigation\" -> devicefly (a dashboard tilts in) -> lightwords \"Build to move beyond generic healthcare search\" -> type \"Persistent sharp pain in lower back\" -> resolve \"Analyzing the affected area...\" (letters fill in out of order, then shimmer) -> resolve \"Mapping anatomical connections...\" -> cards of specialists filter in -> lightwords \"Because the right outcome starts with the right direction\" -> logo",
+  "new_moves": [
+   "cloudreveal",
+   "lightwords",
+   "resolve"
+  ],
+  "lesson": "Calm sells trust: hardly any hard cuts, every change is a reveal or a morph, sentences light word by word as they are read with ONE word in the accent colour, and status lines resolving letter by letter make the product feel like it is thinking.",
+  "source": "health app film (nice_motion)",
+  "date": "2026-10-12"
+ },
+ {
+  "summary": "36.1 s talking-head business edit, 16:9, 30 fps, 27 shots, a new shot every ~1.2 s (longest 2.7 s), 2 cuts in the first 3 s: the presenter is cut with designed inserts every few seconds",
+  "beats": "presenter -> poster (magazine covers slide in) -> bigword (a huge yellow word behind the subject) -> presenter -> statcount \"$3\" price tag -> presenter -> uibutton -> pilljoin -> statcount \"$777,93\" (a green number counting with a curve) -> spotlight \"the | CRAZIEST\" (a hanging lamp flickers on, a huge gold word rises in its light) -> torn (a title over footage)",
+  "new_moves": [
+   "spotlight",
+   "text behind a cut-out presenter (needs their own footage; not code-only)"
+  ],
+  "lesson": "Never stay on the talking head longer than ~3 s: every claim gets its own designed insert (a number counting, a price tag, a cover, a title in a spotlight), and the biggest claim gets the most theatrical one.",
+  "source": "business edit (motion)",
+  "date": "2026-10-12"
+ },
+ {
+  "summary": "51.9 s editorial legal-brand film, 16:9, 24 fps, 39 shots, a new shot every ~1.0 s (longest 4.2 s), 4 cuts in the first 3 s, cream paper throughout",
+  "beats": "collage (old engravings layer on cream) -> paperstack (sage and taupe paper blocks slide in and layer, a small script note) -> paperstack -> serif \"...access to law\" -> logo -> type (a document types in a clean card) -> highlightline (a legal right sits on a card) -> collage (photos of people at work) -> typestack (one line repeated, fading down) -> pictos -> paperstack \"...with a\" -> serif \"see beyond that\" -> logo",
+  "new_moves": [
+   "paperstack"
+  ],
+  "lesson": "A serious brand moves like paper on a desk: a narrow palette (cream, sage, taupe, one dark), blocks that slide and layer, serif lines that rise word by word, and the real product only ever shown as clean fragments.",
+  "source": "editorial legal film (motion_train_2)",
+  "date": "2026-10-12"
+ },
+ {
+  "summary": "5.5 s editorial data poster, 1:1, 48 fps, 11 shots, a new shot every ~0.4 s, 5 cuts in the first 3 s: a fixed frame (header word, footer line) with the centre swapping fast",
+  "beats": "cardstack (a framed page: a stack of navy, sage and cream cards shuffles in, tiny striped data tags flicker on the edges) -> halftone (an engraving in a blue dot screen) -> cardstack \"Find out what your data is worth before you decide anything.\" -> exhibit (a statue cut-out) -> cardstack (papers fan out) -> collage (an engraving over a data card)",
+  "new_moves": [
+   "cardstack"
+  ],
+  "lesson": "Lock the frame (the same header and footer every shot) and swap only the centre, fast: the steadiness makes the speed feel designed, and tiny colour tags and mono labels make paper feel like data.",
+  "source": "editorial data poster (motion_train_4)",
+  "date": "2026-10-12"
+ }
+]

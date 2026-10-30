@@ -1,0 +1,18 @@
+{
+ "desc": "1950s speckled formica countertop texture with boomerang flecks",
+ "tags": [
+  "diner",
+  "counter",
+  "formica",
+  "texture",
+  "retro"
+ ],
+ "usage": "tex_formica_speckle(baseColour)",
+ "name": "formica_speckle",
+ "kind": "tex",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

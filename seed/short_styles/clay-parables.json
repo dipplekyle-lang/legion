@@ -1,0 +1,61 @@
+{
+  "name": "Claymation",
+  "kind": "voiceover",
+  "look": "stop-motion plasticine claymation miniature, matte clay with visible fingerprints and tool marks, warm tungsten key light with soft fill and gentle rim, macro lens with shallow depth of field and softly blurred miniature diorama backgrounds, low eye-level camera, warm terracotta tones plus one saturated complementary colour per story (teal, orange, deep red or night blue)",
+  "character": "handmade clay characters with big rounded heads, heavy half-closed sleepy eyelids, white eyeballs with small black pupils, large bulbous noses, small mouths and chunky hands, terracotta or tan clay skin, costume shows who they are (robe, turban, hat, apron); all characters share this design",
+  "scenes": "detailed handmade miniature dioramas; cycle wide establishing shot, medium two-shot, extreme close-up of one object or hand (chalk, cup, foot, coin), then a face close-up reacting; about a third of shots are object or hand inserts; characters really move inside the shot (a step, a turn, a gesture), animated on twos like real stop-motion, about one shot in five is a slow camera push or pan instead",
+  "text": "small bold rounded serif captions (Cooper Black style) in golden yellow #F2C200 with a thin dark shadow and no box, centred at about 78% of the frame height, 2-4 words per card on 1-2 lines, word for word from the narration",
+  "hook": "opens on an extreme close-up of the story's key object or action already happening (chalk dragging on a floor, a foot stepping into mud) while the narrator starts the story in the first sentence",
+  "hook_examples": [
+    "A [king/monk/merchant] [does one odd, specific thing].",
+    "Two [people] are [walking/working] when they reach [a problem].",
+    "In [year/place], a man everyone thinks is a fool [does X]."
+  ],
+  "script_rules": "a short old parable or true historical anecdote told in present tense with plain short sentences; others try and fail, the wise or lucky one does something simple and surprising; then turn it to modern everyday life (work, phones, comparison) in 2-3 lines; end on a one-line lesson",
+  "pacing": "measured 0.9-2.0 seconds per shot (about 1.6 s on average), hard cuts on the narration, no transitions; inside shots motion is held on twos (12 drawings per second) for the stop-motion feel",
+  "motion": "measured over 158 shots: the camera is LOCKED in 77-91% of shots (a slow push only in ~15%), the CHARACTERS do the moving (about a third of the frame changes over a shot): one small, readable action per shot from the first second (a step, a hand reaching, a head turning, a pour, a stir), held on twos; never a still picture with the camera sliding around it",
+  "voice": "one calm, warm storyteller narrator, unhurried, present tense, with soft music underneath and no hard sound effects; final mix around -14 LUFS",
+  "dont": "never shiny plastic CGI, never smooth 60fps motion, no photoreal humans, no glow or neon on text, no big bold all-caps captions, no transitions or zoom-blur effects, no particles, never copy the reference characters, words or channel badge",
+  "stopmotion": {
+    "fps": 15,
+    "boil_px": 1.6,
+    "flicker": 0.012,
+    "pose_shots": 6,
+    "poses_per_shot": 1
+  },
+  "captions": {
+    "font": "Cooper Black",
+    "font_files": [
+      "C:/Windows/Fonts/COOPBL.TTF",
+      "C:/Windows/Fonts/georgiab.ttf"
+    ],
+    "font_names": {
+      "COOPBL.TTF": "Cooper Black",
+      "georgiab.ttf": "Georgia"
+    },
+    "bold": false,
+    "colour": "#F2C200",
+    "size": 76,
+    "y": 0.78,
+    "outline": 1.2,
+    "shadow": 3,
+    "words": 3
+  },
+  "rhythm": {
+    "median_shot": 1.6,
+    "p90_shot": 2.0,
+    "cuts_first_3s": 2,
+    "words_per_s": 2.4,
+    "sfx_on_cuts": 0
+  },
+  "examples": [],
+  "created": 1791547200,
+  "channel": {
+    "name": "",
+    "avatar": ""
+  },
+  "narration": {
+    "pause": 0.55,
+    "final_pause": 0.9
+  }
+}

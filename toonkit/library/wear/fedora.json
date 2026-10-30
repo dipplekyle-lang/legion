@@ -1,0 +1,17 @@
+{
+ "name": "fedora",
+ "kind": "wear",
+ "desc": "fedora with a band plus a turned-up trench collar",
+ "tags": [
+  "hat",
+  "fedora",
+  "stranger",
+  "noir"
+ ],
+ "usage": "wear_fedora(c, {color, band, collar})",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

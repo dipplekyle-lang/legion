@@ -1,0 +1,91 @@
+{
+  "name": "3D House Explainer",
+  "created": 1793182520,
+  "deep_status": "ready",
+  "channel": {
+    "name": "",
+    "avatar": ""
+  },
+  "engine": "toon",
+  "look": "3D rendered suburban backyard diorama: a grass-topped soil block cut away to show a brown rock cross-section with the subject built inside it, neighbour house (grey clapboard, orange tile roof, blue shutters) and an unlit cloud sky behind, soft single sun, baked textures, glossy plastic props, no outlines, saturation 0.3-0.45, light film grain",
+  "character": "a glossy plastic garden gnome (cone hat, white beard, bright jacket, jeans) seen from behind on a crate or post as the scale marker; otherwise no people, the hero is the object being built",
+  "scenes": "one subject per shot on the same cutaway block: ground line in the lower half, subject centred on the cut edge filling 30-85% of the frame, house or sky behind at lower contrast; inserts leave the background empty (one big prop such as a gauge or beam); every noun appears as a 3D object on its word; everything stands on a surface with a contact shadow; wide overview only for whole-property beats",
+  "text": "one word at a time, dead centre (x 0.5, y about 0.52), Title case, heavy rounded sans, white with a thick black stroke (about 8 px) and soft shadow, cap height about 60-75 px, a new word on each spoken word (about 3 per second), always on",
+  "hook": "first word on 0.0 s: 'If you [ordinary thing] in your yard, you have [big thing].' as one sentence while the ordinary yard turns into the big thing on its words; the strange element on screen by 1-2.5 s",
+  "hook_examples": [
+    "If you put [a famous person] inside your house, you have [their famous building].",
+    "If [a threat] wants your [thing] and you lock it in your [vehicle], you have [the big version].",
+    "If [a disaster] is coming and you dig [a simple defence] around your house, you have [the real structure].",
+    "If you dig a hole in your yard until you hit [a resource], you have [the industry machine]."
+  ],
+  "script_rules": "THE FORMULA, every Short, no exceptions. TITLE (the card, not spoken): 'How A [ordinary home thing] Becomes A [huge thing]'. SPOKEN HOOK, the first sentence: 'If you [do an ordinary thing] in your yard/house, you have [THE BIG THING].' Never open with the gnome or with 'This yard hole is about to'. BODY: a fast chain of problem and fix. Every problem starts with 'But', every fix with 'So'. After a real engineering fix, NAME it: 'This is a [real name of the part].' (at least 4 named parts). Every fix is a real, specific engineering fact, with exact numbers where they are real (thickness, volts, gallons, miles). Include ONE myth-bust: 'Most people think [common belief]. It isn't/doesn't. [the true reason].' A dry joke near the end is welcome. ENDING: 'Add [A], [B], and [C].' then the closing line in the signature variant this Short is given (the signature rotates: never the same closing line two Shorts running). Sentences 6-16 words, about 3 words per second, no questions except the myth-bust setup. THE VOICE (this matters more than the formula): talk to the viewer as 'you' who is building this at home, and every problem happens to YOU and YOUR house, as a vivid little disaster (it buries your train, it comes up through your toilet, a man climbs it and runs all the way inside). Deadpan, plain words, no hype, no exclamation marks. Slip in 2-3 dry jokes or cynical asides that land as an afterthought ('a lot of very happy wolves' kind of line, 'or you could just use a credit card' kind of line). Give one insider secret that changes how people see something ordinary. Explain hard things with a plain household comparison (like a sandwich, like water in a sponge). Never cute, never preachy. THE TOPIC (this is what makes people click): pair something ordinary at home (a hole in the yard, a shed, a pool, a pickup, a grill, a garden hose) with a huge, famous or extreme thing nobody would expect to come out of it (the White House, Fort Knox, a nuclear reactor, an airport, a levee, a drive-thru, an armored truck). The more random and unexpected the pairing, the better: the absurdity is the hook. Never a sensible pairing (a hole becomes a well, a shed becomes a workshop). WHAT HIS SIX SCRIPTS DO (read off the transcripts, 185-312 words each): (1) 6-10 problem/fix loops, chained fast inside run-on sentences ('..., but the mud leaks into your drinking water, so you line the hole with steel and cement. This is casing, but when you hit oil, ...'); every fix explains the real mechanism in plain words ('hard glass flattens the bullet and plastic behind it catches the pieces'). (2) Problems are attacks or disasters that escalate ('they shoot out your tires', 'someone mails you poison', 'a plane could fly straight at your house'). (3) ONE OR TWO reveals about something the VIEWER has personally seen or experienced, said as a flat statement that flips it: 'that ice cream machine is usually not broken. It's cleaning itself.', 'when they ask you to pull forward, it's not for you', 'those vents at the bottom of houses aren't just for air', 'that's why levees on the news are wrapped in plastic'. Never trivia the viewer has never met (how gold bars are cast); never 'fun fact' tone. (4) Near the end a contrast beat: 'All around you, homes sink under the water. But yours stays completely dry.' / 'All over town, ordinary vans get robbed. But yours drives straight to the back.' (5) The last item of 'Add A, B, and C' is the joke: 'a lot of very happy wolves', 'a large soda with every order, because that's where the money really is', 'a rowboat tied to the porch', '570 gallons of white paint'. (6) Myth-bust only when it is a real, well-known belief. THE COMEDY LAYER (from the bridge reel the creator pointed at as THE script style; it matters as much as the engineering): a recurring side character with a plain first name (the gnome on screen is him; a new name every Short, never 'Kevin'), the friend or neighbour who tests your build, suffers for it and has opinions ('Kevin is now part of the local ecosystem', 'Kevin has already fallen into two rivers. We are no longer accepting his opinions.'); absurd household similes for failures ('the structural integrity of a wet biscuit', 'bending like a depressed banana', 'fold like a cheap camping chair', 'buckle like a folding table at a family barbecue'); one-word deadpan reactions as their own sentence ('Crack!', 'Beautiful.', 'Lovely.'); innocent bystanders hit by the fallout ('Some poor grandma just woke up with a bridge in her living room.'); sarcastic asides about people ('He ignores it. Of course he does. Reading is apparently a premium feature.'); the 'Congratulations, you've built X' joke can open the Short right after the hook ('...congratulations! You've built a bridge. A bridge with the structural integrity of a wet biscuit.'); the reveal about something you've felt yourself, in question form ('That little bump when you drive onto a bridge? That's the bridge desperately trying not to die.'); and a closing payoff after the final 'Congratulations': three short callback lines (what you started with and why, what it cost or became, and the side character's final gag: 'And Kevin is suing you for emotional damage.'). About 300-430 words; facts stay real.",
+  "pacing": "a new picture about every 1.7 s (median, p90 4.4 s) but mostly as one continuous camera path: 4-6 fast camera moves per 10 s, 25-61 camera transitions per video, 0-7 hard cuts; about half of frames have no mover besides idle life; first 3 s carry 12-16 words and 0-4 camera moves; the punchline sits on a near-still frame",
+  "voice": "one flat, confident narrator (fundamental about 140-147 Hz) at 2.8-3.3 words per second with almost no gaps (pauses over 0.3 s only 3-7 per video at sentence ends); dark low music bed about 14-15 dB under the voice; boom / thump / click effects 1.3-2.0 per second, 86-96% inside words, only 1-14% on cuts; -14 LUFS",
+  "dont": "no outlines or flat vector look, no real people or faces, no fake UI, no locked frames, no dead stops after a move, no random gradients, no everything-fading-in, no glow on text, no particle bursts except the blast the story calls for, no caption band or several words at once, no fact text over the picture, no floating props, no mood-darkened frames, no sound effects tied to cuts",
+  "transition": "whip",
+  "kind": "voiceover",
+  "motion": {
+    "cam": "drift",
+    "trans": [
+      "whip",
+      "carry",
+      "zoom",
+      "push",
+      "whip",
+      "zoom",
+      "carry",
+      "whip",
+      "dissolve",
+      "push"
+    ]
+  },
+  "spec": "SPEC.md",
+  "deep": true,
+  "deep_done": "2026-10-28",
+  "studied": [
+    "DfBMMiHoKGt",
+    "De_Vzp5oMnH",
+    "De-SyJgomUU",
+    "De8t4aBITVm",
+    "De6OZehIrha",
+    "De5MVTjom-X"
+  ],
+  "captions": {
+    "font": "Fredoka Bold",
+    "font_files": [
+      "Fredoka-Bold.ttf",
+      "C:/Windows/Fonts/ARLRDBD.TTF"
+    ],
+    "font_names": {
+      "Fredoka-Bold.ttf": "Fredoka Bold",
+      "ARLRDBD.TTF": "Arial Rounded MT Bold"
+    },
+    "size": 90,
+    "colour": "#FFFFFF",
+    "bold": false,
+    "outline": 3.5,
+    "shadow": 2,
+    "y": 0.552,
+    "centre": true,
+    "words": 1,
+    "highlight": false,
+    "pop": false,
+    "case": "title",
+    "nopunct": true,
+    "why": "Measured off his frames: one word, Title Case, no punctuation, white rounded bold with a thin dark edge, small (cap height ~66 px of 1920), dead centre x 0.50, word centre y ~0.52."
+  },
+  "signature": {
+    "hook": [
+      "If you [do an ordinary thing] in your yard, you have [the big thing].",
+      "If [a threat] comes for your [thing] and you [do a simple fix], you have [the big thing].",
+      "If you keep [doing an ordinary thing] in your [house / yard / pickup], you end up with [the big thing].",
+      "If you [do an ordinary thing] until you hit [something valuable], you have [the big thing]."
+    ],
+    "ending": [
+      "Add [A], [B], and [C]. Congratulations, you have built [the big thing].",
+      "Add [A], [B], and [C]. And that is how [the ordinary thing] becomes [the big thing].",
+      "Add [A], [B], and [C]. You now own [the big thing]. [the side character's final gag].",
+      "Add [A], [B], and [C]. Congratulations, you have built [the big thing]. [three short callback lines: what you started with, what it became, the side character's gag]."
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "name": "towel",
+ "kind": "prop",
+ "desc": "a striped beach towel lying flat in perspective",
+ "tags": [
+  "beach",
+  "holiday",
+  "summer",
+  "shore"
+ ],
+ "usage": "prop_towel(g, x, y, size, '#2B8BFF', '#FFFFFF')",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "prop_towel(g, 540, 560, 800, '#2B8BFF', '#FFFFFF')"
+}

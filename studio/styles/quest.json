@@ -1,0 +1,173 @@
+{
+ "name": "quest",
+ "builtin": true,
+ "order": 1.6,
+ "label": "QUEST — history played as a 3D video game",
+ "description": "Real history, real careers and real lives played as a bright 3D video game: \"Level 1. You're a recruit…\". The viewer is the hero — a chibi toy figure with a face, who levels up through every rank in a low-poly toy world while a game HUD tracks it all: the level badge and rank, an XP bar, three stat bars, quests that count up, an item hotbar, level-up cards with a golden sunburst, item pickups, unlocks, a boss bar and achievements. Claude designs the playthrough from the script (the levels, the hero's outfit at every rank, the stats, the quests) and directs every 3D shot; this computer's graphics card renders it.",
+ "tagline": "Every level of anything — played as a 3D video game, with a full game HUD.",
+ "points": [
+  "A chibi 3D hero who levels up — a richer outfit at every rank, the same face",
+  "A full game HUD: level badge, rank, XP, stat bars, quests, item hotbar, boss bar",
+  "Level-up cards with a golden sunburst on the words that say them",
+  "Low-poly toy worlds: camps that build themselves, armies of thousands, the level map",
+  "Claude designs the playthrough and directs and checks every shot",
+  "Renders on your own graphics card"
+ ],
+ "script_craft": "off",
+ "cost": "the voice is about $0.05 a minute; Claude's game design and directing run on your Claude Code plan (a 10-minute video uses about 5 % of a Claude Max 5x week); the 3D renders on this computer, about 15-20 minutes per minute of video",
+ "render_x": 12,
+ "language": "English",
+ "voice": {
+  "provider": "algrow",
+  "engine": "elevenlabs",
+  "model": "eleven_multilingual_v2",
+  "chunk_chars": 900,
+  "voice_id": "MFZUKuGQUsGJPQjTS4wC",
+  "voice_name": "Jon — Warm & Grounded Storyteller",
+  "wavespeed_voice": "Brian",
+  "note": "Pick a bright, friendly narrator at go.algrow.online/tool and paste its id here (or set ALGROW_VOICE_ID in .env to use one voice everywhere). wavespeed_voice is the voice used when WaveSpeed speaks instead of Algrow.",
+  "gender": "male"
+ },
+ "features": {
+  "offered": [
+   "threed",
+   "sound",
+   "avatar"
+  ],
+  "on": [
+   "threed",
+   "sound"
+  ],
+  "prefer": "threed"
+ },
+ "look": {
+  "graphics": "documentary",
+  "threed": {
+   "share": 1.0,
+   "min_share": 1.0,
+   "max_share": 1.0,
+   "fill": "auto",
+   "map_max_s": 0,
+   "review_rounds": 2,
+   "sub": 6,
+   "model": "claude-opus-5-5",
+   "preset": "game"
+  },
+  "title_font": "'Cinzel', Georgia, serif",
+  "title_weight": "700",
+  "accent": [
+   "#E9B44C",
+   "#E0383A",
+   "#8B6CF0",
+   "#F6EBD2"
+  ],
+  "warn": "#E0383A",
+  "good": "#5CC86A",
+  "skins": [
+   "noir"
+  ],
+  "caption_accent": "&H3FA9D9&",
+  "captions": {
+   "off": true,
+   "font": "Montserrat",
+   "size": 44,
+   "upper": false,
+   "karaoke": false,
+   "outline": 0.6,
+   "shadow": 0.6,
+   "line_chars": 44
+  },
+  "footage_grade": "eq=contrast=1.02:saturation=1.05",
+  "dust": false,
+  "vignette": false,
+  "leak": false,
+  "encode": {
+   "preset": "medium",
+   "tune": "animation",
+   "crf": 18
+  },
+  "cinema": {
+   "chapter_cards": false,
+   "title_card": false,
+   "year_cards": false,
+   "labels": false,
+   "dust_on_archive": false,
+   "framed_every": 0,
+   "tv_every": 0,
+   "pop_every": 0
+  },
+  "sound": {
+   "sfx_db": -16,
+   "music_rel_db": -7,
+   "duck_db": -6,
+   "intro_s": 0,
+   "intro_db": 0,
+   "moods": true,
+   "opening": "adventure",
+   "epidemic": {
+    "music": {
+     "adventure": "adventure orchestral playful",
+     "dramatic": "epic adventure orchestral",
+     "tension": "adventure suspense",
+     "wonder": "magical fantasy wonder",
+     "eerie": "mysterious fantasy",
+     "epic": "epic orchestral heroic",
+     "hopeful": "hopeful adventure",
+     "quiet": "calm fantasy village",
+     "inspiring": "heroic orchestral triumph",
+     "finale": "heroic orchestral triumph"
+    },
+    "sfx_flavor": "video game fantasy adventure",
+    "avoid": [
+     "horror",
+     "trap",
+     "edm",
+     "christmas",
+     "lofi",
+     "sad piano",
+     "dubstep"
+    ]
+   }
+  },
+  "youtube": {
+   "hook_s": 60,
+   "hook_window_s": 20,
+   "window_s": 30,
+   "candidates": 4,
+   "repeat": false,
+   "watcher": "gemini",
+   "sources": [
+    "youtube",
+    "archive"
+   ]
+  },
+  "reference": "styles/quest.jpg",
+  "options_note": "QUEST videos are a 3D video game from the first frame to the last: the viewer's hero levels up through the story (one level per rank, stage or era), every person is a chibi toy figure with a face, and a game HUD is laid over the finished film (level badge, rank, XP, three stats, quests, items, level-up cards, unlocks, a boss bar). Write titles as a progression: \"Every Rank of the Roman Army\", \"Level 1 to Level 10 Pharaoh's Builder\", \"Every Stage of a Medieval Knight's Life\". Claude designs the playthrough from the script, directs and checks every shot; this computer's graphics card renders it. No captions (the HUD is the on-screen text); the render farm cannot render 3D.",
+  "quest": {
+   "on": true,
+   "hud": true
+  }
+ },
+ "pacing": {
+  "graphic_every_min": 0,
+  "graphic_ratio": 0.0,
+  "graphic_dur_s": 6.0,
+  "graphic_max_s": 8.0,
+  "cold_open_s": 0,
+  "white_fade": 0.0,
+  "punch": false,
+  "wpm": 160
+ },
+ "stock_queries": [],
+ "prompts": {
+  "outline": "You are the head writer of a YouTube channel that tells real history, real careers and real lives as a VIDEO GAME the viewer plays: \"Every level of …\". The pictures are a bright 3D game with a level-up HUD.\n\nTITLE: [INSERT TITLE HERE]\nLENGTH: [INSERT LENGTH — e.g., 10 minutes, 15 minutes, 20 minutes]\n\nPlan the episode as LEVELS: a real progression from the bottom to the top (ranks of an army or an order, stages of a career or a life, eras of a place), each level a real step with its real name.\n- About one level per 40-70 seconds of the length (a 10-minute video has 9-14 levels). Level 1 is the very bottom; the last one is the top, introduced as \"the final level\".\n- For every level: its real name (the rank or the stage), what it is in one line, and two to four concrete, filmable facts — a number (pay, distance, people commanded, years), a duty the viewer would do with their hands, a danger, a reward or a privilege, a piece of gear. Facts you are certain of only; where sources disagree, the round figure with \"about\".\n- Each level must make the viewer want the next: what it costs to climb, who fails, what changes.\n- End with a twist that recasts the whole ladder (who could really reach the top, what the top really cost), then a one-line call to subscribe.\nWrite each level as its own block that starts with a line \"BEAT n — Level n: <REAL NAME>\" (the final level is the last BEAT; the twist and the ending go in that same last BEAT), then its facts and the sights that show them (the hero doing it, the gear, the numbers as crowds or piles).",
+  "script": "Write the complete narration for this video game documentary from the plan below.\n\nTHE PLAN:\n[INSERT OUTLINE HERE]\n\nHOW IT SOUNDS\n- The viewer is the player: second person, present tense (\"You're a tiro, a fresh recruit.\"). Bright, quick, confident; short sentences; a little dry humour.\n- Every level OPENS with exactly this sentence on its own: \"Level one.\" / \"Level two.\" … (the number in words), then the rank or stage name in its own short sentence or after a comma (\"Level two. Legionary.\"). The last level opens with \"And the final level.\" followed by its name.\n- No intro before Level one: the first words are \"Level one.\"\n- After the name, one line on what it is, then the level's facts as things the viewer does, gets, risks or commands. Every sentence carries something a camera could film.\n- Real facts only. No invented quotes or figures.\n- Plain spoken text only: no headings, no stage directions, no lists, no quotation marks around dialogue.\n- Write numbers the way a narrator reads them aloud (\"twenty Roman miles\", \"about five thousand soldiers\"), never digits.\n- After the final level: \"But here's the catch.\" (or a turn like it) and the twist in two or three short sentences; then one short line asking viewers to subscribe for the next game.\n- Never say \"in this video\"."
+ },
+ "thumbnail": {
+  "brief": "A bright 3D video game frame: the chibi hero (big round head, dot eyes, blush, a shiny helmet or the top rank's outfit) big in the foreground, a low-poly toy world behind (green hills, cypress trees, an army or a castle), a golden LEVEL badge with a big white number in a corner, and two to four words of headline in gold serif caps (Cinzel) with a dark outline. Saturated, sunny, clean; no real faces, no arrows, no stickers.",
+  "accent": "#E9B44C",
+  "note": "Send Claude five thumbnails you wish were yours and ask it to rewrite this brief."
+ },
+ "script_parts": true,
+ "tab": "3d"
+}

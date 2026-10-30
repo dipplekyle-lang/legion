@@ -1,0 +1,11 @@
+// @piece prop/coral: a coral: kind 'brain' (dome + ridges) | 'branch' (fingers) | 'fan'; optional tiny face (o.face = mood).
+// usage: prop_coral(g, x, groundY, size, colour, 'branch', t, { face: 'worried' })
+// From "What if the Moon vanished?" (approved). Uses only engine helpers; never edit this file, pass options instead.
+const prop_coral = (g, x, y, s, col, kind, t, o = {}) => {
+  const sh = shadeOf(col, 1.1), li = lightOf(col, 0.9);
+  if (kind === 'branch') { for (const [dx, a, L] of [[-0.3, -0.35, 0.95], [-0.1, -0.1, 1.2], [0.12, 0.12, 1.05], [0.32, 0.38, 0.85]]) { const ex = x + dx * s + Math.sin(a) * s * L, ey = y - Math.cos(a) * s * L; noodle(g, [[x + dx * s * 0.6, y], [x + dx * s * 0.9, y - s * L * 0.5], [ex, ey]], s * 0.2, col); noodle(g, [[x + dx * s * 0.6 + s * 0.05, y], [x + dx * s * 0.9 + s * 0.05, y - s * L * 0.5], [ex + s * 0.03, ey + s * 0.1]], s * 0.07, sh); g.fillStyle = li; ell(g, ex, ey, s * 0.1, s * 0.1); g.fill(); } }
+  else if (kind === 'fan') { flat(g, gg => { gg.beginPath(); gg.moveTo(x - s * 0.1, y); gg.bezierCurveTo(x - s * 0.9, y - s * 0.3, x - s * 0.8, y - s * 1.1, x, y - s * 1.15); gg.bezierCurveTo(x + s * 0.8, y - s * 1.1, x + s * 0.9, y - s * 0.3, x + s * 0.1, y); gg.closePath(); }, col, s, { hl: true }); g.strokeStyle = li; g.lineWidth = s * 0.03; g.lineCap = 'round'; for (let i = -3; i <= 3; i++) { g.beginPath(); g.moveTo(x, y - s * 0.1); g.quadraticCurveTo(x + i * s * 0.12, y - s * 0.6, x + i * s * 0.2, y - s * 1.0); g.stroke(); } }
+  else { flat(g, gg => { gg.beginPath(); gg.ellipse(x, y - s * 0.38, s * 0.62, s * 0.5, 0, Math.PI, 0); gg.lineTo(x + s * 0.62, y); gg.lineTo(x - s * 0.62, y); gg.closePath(); }, col, s, { hl: true });
+    g.save(); g.strokeStyle = sh; g.lineWidth = s * 0.035; g.lineCap = 'round'; g.beginPath(); g.ellipse(x, y - s * 0.38, s * 0.62, s * 0.5, 0, Math.PI, 0); g.clip(); for (let i = 0; i < 5; i++) { g.beginPath(); g.moveTo(x - s * 0.55, y - s * (0.1 + i * 0.1)); g.bezierCurveTo(x - s * 0.2, y - s * (0.2 + i * 0.1), x + s * 0.2, y - s * (0.0 + i * 0.1), x + s * 0.55, y - s * (0.12 + i * 0.1)); g.stroke(); } g.restore(); }
+  if (o.face) face(g, x, y - s * (kind === 'branch' ? 0.45 : 0.3), s * 0.36, { mood: o.face, whites: true, t, seed: o.seed || 1, col, look: [0, -0.5] });
+};

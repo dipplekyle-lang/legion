@@ -1,0 +1,148 @@
+{
+  "name": "mentor",
+  "order": 7,
+  "label": "MENTOR",
+  "description": "A real-looking presenter teaches from a dim modern boardroom, and the graphics live in his shot: glossy glass cards slide past him at table height, a neon countdown hangs in front of him, a glass badge beside his head drains to a percentage, his example prompt types itself into a chat bar. The edit keeps moving — wide, medium, close, slow pushes in and out — and between his shots a 2D cartoon of him acts the story out, with big glass objects and real things turning in the light.",
+  "tagline": "He teaches it. The screen builds around him.",
+  "points": [
+    "A photoreal presenter, lip-synced with Kling — shot sizes switch, slow pushes in and out",
+    "Graphics inside his shot: glass cards, neon countdowns, a draining glass badge, a typed prompt",
+    "A 2D cartoon of him acting the story out, with a moving camera and motion blur",
+    "Full-screen glass objects, tier cards and real objects turning in the light",
+    "Music, his room on the voice, and a sound for every graphic"
+  ],
+  "script_craft": "story",
+  "cost": "about $2.50 a minute",
+  "render_x": 3.2,
+  "language": "English",
+  "voice": {
+    "provider": "ai33",
+    "chunk_chars": 4000,
+    "ai33_model": "eleven_multilingual_v2",
+    "voice_id": "elevenlabs_TX3LPaxmHKxFdv7VOQHJ",
+    "voice_name": "Liam — young, confident, articulate",
+    "gender": "male",
+    "note": "A confident young teacher. Swapping it means swapping the presenter's gender too — the presenter list is filtered by it."
+  },
+  "features": {
+    "offered": [
+      "ai_images",
+      "youtube",
+      "depth",
+      "sound",
+      "avatar",
+      "motion"
+    ],
+    "on": [
+      "ai_images",
+      "sound",
+      "avatar",
+      "motion"
+    ],
+    "prefer": "ai_images"
+  },
+  "look": {
+    "graphics": "kit",
+    "kit": "mentor",
+    "title_font": "'Montserrat', Helvetica, sans-serif",
+    "title_weight": 900,
+    "accent": [
+      "#3D6BFF",
+      "#FF2A55",
+      "#33F28A",
+      "#F5F7FF"
+    ],
+    "warn": "#FF2A55",
+    "good": "#33F28A",
+    "skins": [
+      "noir"
+    ],
+    "caption_accent": "&HFF6B3D&",
+    "captions": {
+      "off": true,
+      "font": "Poppins SemiBold",
+      "size": 64,
+      "upper": false,
+      "karaoke": false,
+      "box": true,
+      "outline": 0.4,
+      "shadow": 0.0,
+      "line_chars": 32,
+      "margin_v": 64
+    },
+    "sound": {
+      "room": {
+        "rt": 0.45,
+        "wet_db": -17,
+        "predelay_ms": 12,
+        "hp": 240,
+        "lp": 6500
+      },
+      "sfx_db": -15,
+      "music_rel_db": -10,
+      "duck_db": -7,
+      "epidemic": {
+        "music": {
+          "dramatic": "modern cinematic pulse electronic tension",
+          "quiet": "minimal ambient electronic soft",
+          "inspiring": "uplifting modern electronic corporate motivational",
+          "": "modern minimal electronic documentary underscore"
+        },
+        "sfx_flavor": "clean modern ui",
+        "avoid": [
+          "comedy",
+          "funny",
+          "quirky",
+          "cartoon",
+          "kids",
+          "trap",
+          "christmas",
+          "orchestral",
+          "epic",
+          "rock"
+        ]
+      }
+    },
+    "footage_grade": "eq=contrast=1.04:saturation=0.98:gamma=1.0",
+    "dust": false,
+    "vignette": false,
+    "leak": false,
+    "encode": {
+      "preset": "medium",
+      "tune": "film",
+      "crf": 19
+    },
+    "options_note": "The presenter is the channel: he is on screen more than half of every minute and the graphics are built around him. Turn the AI presenter off and the overlays have nobody to sit on.",
+    "director": true,
+    "placement": "story",
+    "stills": {
+      "palette": false
+    },
+    "toon": {
+      "avatar": "theo"
+    },
+    "still_suffix": " Photorealistic photograph, full-frame camera, 35mm, cinematic low-key light, true-to-life colour, shallow depth of field, real surface texture. A real modern place. No illustration, no 3D render, no CGI, no text, no watermark.",
+    "scene_prompt": "You are the stills photographer of a channel where one young teacher explains a tool or a skill to camera.\n\nCHANNEL: [INSERT CHANNEL HERE]\n\nBelow is the full spoken SCRIPT. Design [INSERT COUNT HERE] photographs that carry this video between the presenter's own shots.\n\nTHE ONE RULE ABOUT PEOPLE: the presenter is the only person this channel has, and he is filmed separately. So a photograph shows NO face at all: the thing itself, a screen, a pair of hands at work, the place. Never another person, never a crowd, never a stock-photo smile.\n\nWHAT TO SHOW, in the script's order, each category at most once per eight scenes:\n 1. THE SCREEN — a laptop or phone screen glowing in a dark modern room, the interface soft and unreadable (no real text, no logos).\n 2. HANDS AT WORK — one pair of hands typing, scrolling, writing a note, holding a phone; no face.\n 3. THE PLACE — a dim modern office or boardroom, a late-night desk, a city window at dusk; empty of people.\n 4. THE OBJECT — the one real thing the sentence names (a calendar, a clock, an envelope, a notebook, a coffee), close and beautiful.\n 5. THE BEFORE — the messy, tired version: a cluttered desk, a cold coffee, a wall of sticky notes.\n 6. THE AFTER — the calm, finished version: a clean desk, a checked list, morning light.\n\nALSO\n- Each scene illustrates a MOMENT the narrator actually reaches, in the script's order.\n- No readable text, letters, numbers, brand names or logos anywhere in frame.\n- Cinematic low-key light, deep navy shadows with one warm practical light; vary wide, middle and close.\n\nReturn ONLY a JSON array of [INSERT COUNT HERE] objects:\n\n  {\"text\": \"<the line of narration this scene belongs to>\",\n   \"prompt\": \"<a complete image-generation prompt>\"}\n\nSCRIPT:\n[INSERT SCRIPT HERE]"
+  },
+  "pacing": {
+    "graphic_every_min": 4.5,
+    "graphic_ratio": 0.6,
+    "graphic_dur_s": 5.5,
+    "graphic_max_s": 7.0,
+    "cold_open_s": 0,
+    "white_fade": 0.0,
+    "punch": false,
+    "wpm": 165,
+    "photo_every_s": 7,
+    "clips_per_min": 0
+  },
+  "stock_queries": [],
+  "prompts": {
+    "outline": "You are the writer of a YouTube channel where a confident young teacher talks straight to camera and shows people how to get far more out of a tool, a skill or a habit.\n\nTITLE: [INSERT TITLE HERE]\nLENGTH: [INSERT LENGTH — e.g., 8 minutes, 12 minutes]\n\nPlan the video in plain prose.\n- The hook: the viewer's own frustrating routine, said to their face, and a dare (if you're happy with that, close this video). Then the promise and the time it takes ('the next ten minutes').\n- The reframe: what most people do with it, and how small a part of it that is — with one number the edit can put on screen.\n- The body: numbered tips from beginner to advanced. Each tip is ONE change, a concrete example the viewer could copy word for word, and the result it gets.\n- At least twice, a little scene of the viewer's life the edit can act out as a cartoon (on the couch at night, at a desk at 9 a.m.).\n- The close: the tips in one line, and one thing to do today.\nFor each part: one line on what happens, the example, and the things the edit can show (a number, a menu path, a typed prompt, an object, a scene).",
+    "script": "Write the complete narration from the plan below.\n\nTHE PLAN:\n[INSERT OUTLINE HERE]\n\nHOW IT SOUNDS\n- One person talking to one person: confident, quick, warm, a little provocative. Short sentences. Contractions. 'You' all the time.\n- The FIRST TWO SENTENCES are a dare spoken to camera: the boring routine, then 'close this video'.\n- Every tip has a concrete example said exactly as the viewer would type or do it. Menu paths named in order ('Settings, then Personalization, then Custom instructions').\n- Facts must be true today; when unsure, say it as an estimate ('maybe two percent'). Never invent a study or a statistic.\n- Plain spoken text only: no headings, no stage directions, no lists, no emojis; numbers written as they are read aloud.\n- End on the one thing to do today, then one short line pointing to the next video."
+  },
+  "thumbnail": {
+    "brief": "The presenter's face large on one side, surprised or certain; on the other side one glossy glass object or a big neon number from the video. Dark navy background, one blue glow, one red accent.",
+    "accent": "#3D6BFF"
+  }
+}

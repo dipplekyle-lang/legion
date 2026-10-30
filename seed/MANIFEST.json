@@ -1,0 +1,30 @@
+{
+ "files": {
+  "script_structure/challenge-videos.json": "9a45026fa786d50f0a8cda6dc9e704c6381f5760eef10f5155fb50e5aa4f0b9c",
+  "short_styles/3d-house-explainer/critic_style.md": "361bc544a12d6d446fe18d8bbca36e763cfb6a46efbca0cf3bdddd3c5f41f9ee",
+  "short_styles/3d-house-explainer/SPEC.md": "3202b4cd562bbaa4eab8148db38d803168630d916706aeeee86a6bd384b6887a",
+  "short_styles/3d-house-explainer.json": "9d637c914354f5cc4c64273b6999fa72cd023f530017fbcc13a9fa2d56381589",
+  "short_styles/3d-medical-what-if.json": "f8d068dfebf50a496c05e602c6c41bb99bc84121fe6b3f5d7969a246dd667686",
+  "short_styles/clay-parables/SPEC.md": "49c95a9d2d0a2ced25dd9e86eff6c6595e7c714e01870efa0c8fec804bd050a8",
+  "short_styles/clay-parables.json": "939148109ec48c452614bfcb7ef2f4c549af51fc900d5e5825dca71d4d6cb1ad",
+  "short_styles/cosmic-explainer/critic_style.md": "9593ecab602a82fce3bd43cf974316d35622ce46ee1d931449c1b682cae08560",
+  "short_styles/cosmic-explainer/SPEC.md": "512a52e32233ecef287073fb0f6b0fa2fe362f835faa03267c4947053babbd32",
+  "short_styles/cosmic-explainer.jpg": "8f0bd4d7a18a72ecc79cf73755da231e3198ec622bb2b8ac2a0c379ec236422c",
+  "short_styles/cosmic-explainer.json": "6ea765889f9fd2bf265fe2f8a288cf76404875de6f79010611584d6581eda243",
+  "short_styles/glowframe/SPEC.md": "664b54dfd607a67143634c51589805affbc5bbe65a35b1c11c2ebae756b88daf",
+  "short_styles/map-explainer/critic_style.md": "266b860e68a21dfce898128f5919b0d0d062fcf4487c37f50900b754ea62c3b8",
+  "short_styles/map-explainer/SPEC.md": "d4ab357befa3a4a31a9f99e7fd4d3cb990291ec0a360aa16840da0ed724de826",
+  "short_styles/map-explainer.json": "0ca3df217e3c44de934b9d2d7b1747b43c0c00274afc3bd96aecc0c231d56e49"
+ },
+ "old": {
+  "short_styles/3d-medical-what-if.json": [
+   "2b423527b5be42f1103961b25a9000bcb2e8a184522cb15e4b6efcaf4482f140",
+   "2b423527b5be42f1103961b25a9000bcb2e8a184522cb15e4b6efcaf4482f140"
+  ],
+  "short_styles/clay-parables.json": [
+   "1eef1ddc67101d3809f592a3a01be752ec3058ebb3729148db692b87b0a785a7",
+   "1eef1ddc67101d3809f592a3a01be752ec3058ebb3729148db692b87b0a785a7"
+  ]
+ },
+ "stills": false
+}

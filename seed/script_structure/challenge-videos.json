@@ -1,0 +1,192 @@
+{
+ "niche": "challenge videos",
+ "profile": {
+  "n": 8,
+  "hook_lift": {
+   "number": 6.8
+  },
+  "words": 70.5,
+  "sentences": 13.0,
+  "median_sentence": 4.2,
+  "short_share": 0.9,
+  "hook_words": 7.5,
+  "hooks": {
+   "number": 0.62,
+   "you": 0.12,
+   "question": 0.12,
+   "claim": 0.12
+  },
+  "numbers_per_100": 3.5,
+  "questions": 0.5,
+  "loops_back": 0.0,
+  "payoff_marker": 0.0,
+  "last_words": 4.0,
+  "at": 1792661434.1431458,
+  "hook_n": 14,
+  "hook_share": {
+   "number": 0.57,
+   "claim": 0.21,
+   "question": 0.14,
+   "first_person": 0.07
+  },
+  "hook_baseline": 8.1
+ },
+ "from": [
+  {
+   "vid": "fq-s8WPK2nk",
+   "title": "World\u2019s Largest Feastables S\u2019more",
+   "ratio": 18.8,
+   "hook": "you",
+   "hook_words": 3
+  },
+  {
+   "vid": "OykWt31S56I",
+   "title": "Can I Save A 100MPH Football?",
+   "ratio": 13.2,
+   "hook": "question",
+   "hook_words": 9
+  },
+  {
+   "vid": "YCdBgQUxMQA",
+   "title": "Would A Baby Choose $10,000 or Feastables?",
+   "ratio": 7.9,
+   "hook": "number",
+   "hook_words": 10
+  },
+  {
+   "vid": "g3yJwUFVAuU",
+   "title": "Last to Stop Dunking - the @NBAonNBC  is back!",
+   "ratio": 7.2,
+   "hook": "number",
+   "hook_words": 12
+  },
+  {
+   "vid": "YZSp52BEYAQ",
+   "title": "Last Man Standing Wins \ud83c\udfc6",
+   "ratio": 6.4,
+   "hook": "number",
+   "hook_words": 23
+  },
+  {
+   "vid": "0t1a_GpvFLE",
+   "title": "TRY NOT TO LAUGH IN PUBLIC (USA \ud83c\uddfa\ud83c\uddf8)",
+   "ratio": 4.8,
+   "hook": "number",
+   "hook_words": 5
+  },
+  {
+   "vid": "URBzTOl98Hw",
+   "title": "iSHOWSPEED TUG OF WAR CHALLENGE!",
+   "ratio": 4.2,
+   "hook": "number",
+   "hook_words": 6
+  },
+  {
+   "vid": "3ftdWZxH5zY",
+   "title": "TALLEST Man In The World!",
+   "ratio": 1.7,
+   "hook": "claim",
+   "hook_words": 6
+  }
+ ],
+ "openings": [
+  {
+   "vid": "fq-s8WPK2nk",
+   "title": "World\u2019s Largest Feastables S\u2019more",
+   "ratio": 18.8,
+   "hook": "first_person",
+   "short": true
+  },
+  {
+   "vid": "OykWt31S56I",
+   "title": "Can I Save A 100MPH Football?",
+   "ratio": 13.2,
+   "hook": "question",
+   "short": true
+  },
+  {
+   "vid": "YCdBgQUxMQA",
+   "title": "Would A Baby Choose $10,000 or Feastables?",
+   "ratio": 7.9,
+   "hook": "number",
+   "short": true
+  },
+  {
+   "vid": "g3yJwUFVAuU",
+   "title": "Last to Stop Dunking - the @NBAonNBC  is back!",
+   "ratio": 7.2,
+   "hook": "number",
+   "short": true
+  },
+  {
+   "vid": "YZSp52BEYAQ",
+   "title": "Last Man Standing Wins \ud83c\udfc6",
+   "ratio": 6.4,
+   "hook": "number",
+   "short": true
+  },
+  {
+   "vid": "0t1a_GpvFLE",
+   "title": "TRY NOT TO LAUGH IN PUBLIC (USA \ud83c\uddfa\ud83c\uddf8)",
+   "ratio": 4.8,
+   "hook": "question",
+   "short": true
+  },
+  {
+   "vid": "URBzTOl98Hw",
+   "title": "iSHOWSPEED TUG OF WAR CHALLENGE!",
+   "ratio": 4.2,
+   "hook": "number",
+   "short": true
+  },
+  {
+   "vid": "3ftdWZxH5zY",
+   "title": "TALLEST Man In The World!",
+   "ratio": 1.7,
+   "hook": "number",
+   "short": true
+  },
+  {
+   "vid": "0BAkKJ_3Tic",
+   "title": "Lowest Heart Rate Wins!",
+   "ratio": 1.0,
+   "hook": "number",
+   "short": true
+  },
+  {
+   "vid": "e5J5QA0gRBs",
+   "title": "Survive 73 Days To Get $1 Million. He Unexpectedly Discovered An Elk And Shot It For Food.",
+   "ratio": 73.4,
+   "hook": "claim",
+   "short": false
+  },
+  {
+   "vid": "pRRM_npL3Wk",
+   "title": "Survive 66 Days To Get 3 Million Us Dollars, And She Has Endless Fish To Eat Every Day.",
+   "ratio": 13.8,
+   "hook": "number",
+   "short": false
+  },
+  {
+   "vid": "GBZLa_Heub8",
+   "title": "He caught birds and fish for food, lost  30kg in 87 days, and earned $3 million.",
+   "ratio": 9.4,
+   "hook": "number",
+   "short": false
+  },
+  {
+   "vid": "iQ2OW8GxyIc",
+   "title": "Saving my Sister From a BLIZZARD",
+   "ratio": 8.24,
+   "hook": "claim",
+   "short": false
+  },
+  {
+   "vid": "k_saCgccb2g",
+   "title": "I Caught The World's Rarest Ocean Animal!",
+   "ratio": 8.24,
+   "hook": "claim",
+   "short": false
+  }
+ ]
+}

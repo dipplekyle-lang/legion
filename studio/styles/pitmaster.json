@@ -1,0 +1,126 @@
+{
+  "name": "pitmaster",
+  "order": 6.5,
+  "label": "PITMASTER",
+  "description": "An old pitmaster talks to you from beside his smoker, one cook at a time, and the drawings on aged paper show the cut, the fire and the wrong way beside the right one. Every video also sells his own illustrated pit book: halfway through he points at the real lesson number, the pages land on the table, and a card with a QR code and the video's own short link sends the viewer to the book.",
+  "tagline": "Sixty years on the pit — and his book in every video.",
+  "points": [
+    "The presenter carries the video — about 25 seconds of every minute, by the smoker",
+    "Numbered rules, one cook at a time, drawn in ink on aged paper",
+    "Halfway through he mentions his own book — a real lesson number, never a sales pitch",
+    "The book on screen: him holding it, the pages landing, a card with the price and a QR code",
+    "Every video gets its own short link, so you can see which video sold each copy"
+  ],
+  "script_craft": "story",
+  "cost": "about $0.50 a minute",
+  "render_x": 2.8,
+  "language": "English",
+  "voice": {
+    "provider": "ai33",
+    "chunk_chars": 4000,
+    "voice_id": "elevenlabs_3kcyZGqJDoHVxOnQ78Ek",
+    "voice_name": "warm baritone, African-American, 60s",
+    "gender": "male",
+    "note": "A man who has done the job for forty years. Swapping it means swapping the presenter's gender too — the library is filtered by it."
+  },
+  "features": {
+    "offered": [
+      "youtube",
+      "ai_images",
+      "depth",
+      "sound",
+      "avatar",
+      "motion"
+    ],
+    "on": [
+      "ai_images",
+      "depth",
+      "sound",
+      "avatar",
+      "motion"
+    ],
+    "prefer": "ai_images"
+  },
+  "look": {
+    "graphics": "kit",
+    "title_font": "'Oswald', Impact, sans-serif",
+    "title_weight": 700,
+    "accent": [
+      "#B3301F",
+      "#EFE4CE",
+      "#2E7D32",
+      "#8A5A32"
+    ],
+    "warn": "#B3301F",
+    "good": "#2E7D32",
+    "skins": [
+      "noir"
+    ],
+    "caption_accent": "&H4CB4E9&",
+    "captions": {
+      "font": "Barlow Condensed SemiBold",
+      "size": 72,
+      "upper": true,
+      "karaoke": false,
+      "box": true,
+      "outline": 0.4,
+      "outline_colour": "&H2E120F0A",
+      "shadow": 0.0,
+      "line_chars": 30,
+      "margin_v": 66
+    },
+    "footage_grade": "eq=contrast=1.05:saturation=0.96:gamma=1.02",
+    "dust": false,
+    "vignette": false,
+    "leak": false,
+    "encode": {
+      "preset": "medium",
+      "tune": "film",
+      "crf": 19
+    },
+    "options_note": "The presenter is the channel: he is on screen about a quarter of every minute, from a different camera each time. Turn the AI presenter off and this becomes an ordinary picture channel.",
+    "photofx": {
+      "every_s": 18,
+      "gap_s": 3,
+      "depth_subjects": "any",
+      "depth_every": 3
+    },
+    "director": true,
+    "placement": "story",
+    "kit": "workshop",
+    "still_suffix": " Photorealistic photograph taken on a full-frame camera, 35mm, available light, true-to-life colour, real texture — worn wood, soot, grease, sawdust, cold metal. A working place that is used, not styled. No illustration, no 3D render, no CGI, no text, no watermark, no logo.",
+    "scene_prompt": "You are the stills photographer on a channel where one tradesman explains his craft.\n\nCHANNEL: [INSERT CHANNEL HERE]\n\nBelow is the full spoken SCRIPT. Design [INSERT COUNT HERE] photographs that carry this video.\n\nTHE ONE RULE ABOUT PEOPLE: the presenter is the only person this channel has. A scene either shows HIM — and then it is him and nobody else — or it shows no face at all: the thing itself, a pair of hands at work, the place. Never another man, never a crowd, never a customer, never a stranger at a bench. A second person in a one-man channel reads as stock footage.\n\nTHE SECOND RULE: each category below may be used AT MOST ONCE per ten scenes. Work through the script in order and take the category that has gone longest unused.\n\n 1. THE THING ITSELF, CLOSE — the cut, the joint, the grain, the surface, filling the frame.\n 2. THE PLACE, WIDE — the whole working place, lit by whatever light it really has, empty of people.\n 3. HANDS AT WORK — one pair of hands mid-action, no face: turning, trimming, wiping, lifting.\n 4. THE TOOL — the implement of this trade where it lives: on its hook, in the fire, on the bench.\n 5. THE MISTAKE — the ruined version, photographed plainly: burnt, dried out, split, grey.\n 6. THE RIGHT RESULT — the same thing done properly, undramatic and believable.\n 7. THE DETAIL NOBODY PHOTOGRAPHS — the seam, the drip, the ash, the scar in the wood.\n 8. THE MEASURE — the dial, the gauge, the clock, the thermometer, read at the moment it matters.\n 9. THE MATERIAL BEFORE IT IS USED — raw, stacked, waiting: wood, meat, metal, stone.\n10. WHAT IT IS FOR — the finished thing set down where it will be used or eaten, nobody in frame.\n\nALSO\n- Each scene illustrates a MOMENT the narrator actually reaches, in the script's order.\n- No text, letters, numbers, labels or packaging writing anywhere in frame.\n- A real working place: soot, sawdust, grease, worn handles, mismatched tools. Never a showroom, never a studio, never a stock photo.\n- Vary the distance as well — wide, middle, close — but distance is not variety on its own.\n\nReturn ONLY a JSON array of [INSERT COUNT HERE] objects:\n\n  {\"text\": \"<the line of narration this scene belongs to>\",\n   \"prompt\": \"<a complete image-generation prompt>\"}\n\nSCRIPT:\n[INSERT SCRIPT HERE]",
+    "offer": {
+      "mention": true,
+      "cta": true,
+      "end_line": true,
+      "at": [
+        0.35,
+        0.55
+      ],
+      "slug": ""
+    }
+  },
+  "pacing": {
+    "graphic_every_min": 0.75,
+    "graphic_ratio": 0.4,
+    "graphic_dur_s": 7.0,
+    "graphic_max_s": 9.0,
+    "cold_open_s": 0,
+    "white_fade": 0.0,
+    "punch": true,
+    "wpm": 148,
+    "photo_every_s": 11,
+    "clips_per_min": 0.6
+  },
+  "stock_queries": [],
+  "prompts": {
+    "outline": "You are the writer for a barbecue channel where one old pitmaster talks to camera from beside his smoker.\n\nTITLE: [INSERT TITLE HERE]\nLENGTH: [INSERT LENGTH — e.g., 8 minutes, 12 minutes]\n\nHe has cooked on a pit most of his life. He is not a chef and not a salesman: he is the man his town calls when a cook goes wrong.\n\nPlan the video as numbered RULES or PARTS (as many as the title promises — five to ten), each about the same share of the running time, plus an opening and a close. Write them in plain prose.\n- The opening is him, on camera, naming the mistake almost everybody makes and what it costs (dry, tough, bitter, rubbery, raw in the middle). No greeting, no channel name.\n- Each numbered part is ONE thing: a cut, a temperature, a test, a tool, a myth he kills. It has a name you could burn into a plank in four words.\n- Every part gives a real number or a real test the viewer can use on the next cook (a temperature, a time, a weight, the bend test, the probe test) and the reason it works.\n- At least twice he tells a short story from his own life at the pit — a year, a place, a person who got it wrong — with the one detail only someone who was there would keep.\n- Food safety is never traded for tradition: where the old way is unsafe he says so and gives the safe number.\n- The close returns to the mistake from the opening and says what to do instead, once.\nFor each part: the number, its four-word name, one line on what happens, and the things the edit can show or draw.",
+    "script": "Write the complete narration from the plan below.\n\nTHE PLAN:\n[INSERT OUTLINE HERE]\n\nHOW HE SOUNDS\n- One man talking to one person across the pit. Short sentences. Contractions. A little Southern ('y'all', 'fixing to') but never a costume. Dry, certain, never excited. He says 'you' and means it.\n- The FIRST THREE SENTENCES are spoken to camera: the mistake, then what it costs. No preamble.\n- He announces each part by its number ('Rule four.' / 'Number six.') so the viewer always knows where they are.\n- He names real things: the cut, the wood, the temperature, the time, the tool. Round numbers and say 'about' when unsure. Never invent a study or a statistic.\n- Once a part, one sentence only a man who has done it would say — what it smells like when it's right, what the bark feels like when it's not.\n- Plain spoken text only: no headings, no stage directions, no speaker labels, no lists, no numbers written as digits — write them as they are read aloud.\n- He never says 'in this video'. He ends on the one thing to do next cook, then one short line asking people to subscribe."
+  },
+  "thumbnail": {
+    "brief": "His face to one side, weathered and serious, the meat big on the other — the brisket, the ribs, the bark, smoke in the light. Daylight, nothing studio, one red hand-lettered word.",
+    "accent": "#B3301F"
+  },
+  "options_note": "The book is the point of this channel: build it first with offer.py (or ask Claude Code for 'a product for my channel'), then attach it — python offer.py attach <name> --style pitmaster. Until a book is attached the videos are plain WORKSHOP-style pitmaster videos with no mention. Pick the same presenter the book's cover shows."
+}

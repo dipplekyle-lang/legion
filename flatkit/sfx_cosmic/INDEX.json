@@ -1,0 +1,252 @@
+{
+"Blips/Soft Blip 01.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0066,
+"ring": 0.144,
+"dur": 0.15,
+"db": -18.5,
+"bright": 481,
+"stamp": "13274:1792993496"
+},
+"Blips/Soft Blip 02.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.006,
+"ring": 0.144,
+"dur": 0.15,
+"db": -18.8,
+"bright": 538,
+"stamp": "13274:1792993496"
+},
+"Blips/Soft Blip 03.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0068,
+"ring": 0.144,
+"dur": 0.15,
+"db": -19.1,
+"bright": 602,
+"stamp": "13274:1792993496"
+},
+"Blips/Soft Blip 04.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0067,
+"ring": 0.144,
+"dur": 0.15,
+"db": -18.6,
+"bright": 635,
+"stamp": "13274:1792993496"
+},
+"Blips/Soft Blip 05.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0065,
+"ring": 0.144,
+"dur": 0.15,
+"db": -18.7,
+"bright": 711,
+"stamp": "13274:1792993496"
+},
+"Blips/Soft Blip 06.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0065,
+"ring": 0.144,
+"dur": 0.15,
+"db": -18.7,
+"bright": 795,
+"stamp": "13274:1792993496"
+},
+"Chimes/Mallet Chime 01.wav": {
+"role": "realise",
+"onset": 0.0,
+"peak": 0.0093,
+"ring": 0.359,
+"dur": 0.38,
+"db": -20.2,
+"bright": 432,
+"stamp": "33560:1792993496"
+},
+"Chimes/Mallet Chime 02.wav": {
+"role": "realise",
+"onset": 0.0,
+"peak": 0.0086,
+"ring": 0.36,
+"dur": 0.38,
+"db": -20.3,
+"bright": 480,
+"stamp": "33560:1792993496"
+},
+"Chimes/Mallet Chime 03.wav": {
+"role": "realise",
+"onset": 0.0,
+"peak": 0.0085,
+"ring": 0.36,
+"dur": 0.38,
+"db": -20.3,
+"bright": 533,
+"stamp": "33560:1792993496"
+},
+"Chimes/Mallet Chime 04.wav": {
+"role": "realise",
+"onset": 0.0,
+"peak": 0.0083,
+"ring": 0.36,
+"dur": 0.38,
+"db": -19.9,
+"bright": 623,
+"stamp": "33560:1792993496"
+},
+"Chimes/Mallet Chime 05.wav": {
+"role": "realise",
+"onset": 0.0,
+"peak": 0.0096,
+"ring": 0.36,
+"dur": 0.38,
+"db": -19.8,
+"bright": 693,
+"stamp": "33560:1792993496"
+},
+"Chimes/Mallet Chime 06.wav": {
+"role": "realise",
+"onset": 0.0,
+"peak": 0.0106,
+"ring": 0.36,
+"dur": 0.38,
+"db": -20.0,
+"bright": 773,
+"stamp": "33560:1792993496"
+},
+"Knocks/Soft Knock 01.wav": {
+"role": "foley",
+"onset": 0.0,
+"peak": 0.0055,
+"ring": 0.08,
+"dur": 0.08,
+"db": -17.4,
+"bright": 289,
+"stamp": "7100:1792993496"
+},
+"Knocks/Soft Knock 02.wav": {
+"role": "foley",
+"onset": 0.0,
+"peak": 0.005,
+"ring": 0.08,
+"dur": 0.08,
+"db": -18.6,
+"bright": 290,
+"stamp": "7100:1792993496"
+},
+"Knocks/Soft Knock 03.wav": {
+"role": "foley",
+"onset": 0.0,
+"peak": 0.0051,
+"ring": 0.08,
+"dur": 0.08,
+"db": -18.0,
+"bright": 289,
+"stamp": "7100:1792993496"
+},
+"Pops/Soft Pop 01.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0062,
+"ring": 0.159,
+"dur": 0.16,
+"db": -21.0,
+"bright": 738,
+"stamp": "14156:1792993496"
+},
+"Pops/Soft Pop 02.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.006,
+"ring": 0.158,
+"dur": 0.16,
+"db": -21.8,
+"bright": 794,
+"stamp": "14156:1792993496"
+},
+"Pops/Soft Pop 03.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.006,
+"ring": 0.158,
+"dur": 0.16,
+"db": -21.2,
+"bright": 840,
+"stamp": "14156:1792993496"
+},
+"Pops/Soft Pop 04.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0059,
+"ring": 0.159,
+"dur": 0.16,
+"db": -21.8,
+"bright": 974,
+"stamp": "14156:1792993496"
+},
+"Pops/Soft Pop 05.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0059,
+"ring": 0.159,
+"dur": 0.16,
+"db": -21.6,
+"bright": 934,
+"stamp": "14156:1792993496"
+},
+"Pops/Soft Pop 06.wav": {
+"role": "appear",
+"onset": 0.0,
+"peak": 0.0058,
+"ring": 0.159,
+"dur": 0.16,
+"db": -21.9,
+"bright": 1083,
+"stamp": "14156:1792993496"
+},
+"Whooshes/Soft Whoosh 01.wav": {
+"role": "move",
+"onset": 0.0,
+"peak": 0.0067,
+"ring": 0.256,
+"dur": 0.26,
+"db": -19.1,
+"bright": 921,
+"stamp": "22976:1792993496"
+},
+"Whooshes/Soft Whoosh 02.wav": {
+"role": "move",
+"onset": 0.0,
+"peak": 0.0066,
+"ring": 0.256,
+"dur": 0.26,
+"db": -19.8,
+"bright": 895,
+"stamp": "22976:1792993496"
+},
+"Whooshes/Soft Whoosh 03.wav": {
+"role": "move",
+"onset": 0.0,
+"peak": 0.0073,
+"ring": 0.256,
+"dur": 0.26,
+"db": -19.3,
+"bright": 866,
+"stamp": "22976:1792993496"
+},
+"Whooshes/Soft Whoosh 04.wav": {
+"role": "move",
+"onset": 0.0,
+"peak": 0.0071,
+"ring": 0.256,
+"dur": 0.26,
+"db": -20.0,
+"bright": 852,
+"stamp": "22976:1792993496"
+}
+}

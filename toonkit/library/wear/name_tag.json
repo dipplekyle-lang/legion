@@ -1,0 +1,16 @@
+{
+ "name": "name_tag",
+ "kind": "wear",
+ "desc": "chest name tag with custom text",
+ "tags": [
+  "name tag",
+  "accessory",
+  "diner"
+ ],
+ "usage": "wear_name_tag(c.body, {text})",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

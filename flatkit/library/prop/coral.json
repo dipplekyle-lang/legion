@@ -1,0 +1,18 @@
+{
+ "name": "coral",
+ "kind": "prop",
+ "desc": "a coral: kind 'brain' (dome + ridges) | 'branch' (fingers) | 'fan'; optional tiny face (o.face = mood)",
+ "tags": [
+  "reef",
+  "coral",
+  "underwater",
+  "ocean",
+  "sea",
+  "diving",
+  "marine"
+ ],
+ "usage": "prop_coral(g, x, groundY, size, colour, 'branch', t, { face: 'worried' })",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "prop_coral(g, 300, 1000, 380, '#FF6FAE', 'branch', 1); prop_coral(g, 760, 1000, 380, '#FFB020', 'brain', 1, { face: 'worried' })"
+}

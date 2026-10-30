@@ -1,0 +1,16 @@
+{
+ "name": "puffer_vest",
+ "kind": "wear",
+ "desc": "sporty jacket cloth painter with zip stripes",
+ "tags": [
+  "outfit",
+  "jacket",
+  "casual"
+ ],
+ "usage": "cloth: wear_puffer_vest()",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

@@ -1,0 +1,16 @@
+{
+ "name": "bandana_knot",
+ "kind": "wear",
+ "desc": "bandana tails tied at the back of the head",
+ "tags": [
+  "bandana",
+  "cook",
+  "accessory"
+ ],
+ "usage": "wear_bandana_knot(c.head, {color})",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

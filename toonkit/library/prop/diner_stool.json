@@ -1,0 +1,18 @@
+{
+ "desc": "chrome and red-vinyl diner counter stool",
+ "tags": [
+  "diner",
+  "stool",
+  "counter",
+  "chrome",
+  "furniture"
+ ],
+ "usage": "prop_diner_stool({x, z, color})",
+ "name": "diner_stool",
+ "kind": "prop",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

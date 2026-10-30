@@ -1,0 +1,13 @@
+{
+ "assets": [
+  {
+   "id": "overlay_dust",
+   "when": "archive_shots"
+  }
+ ],
+ "kit_palette": false,
+ "kit_fonts": false,
+ "cinema": {
+  "title_card": false
+ }
+}

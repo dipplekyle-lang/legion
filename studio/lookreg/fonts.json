@@ -1,0 +1,1629 @@
+{
+ "generated_by": "lookreg.fonts.regenerate (fontTools)",
+ "dirs": [
+  "assets/fonts",
+  "assets/kits/fonts"
+ ],
+ "fonts": [
+  {
+   "file": "assets/fonts/AlfaSlabOne-Regular.ttf",
+   "dir": "assets/fonts",
+   "family": "Alfa Slab One",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Alfa Slab One Regular",
+   "ps": "AlfaSlabOne-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Alfa Slab One",
+   "maps_alias": "Alfa Slab One Regular",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 734
+  },
+  {
+   "file": "assets/fonts/Anton-Regular.ttf",
+   "dir": "assets/fonts",
+   "family": "Anton",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Anton Regular",
+   "ps": "Anton-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Anton",
+   "maps_alias": "Anton Regular",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1326
+  },
+  {
+   "file": "assets/fonts/ArchivoBlack.ttf",
+   "dir": "assets/fonts",
+   "family": "Archivo Black",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Archivo Black Regular",
+   "ps": "ArchivoBlack-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Archivo Black",
+   "maps_alias": "Archivo Black",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 426
+  },
+  {
+   "file": "assets/fonts/Bangers.ttf",
+   "dir": "assets/fonts",
+   "family": "Bangers",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Bangers Regular",
+   "ps": "Bangers-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Bangers",
+   "maps_alias": "Bangers",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 597
+  },
+  {
+   "file": "assets/fonts/BarlowCondensed-Bold.ttf",
+   "dir": "assets/fonts",
+   "family": "Barlow Condensed",
+   "typo_family": "",
+   "style": "Bold",
+   "full": "Barlow Condensed Bold",
+   "ps": "BarlowCondensed-Bold",
+   "weight": 700,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Barlow Condensed",
+   "maps_alias": "Barlow Condensed Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 694
+  },
+  {
+   "file": "assets/fonts/BarlowCondensed-SemiBold.ttf",
+   "dir": "assets/fonts",
+   "family": "Barlow Condensed SemiBold",
+   "typo_family": "Barlow Condensed",
+   "style": "Regular",
+   "full": "Barlow Condensed SemiBold",
+   "ps": "BarlowCondensed-SemiBold",
+   "weight": 600,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Barlow Condensed SemiBold",
+   "maps_alias": "Barlow Condensed Semi Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 694
+  },
+  {
+   "file": "assets/fonts/BarlowCondensed-SemiBoldItalic.ttf",
+   "dir": "assets/fonts",
+   "family": "Barlow Condensed SemiBold",
+   "typo_family": "Barlow Condensed",
+   "style": "Italic",
+   "full": "Barlow Condensed SemiBold Italic",
+   "ps": "BarlowCondensed-SemiBoldItalic",
+   "weight": 600,
+   "italic": true,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Barlow Condensed SemiBold",
+   "maps_alias": "Barlow Condensed Semi Bold Italic",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 694
+  },
+  {
+   "file": "assets/fonts/BebasNeue.ttf",
+   "dir": "assets/fonts",
+   "family": "Bebas Neue",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Bebas Neue Regular",
+   "ps": "BebasNeue-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Bebas Neue",
+   "maps_alias": "Bebas Neue",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 508
+  },
+  {
+   "file": "assets/fonts/Caveat.ttf",
+   "dir": "assets/fonts",
+   "family": "Caveat",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Caveat Regular",
+   "ps": "Caveat-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Caveat",
+   "maps_alias": "Caveat",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1034
+  },
+  {
+   "file": "assets/fonts/Cinzel.ttf",
+   "dir": "assets/fonts",
+   "family": "Cinzel",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Cinzel Regular",
+   "ps": "Cinzel-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Cinzel",
+   "maps_alias": "Cinzel",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 548
+  },
+  {
+   "file": "assets/fonts/CourierPrime-Bold.ttf",
+   "dir": "assets/fonts",
+   "family": "Courier Prime",
+   "typo_family": "",
+   "style": "Bold",
+   "full": "Courier Prime Bold",
+   "ps": "CourierPrime-Bold",
+   "weight": 700,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Courier Prime",
+   "maps_alias": "Courier Prime Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 415
+  },
+  {
+   "file": "assets/fonts/CourierPrime.ttf",
+   "dir": "assets/fonts",
+   "family": "Courier Prime",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Courier Prime Regular",
+   "ps": "CourierPrime-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Courier Prime",
+   "maps_alias": "Courier Prime",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 415
+  },
+  {
+   "file": "assets/fonts/DMSerifDisplay.ttf",
+   "dir": "assets/fonts",
+   "family": "DM Serif Display",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "DM Serif Display Regular",
+   "ps": "DMSerifDisplay-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "DM Serif Display",
+   "maps_alias": "DMSerif Display",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 355
+  },
+  {
+   "file": "assets/fonts/EB-Garamond-Italic.ttf",
+   "dir": "assets/fonts",
+   "family": "EB Garamond",
+   "typo_family": "",
+   "style": "Italic",
+   "full": "EB Garamond Italic",
+   "ps": "EBGaramond-Italic",
+   "weight": 400,
+   "italic": true,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "EB Garamond",
+   "maps_alias": "EB Garamond Italic",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2906
+  },
+  {
+   "file": "assets/fonts/EB-Garamond.ttf",
+   "dir": "assets/fonts",
+   "family": "EB Garamond",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "EB Garamond Regular",
+   "ps": "EBGaramond-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "EB Garamond",
+   "maps_alias": "EB Garamond",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 3080
+  },
+  {
+   "file": "assets/fonts/Inter-Black.ttf",
+   "dir": "assets/fonts",
+   "family": "Inter Black",
+   "typo_family": "Inter",
+   "style": "Regular",
+   "full": "Inter Black",
+   "ps": "Inter-Black",
+   "weight": 900,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Inter Black",
+   "maps_alias": "Inter Black",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2937
+  },
+  {
+   "file": "assets/fonts/Inter-Bold.ttf",
+   "dir": "assets/fonts",
+   "family": "Inter",
+   "typo_family": "",
+   "style": "Bold",
+   "full": "Inter Bold",
+   "ps": "Inter-Bold",
+   "weight": 700,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Inter",
+   "maps_alias": "Inter Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2937
+  },
+  {
+   "file": "assets/fonts/Inter-ExtraBold.ttf",
+   "dir": "assets/fonts",
+   "family": "Inter ExtraBold",
+   "typo_family": "Inter",
+   "style": "Regular",
+   "full": "Inter ExtraBold",
+   "ps": "Inter-ExtraBold",
+   "weight": 800,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Inter ExtraBold",
+   "maps_alias": "Inter Extra Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2937
+  },
+  {
+   "file": "assets/fonts/Inter-SemiBold.ttf",
+   "dir": "assets/fonts",
+   "family": "Inter SemiBold",
+   "typo_family": "Inter",
+   "style": "Regular",
+   "full": "Inter SemiBold",
+   "ps": "Inter-SemiBold",
+   "weight": 600,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Inter SemiBold",
+   "maps_alias": "Inter Semi Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2937
+  },
+  {
+   "file": "assets/fonts/InterDisplay-Black.ttf",
+   "dir": "assets/fonts",
+   "family": "Inter Display Black",
+   "typo_family": "Inter Display",
+   "style": "Regular",
+   "full": "Inter Display Black",
+   "ps": "InterDisplay-Black",
+   "weight": 900,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Inter Display Black",
+   "maps_alias": "Inter Display Black",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2937
+  },
+  {
+   "file": "assets/fonts/KodeMono.ttf",
+   "dir": "assets/fonts",
+   "family": "Kode Mono",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Kode Mono Regular",
+   "ps": "KodeMono-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Kode Mono",
+   "maps_alias": "Kode Mono",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 488
+  },
+  {
+   "file": "assets/fonts/LilitaOne.ttf",
+   "dir": "assets/fonts",
+   "family": "Lilita One",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Lilita One",
+   "ps": "LilitaOne",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Lilita One",
+   "maps_alias": "Lilita One",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": false,
+    "pl": false,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {
+    "cs": "čďěňřťůČĎĚŇŘŤŮ",
+    "pl": "ąćęńśźżĄĆĘŃŚŹŻ"
+   },
+   "latin_only": true,
+   "glyphs": 229
+  },
+  {
+   "file": "assets/fonts/Lora-Italic.ttf",
+   "dir": "assets/fonts",
+   "family": "Lora",
+   "typo_family": "",
+   "style": "Italic",
+   "full": "Lora Italic",
+   "ps": "Lora-Italic",
+   "weight": 400,
+   "italic": true,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Lora",
+   "maps_alias": "Lora Italic",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 889
+  },
+  {
+   "file": "assets/fonts/Lora.ttf",
+   "dir": "assets/fonts",
+   "family": "Lora",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Lora Regular",
+   "ps": "Lora-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Lora",
+   "maps_alias": "Lora",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 892
+  },
+  {
+   "file": "assets/fonts/Montserrat-Black.ttf",
+   "dir": "assets/fonts",
+   "family": "Montserrat Black",
+   "typo_family": "Montserrat",
+   "style": "Regular",
+   "full": "Montserrat Black",
+   "ps": "Montserrat-Black",
+   "weight": 900,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Montserrat Black",
+   "maps_alias": "Montserrat Black",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2677
+  },
+  {
+   "file": "assets/fonts/Montserrat-Book.ttf",
+   "dir": "assets/fonts",
+   "family": "Montserrat Book",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Montserrat Book",
+   "ps": "Montserrat-Book",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Montserrat Book",
+   "maps_alias": "Montserrat Book",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2677
+  },
+  {
+   "file": "assets/fonts/Montserrat-ExtraBold.ttf",
+   "dir": "assets/fonts",
+   "family": "Montserrat ExtraBold",
+   "typo_family": "Montserrat",
+   "style": "Regular",
+   "full": "Montserrat ExtraBold",
+   "ps": "Montserrat-ExtraBold",
+   "weight": 800,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Montserrat ExtraBold",
+   "maps_alias": "Montserrat Extra Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2677
+  },
+  {
+   "file": "assets/fonts/Montserrat-Light.ttf",
+   "dir": "assets/fonts",
+   "family": "Montserrat Light",
+   "typo_family": "Montserrat",
+   "style": "Regular",
+   "full": "Montserrat Light",
+   "ps": "Montserrat-Light",
+   "weight": 300,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Montserrat Light",
+   "maps_alias": "Montserrat Light",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2654
+  },
+  {
+   "file": "assets/fonts/Oswald-Bold.ttf",
+   "dir": "assets/fonts",
+   "family": "Oswald",
+   "typo_family": "",
+   "style": "Bold",
+   "full": "Oswald Bold",
+   "ps": "Oswald-Bold",
+   "weight": 700,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Oswald",
+   "maps_alias": "Oswald Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 869
+  },
+  {
+   "file": "assets/fonts/Oswald.ttf",
+   "dir": "assets/fonts",
+   "family": "Oswald",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Oswald Regular",
+   "ps": "Oswald-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Oswald",
+   "maps_alias": "Oswald",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 883
+  },
+  {
+   "file": "assets/fonts/PatrickHand.ttf",
+   "dir": "assets/fonts",
+   "family": "Patrick Hand",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Patrick Hand",
+   "ps": "PatrickHand-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Patrick Hand",
+   "maps_alias": "Patrick Hand",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 728
+  },
+  {
+   "file": "assets/fonts/PlayfairDisplay.ttf",
+   "dir": "assets/fonts",
+   "family": "Playfair Display",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Playfair Display Regular",
+   "ps": "PlayfairDisplay-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Playfair Display",
+   "maps_alias": "Playfair Display",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1103
+  },
+  {
+   "file": "assets/fonts/Poppins-Bold.ttf",
+   "dir": "assets/fonts",
+   "family": "Poppins",
+   "typo_family": "",
+   "style": "Bold",
+   "full": "Poppins Bold",
+   "ps": "Poppins-Bold",
+   "weight": 700,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Poppins",
+   "maps_alias": "Poppins Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1060
+  },
+  {
+   "file": "assets/fonts/Poppins-ExtraBold.ttf",
+   "dir": "assets/fonts",
+   "family": "Poppins ExtraBold",
+   "typo_family": "Poppins",
+   "style": "Regular",
+   "full": "Poppins ExtraBold",
+   "ps": "Poppins-ExtraBold",
+   "weight": 800,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Poppins ExtraBold",
+   "maps_alias": "Poppins Extra Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1060
+  },
+  {
+   "file": "assets/fonts/Poppins-SemiBold.ttf",
+   "dir": "assets/fonts",
+   "family": "Poppins SemiBold",
+   "typo_family": "Poppins",
+   "style": "Regular",
+   "full": "Poppins SemiBold",
+   "ps": "Poppins-SemiBold",
+   "weight": 600,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Poppins SemiBold",
+   "maps_alias": "Poppins Semi Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1060
+  },
+  {
+   "file": "assets/fonts/Roboto-Condensed-Italic.ttf",
+   "dir": "assets/fonts",
+   "family": "Roboto Condensed",
+   "typo_family": "",
+   "style": "Italic",
+   "full": "Roboto Condensed Italic",
+   "ps": "RobotoCondensed-Italic",
+   "weight": 400,
+   "italic": true,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Roboto Condensed",
+   "maps_alias": "Roboto Condensed Italic",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1321
+  },
+  {
+   "file": "assets/fonts/Roboto-Condensed.ttf",
+   "dir": "assets/fonts",
+   "family": "Roboto Condensed",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Roboto Condensed Regular",
+   "ps": "RobotoCondensed-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Roboto Condensed",
+   "maps_alias": "Roboto Condensed",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1321
+  },
+  {
+   "file": "assets/fonts/RobotoSlab-VF.ttf",
+   "dir": "assets/fonts",
+   "family": "Roboto Slab",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Roboto Slab Regular",
+   "ps": "RobotoSlab-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Roboto Slab",
+   "maps_alias": "Roboto Slab VF",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": true,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1164
+  },
+  {
+   "file": "assets/fonts/SairaStencilOne.ttf",
+   "dir": "assets/fonts",
+   "family": "Saira Stencil One",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Saira Stencil One Regular",
+   "ps": "SairaStencilOne-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Saira Stencil One",
+   "maps_alias": "Saira Stencil One",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 904
+  },
+  {
+   "file": "assets/fonts/ShareTechMono.ttf",
+   "dir": "assets/fonts",
+   "family": "Share Tech Mono",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Share Tech Mono",
+   "ps": "ShareTechMono-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Share Tech Mono",
+   "maps_alias": "Share Tech Mono",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": false,
+    "pl": false,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {
+    "cs": "čďěňřťůČĎĚŇŘŤŮ",
+    "pl": "ąćęńśźżĄĆĘŃŚŹŻ"
+   },
+   "latin_only": true,
+   "glyphs": 268
+  },
+  {
+   "file": "assets/fonts/SpaceMono-Bold.ttf",
+   "dir": "assets/fonts",
+   "family": "Space Mono",
+   "typo_family": "",
+   "style": "Bold",
+   "full": "Space Mono Bold",
+   "ps": "SpaceMono-Bold",
+   "weight": 700,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Space Mono",
+   "maps_alias": "Space Mono Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 765
+  },
+  {
+   "file": "assets/fonts/SpecialElite.ttf",
+   "dir": "assets/fonts",
+   "family": "Special Elite",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Special Elite Regular",
+   "ps": "SpecialElite-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Special Elite",
+   "maps_alias": "Special Elite",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 370
+  },
+  {
+   "file": "assets/fonts/VT323.ttf",
+   "dir": "assets/fonts",
+   "family": "VT323",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "VT323 Regular",
+   "ps": "VT323-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "VT323",
+   "maps_alias": "VT323",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 587
+  },
+  {
+   "file": "assets/fonts/ZillaSlab-Bold.ttf",
+   "dir": "assets/fonts",
+   "family": "Zilla Slab",
+   "typo_family": "",
+   "style": "Bold",
+   "full": "Zilla Slab Bold",
+   "ps": "ZillaSlab-Bold",
+   "weight": 700,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Zilla Slab",
+   "maps_alias": "Zilla Slab Bold",
+   "engines": {
+    "libass": true,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": true,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1056
+  },
+  {
+   "file": "assets/kits/fonts/HKDrip-Regular.ttf",
+   "dir": "assets/kits/fonts",
+   "family": "HK Drip",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "HK Drip",
+   "ps": "HKDrip-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "HK Drip",
+   "maps_alias": "",
+   "engines": {
+    "libass": false,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": false,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": false,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {
+    "pl": "ąćęńśźżĄĆĘŃŚŹŻ"
+   },
+   "latin_only": true,
+   "glyphs": 244
+  },
+  {
+   "file": "assets/kits/fonts/InterVar.ttf",
+   "dir": "assets/kits/fonts",
+   "family": "Inter",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Inter Regular",
+   "ps": "Inter-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "opsz",
+    "wght"
+   ],
+   "css_alias": "Inter",
+   "maps_alias": "",
+   "engines": {
+    "libass": false,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": false,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2933
+  },
+  {
+   "file": "assets/kits/fonts/MontserratVar.ttf",
+   "dir": "assets/kits/fonts",
+   "family": "Montserrat Thin",
+   "typo_family": "Montserrat",
+   "style": "Regular",
+   "full": "Montserrat Thin",
+   "ps": "Montserrat-Thin",
+   "weight": 100,
+   "italic": false,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Montserrat Thin",
+   "maps_alias": "",
+   "engines": {
+    "libass": false,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": false,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 2677
+  },
+  {
+   "file": "assets/kits/fonts/PlayfairDisplay-Italic.ttf",
+   "dir": "assets/kits/fonts",
+   "family": "Playfair Display",
+   "typo_family": "",
+   "style": "Italic",
+   "full": "Playfair Display Italic",
+   "ps": "PlayfairDisplay-Italic",
+   "weight": 400,
+   "italic": true,
+   "variable": true,
+   "axes": [
+    "wght"
+   ],
+   "css_alias": "Playfair Display",
+   "maps_alias": "",
+   "engines": {
+    "libass": false,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": false,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1101
+  },
+  {
+   "file": "assets/kits/fonts/Poppins-Medium.ttf",
+   "dir": "assets/kits/fonts",
+   "family": "Poppins Medium",
+   "typo_family": "Poppins",
+   "style": "Regular",
+   "full": "Poppins Medium",
+   "ps": "Poppins-Medium",
+   "weight": 500,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Poppins Medium",
+   "maps_alias": "",
+   "engines": {
+    "libass": false,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": false,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1060
+  },
+  {
+   "file": "assets/kits/fonts/Poppins-Regular.ttf",
+   "dir": "assets/kits/fonts",
+   "family": "Poppins",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Poppins Regular",
+   "ps": "Poppins-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Poppins",
+   "maps_alias": "",
+   "engines": {
+    "libass": false,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": false,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 1060
+  },
+  {
+   "file": "assets/kits/fonts/PressStart2P-Regular.ttf",
+   "dir": "assets/kits/fonts",
+   "family": "Press Start 2P",
+   "typo_family": "",
+   "style": "Regular",
+   "full": "Press Start 2P Regular",
+   "ps": "PressStart2P-Regular",
+   "weight": 400,
+   "italic": false,
+   "variable": false,
+   "axes": [],
+   "css_alias": "Press Start 2P",
+   "maps_alias": "",
+   "engines": {
+    "libass": false,
+    "libass_default_instance_only": false,
+    "chromium": true,
+    "maps": false,
+    "pil": true
+   },
+   "coverage": {
+    "cs": true,
+    "pl": true,
+    "de": true,
+    "quotes": true
+   },
+   "missing": {},
+   "latin_only": false,
+   "glyphs": 658
+  }
+ ]
+}

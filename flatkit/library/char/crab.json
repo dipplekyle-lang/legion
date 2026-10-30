@@ -1,0 +1,19 @@
+{
+ "name": "crab",
+ "kind": "char",
+ "desc": "a tiny crab with eye stalks and raised, waving claws",
+ "tags": [
+  "crab",
+  "beach",
+  "tide",
+  "shore",
+  "sea",
+  "ocean",
+  "rock pool",
+  "tidal"
+ ],
+ "usage": "char_crab(g, x, y, size, t, '#FF4D3A')",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "char_crab(g, 540, 640, 600, 1)"
+}

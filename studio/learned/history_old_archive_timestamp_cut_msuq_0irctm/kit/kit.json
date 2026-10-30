@@ -1,0 +1,204 @@
+{
+ "name": "gen_the_man_who_surviv_dfec",
+ "js": "kit.js",
+ "label": "ARCHIVE TIMESTAMP CUT (learned)",
+ "fonts": [
+  [
+   "Inter",
+   "Inter-Bold.ttf",
+   "700",
+   "normal"
+  ],
+  [
+   "Inter",
+   "Inter-SemiBold.ttf",
+   "600",
+   "normal"
+  ],
+  [
+   "Space Mono",
+   "SpaceMono-Bold.ttf",
+   "400 700",
+   "normal"
+  ]
+ ],
+ "palette": {
+  "ground": "#101012",
+  "ink": "#F2F0EE",
+  "accent": "#E8788A",
+  "accent2": "#6FA3C0",
+  "muted": "#827F7F",
+  "map": "#5B6369",
+  "readout": "#AEA5A6"
+ },
+ "types": {
+  "title": 4.0,
+  "datestack": 4.5,
+  "rosetint": 2.5,
+  "blackbeat": 2.5,
+  "scopeplate": 12.0,
+  "longhold": 12.0,
+  "personcut": 3.0,
+  "countline": 3.0,
+  "placeflash": 2.5
+ },
+ "min_s": {
+  "title": 3.0,
+  "datestack": 3.6,
+  "rosetint": 1.6,
+  "blackbeat": 1.6,
+  "scopeplate": 6.0,
+  "longhold": 8.0,
+  "personcut": 2.0,
+  "countline": 2.2,
+  "placeflash": 1.8
+ },
+ "photo_types": [
+  "personcut",
+  "scopeplate"
+ ],
+ "frame_types": [
+  "datestack",
+  "rosetint",
+  "longhold",
+  "countline",
+  "placeflash"
+ ],
+ "grounds": {
+  "title": [
+   10.0,
+   0.34,
+   0.0
+  ],
+  "datestack": [
+   0.0,
+   0.92,
+   0.0
+  ],
+  "rosetint": [
+   0.0,
+   0.95,
+   0.0
+  ],
+  "blackbeat": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "scopeplate": [
+   8.0,
+   0.3,
+   0.0
+  ],
+  "longhold": [
+   0.0,
+   0.95,
+   1.0
+  ],
+  "personcut": [
+   14.0,
+   0.3,
+   0.0
+  ],
+  "countline": [
+   0.0,
+   0.8,
+   0.0
+  ],
+  "placeflash": [
+   0.0,
+   0.92,
+   0.0
+  ]
+ },
+ "sounds": {
+  "title": [
+   [
+    0.0,
+    "rumble",
+    -18.0
+   ],
+   [
+    0.35,
+    "hit",
+    -16.0
+   ]
+  ],
+  "datestack": [
+   [
+    0.0,
+    "hit",
+    -12.0
+   ],
+   [
+    1.4,
+    "hit",
+    -13.0
+   ],
+   [
+    2.8,
+    "hit",
+    -12.0
+   ]
+  ],
+  "rosetint": [
+   [
+    0.0,
+    "hit",
+    -11.0
+   ]
+  ],
+  "scopeplate": [
+   [
+    0.0,
+    "riser",
+    -22.0
+   ],
+   [
+    1.0,
+    "servo",
+    -24.0
+   ],
+   [
+    2.6,
+    "teletype",
+    -25.0
+   ]
+  ],
+  "longhold": [
+   [
+    0.0,
+    "riser",
+    -20.0
+   ]
+  ],
+  "personcut": [
+   [
+    0.0,
+    "shutter",
+    -18.0
+   ]
+  ],
+  "countline": [
+   [
+    0.0,
+    "hit",
+    -10.0
+   ],
+   [
+    0.0,
+    "sub_drop",
+    -20.0
+   ]
+  ],
+  "placeflash": [
+   [
+    0.0,
+    "hit",
+    -12.0
+   ]
+  ]
+ },
+ "prompt": "- graphic — a ARCHIVE TIMESTAMP CUT (learned) scene: one small plain white fact (a date, a clock time, a place, a distance or a count) cut onto real archive one beat at a time in a cold silver grade, with rose-duotone warning shots, black silence beats and a slow target-scope plate on a real period map. One of:\n  {\"tool\": \"graphic\", \"cue\": 1, \"words\": \"This is the story of one man, and two cities.\", \"type\": \"title\", \"title\": \"The Man Who Survived Both Atomic Bombs\", \"sub\": \"Hiroshima · Nagasaki · 1945\"}\n  {\"tool\": \"graphic\", \"cue\": 2, \"words\": \"On the morning of the sixth of August, at a quarter past eight, the sky over Hiroshima was clear.\", \"type\": \"datestack\", \"beats\": [\"06 August 1945\", \"08:15 AM\", \"Hiroshima\"]}\n  {\"tool\": \"graphic\", \"cue\": 4, \"words\": \"Tsutomu Yamaguchi, a draftsman for Mitsubishi, was in the city on a business trip.\", \"type\": \"personcut\", \"name\": \"Tsutomu Yamaguchi\", \"meta\": \"1916–2010 · Mitsubishi Heavy Industries\", \"subject\": \"Tsutomu Yamaguchi\", \"query\": \"Tsutomu Yamaguchi portrait photo\"}\n  {\"tool\": \"graphic\", \"cue\": 6, \"words\": \"In the early hours, a single bomber took off from Tinian.\", \"type\": \"longhold\", \"label\": \"Tinian · 02:45 AM\", \"colour\": false}\n  {\"tool\": \"graphic\", \"cue\": 8, \"words\": \"The bomb went off almost over the centre of the city. Yamaguchi was about three kilometres away.\", \"type\": \"scopeplate\", \"city\": \"Hiroshima\", \"coords\": \"34.39N 132.45E\", \"readout\": \"Yamaguchi · 3 km from ground zero\", \"subject\": \"Hiroshima\", \"query\": \"Hiroshima 1945 US Army target map\"}\n  {\"tool\": \"graphic\", \"cue\": 9, \"words\": \"Then, silence.\", \"type\": \"blackbeat\", \"time\": \"08:15 AM\"}\n  {\"tool\": \"graphic\", \"cue\": 11, \"words\": \"Those nearest the centre were burned beyond recognition.\", \"type\": \"rosetint\", \"label\": \"Hiroshima\"}\n  {\"tool\": \"graphic\", \"cue\": 14, \"words\": \"Bandaged and half deaf, he reported for work in his home city.\", \"type\": \"placeflash\", \"place\": \"Nagasaki\", \"date\": \"09 August 1945\"}\n  {\"tool\": \"graphic\", \"cue\": 16, \"words\": \"Three days after the first bomb, a second was already on its way.\", \"type\": \"countline\", \"figure\": \"3 days\", \"label\": \"Hiroshima to Nagasaki\"}\nRules: use title once, as the very first graphic, then a datestack on the first real shot (06 August 1945 / 08:15 AM / Hiroshima). Use a second datestack only for 09 August 1945 / 11:02 AM / Nagasaki.\nOn-screen text is only a fact the narration states: a date, a clock time, a place, a distance, a count or a name. Never retype the sentence, and never invent a time, number or label.\nPut a blackbeat directly before each detonation (Hiroshima 08:15 AM, Nagasaki 11:02 AM) and optionally directly after it, at most 4 in the film. Use rosetint only on the 2-4 most harrowing real shots (burned survivors, the flattened city).\nUse personcut the first time Yamaguchi or any other named person appears, and placeflash on the move from Hiroshima to Nagasaki. Use countline for a span the narration states (3 days, 43 seconds).\nUse longhold and scopeplate for the slow, heavy moments (the flight from Tinian, the cloud, the target maps), about once every 2 minutes each. Never use the same type twice in a row, and keep graphics to about 15% of the runtime.",
+ "learned": true
+}

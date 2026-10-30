@@ -1,0 +1,18 @@
+{
+ "desc": "red quilted diner vinyl texture with seams and buttons",
+ "tags": [
+  "diner",
+  "vinyl",
+  "booth",
+  "quilt",
+  "texture"
+ ],
+ "usage": "tex_quilted_vinyl(wMetres, hMetres, base, dark, light)",
+ "name": "quilted_vinyl",
+ "kind": "tex",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

@@ -1,0 +1,19 @@
+{
+ "name": "cactus",
+ "kind": "prop",
+ "desc": "a saguaro cactus with two arms, a shade side and a light line",
+ "tags": [
+  "desert",
+  "heat",
+  "dry",
+  "drought",
+  "cactus",
+  "sahara",
+  "arid",
+  "hot"
+ ],
+ "usage": "prop_cactus(g, x, groundY, size, '#2E9A4A')",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "prop_cactus(g, 540, 1000, 880, '#2E9A4A')"
+}

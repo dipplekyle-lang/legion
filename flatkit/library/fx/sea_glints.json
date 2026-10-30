@@ -1,0 +1,16 @@
+{
+ "name": "sea_glints",
+ "kind": "fx",
+ "desc": "sea glints: short horizontal capsules, small and dense near the horizon, shimmering",
+ "tags": [
+  "sea",
+  "ocean",
+  "lake",
+  "sunset",
+  "coast"
+ ],
+ "usage": "fx_sea_glints(g, seed, horizonY, waterlineY, t)",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "g.fillStyle='#2B4BFF'; g.fillRect(0,200,1080,800); fx_sea_glints(g, 3, 200, 1000, 1)"
+}

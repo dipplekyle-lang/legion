@@ -1,0 +1,89 @@
+{
+ "id": "history_old_archive_timestamp_cut_msuq_0irctm",
+ "status": "auto",
+ "kind": "reflearn",
+ "version": "1.1-reflearn",
+ "genre": "history_old",
+ "niche_tags": [
+  "hiroshima",
+  "nagasaki",
+  "atomic bomb",
+  "b-29 bomber",
+  "mushroom cloud",
+  "shipyard",
+  "1945 japan",
+  "survivor",
+  "ruined city",
+  "newsreel",
+  "tsutomu yamaguchi",
+  "bomber airfield"
+ ],
+ "fits": [
+  "history_old",
+  "war",
+  "biography"
+ ],
+ "avoid": [
+  "tech",
+  "gaming",
+  "sports",
+  "business",
+  "internet"
+ ],
+ "tones": [
+  "tragedy",
+  "serious"
+ ],
+ "needs": {
+  "threed": false,
+  "archival": false
+ },
+ "threed_preset": "",
+ "style_name": "Archive Timestamp Cut",
+ "reference": "Uncensored Footage of the Atomic Bomb's Devastation in Hiroshima (mSUQ-0iRctM)",
+ "video": "mSUQ-0iRctM",
+ "views": 13376652,
+ "ratio": 326.26,
+ "channel_hidden": true,
+ "channel_key": "0dace554b8aa",
+ "briefs": [
+  "65b8b0c1f259"
+ ],
+ "first_title": "The Man Who Survived Both Atomic Bombs",
+ "titles": [
+  "the-man-who-survived-both-atomic-bombs"
+ ],
+ "written": "2026-10-16 08:35",
+ "valid": {
+  "browser": true,
+  "kept": [
+   "title",
+   "datestack",
+   "rosetint",
+   "blackbeat",
+   "scopeplate",
+   "longhold",
+   "personcut",
+   "countline",
+   "placeflash"
+  ],
+  "critique": {
+   "score": 5,
+   "verdict": "The kit has the right restrained palette and timing, but nearly all of its type is too small and too timid next to the reference's bold centred white facts, and the title wraps badly.",
+   "problems": [
+    "title: the name is only about 64px and wraps to leave a lone 'BOMBS' on line two. The subtitle is a tiny, barely readable strip of about 28px. The reference's title cards are large, plain and balanced.",
+    "datestack and placeflash: the date, time and place facts are small, about 64px (placeflash's date line is 34px). The reference's centred facts (06 AUGUST 1945, 08:13AM, HIROSHIMA) read at a glance and carry more weight. Ours look timid, and the date line under NAGASAKI is almost illegible.",
+    "personcut: the name and meta line are tiny in the bottom-left corner. The grey meta text (1910–2010 · MITSUBISHI HEAVY INDUSTRIES) disappears into the gradient. Nothing here is readable at video size.",
+    "scopeplate: the city label, coordinates and typed readout are all around 20–26px, so they are unreadable. The ring sits on top of the face and the plate is dark navy, so it looks murky next to the crisp reference frames.",
+    "blackbeat: the lone clock time is about 34px in the middle of a huge black frame. It looks lost. It should be a confident single fact.",
+    "rosetint and longhold: the HIROSHIMA label on the rose frame and the TINIAN · 02:45 AM label are tiny. The rose label sits in the bottom-left corner, hard to see. countline's 'HIROSHIMA TO NAGASAKI' label is also too small under the figure."
+   ],
+   "after": {
+    "score": 7,
+    "verdict": "Ours reproduces the reference's centred white sans-serif date and place stacks, the rose-tint treatment and the black-and-white archival look cleanly and legibly, but some centred text sits on the busy face or window area and loses contrast (datestack, longhold, placeflash). The motion variety is al"
+   }
+  }
+ },
+ "minutes": 13.96,
+ "usd": 0.0
+}

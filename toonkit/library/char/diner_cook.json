@@ -1,0 +1,16 @@
+{
+ "name": "diner_cook",
+ "kind": "char",
+ "desc": "red-tee cook with teal bandana",
+ "tags": [
+  "diner",
+  "cook",
+  "character"
+ ],
+ "usage": "char_diner_cook()",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

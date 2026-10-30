@@ -1,0 +1,17 @@
+{
+ "name": "diner_owner",
+ "kind": "char",
+ "desc": "diner owner with captain cap, anchor apron and moustache",
+ "tags": [
+  "diner",
+  "owner",
+  "character",
+  "anchor"
+ ],
+ "usage": "char_diner_owner({name})",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

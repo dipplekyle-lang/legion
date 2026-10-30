@@ -1,0 +1,18 @@
+{
+ "name": "sailboat",
+ "kind": "prop",
+ "desc": "a small far sailboat sitting on the horizon (two sails, hull)",
+ "tags": [
+  "sea",
+  "ocean",
+  "coast",
+  "boat",
+  "sailing",
+  "harbour",
+  "lake"
+ ],
+ "usage": "prop_sailboat(g, x, horizonY, size, colour)  // far ones small and hazed: atmos(colour, sky, 0.35)",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "g.fillStyle='#18B8F0'; g.fillRect(0,820,1080,260); prop_sailboat(g, 540, 820, 520, '#FF5CA8')"
+}

@@ -1,0 +1,16 @@
+{
+ "name": "pom_jacket_girl",
+ "kind": "char",
+ "desc": "purple jacket girl with pom beanie",
+ "tags": [
+  "customer",
+  "girl",
+  "character"
+ ],
+ "usage": "char_pom_jacket_girl()",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

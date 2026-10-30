@@ -1,0 +1,16 @@
+{
+ "name": "pom_beanie",
+ "kind": "wear",
+ "desc": "pom-pom on top of the head",
+ "tags": [
+  "hat",
+  "beanie",
+  "accessory"
+ ],
+ "usage": "wear_pom_beanie(c.head, {color})",
+ "from": "The Sandwich Nobody Buys",
+ "critic": 8,
+ "from_folder": "toon_harvest",
+ "approved": true,
+ "added": "2026-10-25"
+}

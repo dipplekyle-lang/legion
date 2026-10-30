@@ -1,0 +1,18 @@
+{
+ "name": "mangrove",
+ "kind": "prop",
+ "desc": "a mangrove: arching stilt roots under a round canopy; grow 0..1 lets it grow on a word",
+ "tags": [
+  "mangrove",
+  "coast",
+  "swamp",
+  "tropical",
+  "tide",
+  "wetland",
+  "estuary"
+ ],
+ "usage": "prop_mangrove(g, x, groundY, size, '#1FBF4A', grow /* 0..1, grows on a word */, rootColour)",
+ "from": "What if the Moon vanished?",
+ "approved": true,
+ "demo": "prop_mangrove(g, 540, 1020, 470, '#1FBF4A', 1)"
+}

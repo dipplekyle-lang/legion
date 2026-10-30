@@ -1,0 +1,156 @@
+{
+  "name": "history",
+  "order": 24,
+  "label": "Canvas",
+  "description": "Long-form history told calmly and in order — how a city, an empire or a dynasty rose and changed — in sepia oil paintings that move slowly and dissolve into each other, and an embossed parchment map where empires spread, armies march and battles are marked. Every place, event and dynasty gets a title in Roman capitals, every ruler a round gold-rimmed portrait, the great turning points burn through like paper. No footage, no captions: paintings, maps and a deep, even narrator over an orchestral score.",
+  "tagline": "History in oil paintings and maps.",
+  "points": [
+    "Oil paintings that come alive",
+    "Parchment maps: empires, routes, battles",
+    "Drifting clouds, a tilting map",
+    "Roman-capital titles with the year",
+    "A gold medallion for every ruler",
+    "Paper burns at the turning points"
+  ],
+  "script_craft": "story",
+  "cost": "about $0.10 a minute (the paintings and the voice) plus $1.50–3 a video for up to ten paintings set in motion (Seedance on kie.ai, $0.15 a 5-second clip); no footage to watch; rendering takes about eight to ten minutes per minute of video",
+  "render_x": 7.0,
+  "language": "English",
+  "voice": {
+    "provider": "ai33",
+    "engine": "elevenlabs",
+    "model": "eleven_multilingual_v2",
+    "chunk_chars": 900,
+    "voice_id": "vLZJLcQMJCqxjrHGEVDO",
+    "voice_name": "Connery — Deep & Immersive Documentary",
+    "wavespeed_voice": "Brian",
+    "note": "The reference narrator is a low, even male voice (pitch about 113 Hz, 144 words a minute). Any deep ElevenLabs narrator works.",
+    "gender": "male"
+  },
+  "features": {
+    "offered": [
+      "ai_images",
+      "motion",
+      "sound"
+    ],
+    "on": [
+      "ai_images",
+      "motion",
+      "sound"
+    ],
+    "prefer": "stock"
+  },
+  "look": {
+    "graphics": "kit",
+    "kit": "history",
+    "director": true,
+    "placement": "story",
+    "scene_prompt": "You are the art director of a history channel whose every picture is an oil painting.\n\nCHANNEL: [INSERT CHANNEL HERE]\n\nBelow is the narration. Paint [INSERT COUNT HERE] consecutive pictures, about one for every ten seconds of narration,\ncovering it from its first line to its last, so that each picture shows EXACTLY what the viewer is hearing then.\n\nWHAT A PICTURE SHOWS — the channel is literal three times out of four:\n- A place: the place itself at that moment of its history, usually from above or from across the water, so the\n  viewer sees the whole city, harbour, fortress or palace (an aerial painting of the city at the start of a story).\n- An event: its most visual instant — the siege at the walls with smoke and catapults, the riot in front of burning\n  buildings, the fleet off the sea walls, the crowd entering the gates, the looting inside the church.\n- A ruler or a leader who acts: that person doing the thing — on horseback before the army, on the throne receiving\n  envoys, standing under the dome — never a portrait of them posing (portraits are drawn apart).\n- A building or a work: the building from outside at golden hour, then its interior with light falling through it.\n- An idea with nothing to paint (a crisis, a decline, a rivalry): a scene of the same time and place that shows it\n  happening to people — a court in turmoil, ruins with survivors, monks hiding an icon. Never a symbol.\n- Soldiers, crowds, ships and dress belong to the exact era and people named; a place painted twice looks the same.\n- Vary the distance like an editor: the wide view of the place, the crowd at street level, the group round one figure.\n  Never repeat a composition. No text, letters, maps or numbers inside a picture.\n- Describe the scene only; one painted look is added to every prompt for you.\n\nReturn ONLY a JSON array of [INSERT COUNT HERE] objects, in narration order. Laid end to end, the \"text\" fields are\nthe narration itself, with nothing skipped:\n\n  {\"text\": \"<the narration this picture covers, COPIED WORD FOR WORD from the script>\",\n   \"prompt\": \"<a complete image prompt: the place, the moment, the people and what they do, the era's dress and\n              architecture, the time of day, the light, the distance>\"}\n\nSCRIPT:\n[INSERT SCRIPT HERE]",
+    "still_suffix": " Painted as a 19th-century academic history painting in oil with fine engraved detail: a golden-sepia palette of umber, ochre, amber and muted olive, warm low-key light, soft atmospheric haze and depth, gently darker edges, the scene seen as a real place with real people in the dress, armour and architecture of their own era, cinematic 16:9 composition, no text, no letters, no frame, no border, no watermark.",
+    "title_font": "'Cinzel', Georgia, serif",
+    "title_weight": "600",
+    "accent": [
+      "#E9D6C4",
+      "#B97A5C",
+      "#AD9662",
+      "#707A56",
+      "#8E7169"
+    ],
+    "warn": "#B97A5C",
+    "good": "#707A56",
+    "skins": [
+      "noir"
+    ],
+    "caption_accent": "&HC4D6E9&",
+    "captions": {
+      "off": true,
+      "font": "EB Garamond",
+      "size": 46,
+      "upper": false,
+      "karaoke": false
+    },
+    "footage_grade": "eq=saturation=0.72:gamma=1.12:contrast=0.93,colorbalance=rs=0.04:bs=-0.04",
+    "dust": false,
+    "vignette": false,
+    "leak": false,
+    "zoom": "alternate",
+    "encode": {
+      "preset": "slow",
+      "tune": "film",
+      "crf": 18
+    },
+    "animate": {
+      "every": 1,
+      "max": 0,
+      "note": "max 0 animates nothing; the block is what makes Legion run the kit's timeline pass (kits.fix_transitions), which turns every painting into the channel's moving, dissolving picture — keep it"
+    },
+    "cinema": {
+      "chapter_cards": false,
+      "title_card": false,
+      "year_cards": false,
+      "labels": false,
+      "dust_on_archive": false,
+      "framed_every": 0,
+      "tv_every": 0,
+      "pop_every": 0
+    },
+    "sound": {
+      "sfx_db": -17,
+      "music_rel_db": -9,
+      "duck_db": -3,
+      "track": "orchestral/document orchestral 2.mp3 | orchestral/document orchestral.mp3 | documentary/Documentary 1.mp3",
+      "epidemic": {
+        "music": {
+          "dramatic": "epic orchestral war drums historical",
+          "quiet": "melancholic orchestral strings historical drama",
+          "inspiring": "majestic orchestral strings historical epic",
+          "": "orchestral historical documentary underscore"
+        },
+        "sfx_flavor": "cinematic documentary",
+        "avoid": ["comedy", "trap", "edm", "cartoon", "electronic", "hip hop", "pop"]
+      },
+      "note": "One orchestral score under the whole video, strings and low pads, quiet under the voice. Your own tracks go in assets/music/history/ (or name one in \"track\"); with an Epidemic Sound key in .env every chapter gets its own orchestral track by mood instead."
+    },
+    "options_note": "HISTORY: every picture is an oil painting that moves on the channel's slow camera presets and dissolves into the next; maps are drawn by the kit (realms, routes, battles, pushes), titles and medallions sit on the paintings. No footage and no captions by design.",
+    "reference": "styles/history.jpg",
+    "history_motion": {
+      "provider": "kie",
+      "model": "bytedance/v1-pro-image-to-video",
+      "resolution": "720p",
+      "max": 10,
+      "min_s": 5.5,
+      "note": "the paintings held longest come alive (water, smoke, flags, fire, people) through Seedance on kie.ai: about $0.15 per 5 s clip, $0.30 for 10 s; max 0 keeps every painting still"
+    }
+  },
+  "pacing": {
+    "graphic_every_min": 0.6,
+    "graphic_ratio": 0.45,
+    "graphic_dur_s": 8.0,
+    "graphic_max_s": 26.0,
+    "cold_open_s": 0,
+    "white_fade": 0.0,
+    "punch": false,
+    "graphics": true,
+    "wpm": 144,
+    "cut_s": 5.8,
+    "photo_every_s": 9.7,
+    "hook_s": 60,
+    "scene_share_hook": 0.9,
+    "scene_share_body": 0.9,
+    "hook_notes": "A history episode told in paintings and maps; the reference's first minute has 3 maps. Cue 1 (the very first words of the video, whatever they are) is a title card with the name of the place, city, empire or dynasty the episode is about (sub: its first date or \"\"). Then, 6-15 s in, a map that shows WHERE the story happens: the region with the place named and its seas labelled, or the founder's route, with his medallion ON the map. A second map before 0:45 (a realm when a power takes the land, the ruler's medallion ON it). Maps win over titles and medallions in the first minute; leave at least 6 s between the start of one scene and the next. No counter, cutout, burn or reframe in the first minute. NO text labels at all: names, places and dates are carried by the title cards, medallions and map labels.",
+    "body_notes": "After the hook the paintings carry the story. A map every 35-45 s: realm when territory changes hands (spreads on its word), route when someone travels, marches or trades, battle with the year when a battle or a siege is fought, mapzoom for a long stretch of political narration (the camera pushes from the empire to the city). A title card every 35-50 s for each new place, event, dynasty or era the story reaches, with its year or range as sub; it goes up on the cue where the sentence starts, never two within 20 s. A medallion the first time each ruler or leader acts (never for a passing mention). burn only at the two or three biggest turning points of the whole video (a conquest, a sack, a new capital), on the cue where that sentence starts. cutout once or twice a video, when a kind of soldier, guard or machine enters the story. counter when the narration states a population before and after. reframe whenever one painting must carry a long description of one place. NO text labels on the paintings: the channel never floats a name, a number or a phrase over a picture.",
+    "scene_share_note": "titles, medallions, counters, cut-outs, burns and re-crops are drawn ON the paintings, so they do not take the pictures' room: only the maps replace them (31 % of the reference's time)",
+    "same_tool_penalty": 0.15,
+    "same_tool_note": "every HISTORY scene is a kit 'graphic' (titles, medallions and maps alike): the director's variety penalty would drop the maps, so it is kept small"
+  },
+  "stock_queries": [],
+  "prompts": {
+    "outline": "You are the head writer of a long-form history channel: the whole story of a city, an empire or a dynasty, told\ncalmly and in order, from its legendary beginning to the moment everything changed.\n\nTITLE: [INSERT TITLE HERE]\nLENGTH: [INSERT LENGTH — e.g., 15 minutes, 20 minutes, 25 minutes]\n\nPlan the episode in plain prose, as numbered beats of about one minute each, in CHRONOLOGICAL order.\n- Beat 1 opens on the origin: the legend or the first recorded moment of the story, with a date, a founder and a place\n  (\"According to legend, ... around 600 BC, when a Greek explorer named ...\"). No flash-forward, no teaser.\n- Every beat moves the story forward in time and is anchored to things a painting or a map can show: a named ruler,\n  a place, a year, a battle, a building, a treaty, a migration, a trade route.\n- Name the rulers and say what each of them did and when; name the places as they were called then and say when a\n  name changed.\n- Every few beats a turning point: a conquest, a sack, a split, a new capital. Give the two or three biggest ones room.\n- Use only facts you are certain of; where sources disagree, plan the round figure with \"around\" or \"perhaps\".\n- The last beat lands the story's great change and what the place became after it.\nFor each beat, write the facts it states and the concrete things on screen that prove them (the place, the ruler,\nthe map of who held what).",
+    "script": "Write the complete narration for this history episode from the plan below.\n\nTHE PLAN:\n[INSERT OUTLINE HERE]\n\nHOW IT SOUNDS\n- A calm, even, authoritative narrator telling a long story in order. Past tense. Full, flowing sentences of 15 to 30\n  words with clauses (\"Seeking a fresh start and a strategic administrative center, Constantine chose ancient\n  Byzantium as the site for a new imperial capital\"), and now and then a short one at a turning point.\n- It opens on the origin, not on a hook question: \"According to legend, the origins of the city that would one day\n  become ... date back to around ...\"\n- Every sentence carries something concrete: a ruler, a place, a year, a battle, a building, a number of people.\n- Say the name of a place, event or ruler in the sentence's first half: the picture and its title arrive with the\n  sentence and the name follows a moment later.\n- Name places as they were called at the time and say when the name changed.\n- Real facts only. No invented quotes or figures; disputed figures take \"around\" or \"perhaps\".\n- Plain spoken text only: no headings, no stage directions, no lists, no quotation marks.\n- Write dates and numbers the way a narrator reads them aloud (\"in 330 AD\" as \"in three hundred and thirty AD\",\n  \"fifty thousand people\").\n- Never say \"in this video\"; no questions to the viewer. End on what the place became after the great change; then\n  one short line asking viewers to subscribe for the next story."
+  },
+  "thumbnail": {
+    "brief": "A single sepia oil painting of the story's place at its most dramatic moment (the city from above at golden hour, the siege at the walls, the conqueror at the gate), low-key light, darker edges. Two to four words of headline in Roman capitals with wide letter-spacing, warm off-white, centred in the lower third, a thin hairline under it and a year in small italics. No faces looking at camera, no arrows, no circles.",
+    "accent": "#E9D6C4",
+    "note": "Send Claude five thumbnails from history channels you like and ask it to rewrite this brief."
+  }
+}

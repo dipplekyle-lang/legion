@@ -1,0 +1,24 @@
+{
+  "look": "stylized 3D CGI rendering with photoreal textures on skin, fabric and props, soft cinematic studio lighting with gentle rim light and shallow depth of field, cool-leaning but varied colour grading (teal, blue, muted green, warm amber accents), camera mixes static mid-shots with handheld-feel close-ups and low/high angle hero shots on the character's face",
+  "character": "a plain, slightly awkward or everyman-looking young-to-middle-aged man rendered in semi-realistic 3D (distinct haircut, sometimes glasses, cap, or moustache per episode), dressed in ordinary modern clothing like hoodies, polos, t-shirts or uniforms, reacting or narrating with exaggerated but grounded facial expressions and hand gestures",
+  "scenes": "each shot isolates one main subject or action against a shallow-focus background (a hallway, workshop, rooftop, or plain coloured backdrop), minimal clutter, usually 1-2 foreground elements (a hand, an object, a second character) plus a softly blurred environment behind, one clear thing moves or is highlighted per shot: a hand gesture, an object being held up, a mechanism animating, or a character leaning into frame",
+  "text": "large bold sans-serif captions in white with a thick black outline, centered horizontally and sitting in the lower third of the frame, 2-5 words per card building a sentence across cuts, occasional simple graphic accents like blue chevron arrows pointing to a detail",
+  "hook": "opens mid-action or mid-sentence on a striking close-up (a hand holding a strange object, an odd device, an exaggerated face) with a caption fragment already running, immediately raising a question about what's being shown",
+  "pacing": "fast, roughly 1-2 seconds per shot, hard cuts timed to the spoken captions with occasional punch-in zooms on the key object or face for emphasis, no slow fades or transitions",
+  "voice": "narrated throughout in a confident, casual explainer/storytelling tone, present tense, conversational and matter-of-fact as if revealing a secret or little-known fact",
+  "kind": "voiceover",
+  "name": "What Happens To Your Body",
+  "examples": [
+    "dLQQV73fUI0",
+    "NNIK86faGPE",
+    "NEgarf1vDTU",
+    "MSPVq-5sbCg",
+    "FFrTF0ObUT0",
+    "zZVlkSIn8BY"
+  ],
+  "created": 1791283935.738017,
+  "channel": {
+    "name": "",
+    "avatar": ""
+  }
+}

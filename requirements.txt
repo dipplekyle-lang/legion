@@ -1,0 +1,13 @@
+flask>=3.0
+requests>=2.31
+python-dotenv>=1.0
+numpy>=1.24
+pillow>=10.0
+playwright>=1.40
+static-ffmpeg>=2.5
+edge-tts>=6.1
+# Long videos (studio/)
+faster-whisper>=1.0
+opencv-python-headless>=4.8
+yt-dlp>=2025.10.22; python_version >= "3.10"
+pypdf>=4.0
